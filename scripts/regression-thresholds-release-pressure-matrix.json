@@ -1,0 +1,11 @@
+{
+  "default_threshold_percent": 15.0,
+  "rules": [
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "threshold_percent": 25.0
+    }
+  ]
+}

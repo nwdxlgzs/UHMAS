@@ -1,0 +1,152 @@
+{
+  "schema": "uhmas.publication-verification.v1",
+  "date": "2026-10-10",
+  "scope": "Publication materials, privacy redaction, portable WSL paths and default VM example; allocator runtime unchanged",
+  "choices": {
+    "new_git_history": true,
+    "license_added": false,
+    "remote_created_or_pushed": false,
+    "development_history_preserved_locally": true
+  },
+  "checks": {
+    "powershell_all_scripts_parse": "pass",
+    "wsl_path_auto_explicit_spaces": "pass",
+    "working_checkout_Windows_x64_Release_basic_platform_example": "pass",
+    "working_checkout_WSL_x64_Release_basic_platform_example": "pass",
+    "independent_snapshot_Windows_x64_Release_build_basic_platform_example": "pass",
+    "independent_snapshot_WSL_x64_Release_build_basic_platform_example": "pass",
+    "export_nonempty_target_refusal": "pass",
+    "candidate_manifest_sha256_mismatches": 0,
+    "candidate_privacy_worktree_and_all_reachable_blobs": "pass",
+    "candidate_git_commit_count": 1,
+    "candidate_git_non_neutral_identity_count": 0,
+    "candidate_git_has_remotes": false,
+    "historical_47_JSON_numeric_structure_vs_git_HEAD": "pass"
+  },
+  "historical_json_redaction": {
+    "files": 47,
+    "numeric_measurements_preserved": true,
+    "old_provenance_describes_original_inputs": true,
+    "reference_only": true,
+    "original_formatting_preserved": true,
+    "redaction_report_original_hash_byte_source": "tracked HEAD blob"
+  },
+  "path_wrapper_metadata": {
+    "windows": {
+      "artifact": "artifacts/benchmarks/bench-20261010-154746-windows-metadata-footprint-quick.json",
+      "metadata_comparison_summary": {
+        "total": 156,
+        "failed": 0,
+        "ok": 156,
+        "tolerated_sample_outliers": 0,
+        "threshold": 0,
+        "missing_metadata": 0,
+        "missing_record": 0,
+        "missing_key": 0
+      },
+      "comparison_status": "skipped-metadata-only",
+      "comparison_skipped": true
+    },
+    "wsl": {
+      "artifact": "artifacts/benchmarks/bench-20261010-154752-wsl-metadata-footprint-quick.json",
+      "metadata_comparison_summary": {
+        "total": 156,
+        "failed": 0,
+        "ok": 156,
+        "tolerated_sample_outliers": 0,
+        "threshold": 0,
+        "missing_metadata": 0,
+        "missing_record": 0,
+        "missing_key": 0
+      },
+      "comparison_status": "skipped-metadata-only",
+      "comparison_skipped": true
+    }
+  },
+  "focused_negative_evidence": {
+    "artifact": "artifacts/benchmarks/bench-20261010-154642-windows-treap-adversarial-quick.json",
+    "diagnostic_summary": {
+      "total": 420,
+      "failed": 1,
+      "ok": 419,
+      "threshold": 1,
+      "missing_diagnostics": 0,
+      "missing_record": 0,
+      "missing_key": 0
+    },
+    "heap_lock_max_hold_ns": 1857000,
+    "limit_ns": 1000000,
+    "concurrent_snapshot_build": true,
+    "causal_explanation_proven": false,
+    "threshold_relaxed": false,
+    "retry_until_green": false
+  },
+  "Windows_x64_Release_quick": {
+    "artifact": "artifacts/benchmarks/bench-20261010-154833-windows-quick.json",
+    "samples": 3,
+    "aggregation": "median",
+    "regression_mode": "same-run-relative",
+    "comparison_status": "same-run-relative",
+    "results": [
+      {
+        "name": "uhm small malloc/free",
+        "ns_per_op": 390.4
+      },
+      {
+        "name": "system malloc small",
+        "ns_per_op": 98.4
+      },
+      {
+        "name": "uhm small malloc/free multithread",
+        "ns_per_op": 258
+      },
+      {
+        "name": "system malloc multithread",
+        "ns_per_op": 63.7
+      },
+      {
+        "name": "uhm large malloc/realloc/free",
+        "ns_per_op": 745.2
+      },
+      {
+        "name": "system malloc large/realloc/free",
+        "ns_per_op": 521.7
+      },
+      {
+        "name": "uhm mmap/munmap large",
+        "ns_per_op": 12568.7
+      },
+      {
+        "name": "system mmap/VirtualAlloc large",
+        "ns_per_op": 11068.6
+      },
+      {
+        "name": "uhm mmap fixed/auto mix",
+        "ns_per_op": 6462.4
+      },
+      {
+        "name": "uhm mprotect split/merge cost",
+        "ns_per_op": 5373.3
+      },
+      {
+        "name": "uhm malloc/mmap collision pressure",
+        "ns_per_op": 10846.3
+      },
+      {
+        "name": "uhm release mixed long pressure",
+        "ns_per_op": 6849.4
+      }
+    ]
+  },
+  "limits": [
+    "No new Win32/i386/macOS/Android/sanitizer rerun in this publication-only stage; previous stage evidence remains separately labeled.",
+    "Metadata throughput comparisons skipped because baseline is missing; quick uses NoRegressionBaseline.",
+    "Different power limits affect cross-run values; the cause of every sample difference is not proven.",
+    "Privacy pattern checks and known-source identity checks are bounded by the stated allowlist and rules."
+  ],
+  "x64_benchmark_text": {
+    "bytes": 443212,
+    "sha256": "d4baf164ca8448d2a4c9b3c918246f595756a4537d5ab3f65b72a5df47c164e3",
+    "identical_to_previous_stage": true
+  }
+}

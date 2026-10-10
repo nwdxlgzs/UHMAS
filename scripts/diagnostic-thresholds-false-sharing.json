@@ -1,0 +1,179 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "live_slow_fallback_scans",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "live_slow_fallback_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "live_slow_fallback_aborts",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "metadata_quarantine_drain_budget_exhausted",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "malloc_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "malloc_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "vma_tree_insertions",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "mmap_free_tree_insertions",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "mmap_recent_free_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "mmap_free_tree_find_calls",
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "vm_commit_calls",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "false-share page-map mmap/munmap",
+      "key": "vm_decommit_calls",
+      "max_value": 0
+    }
+  ]
+}

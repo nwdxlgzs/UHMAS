@@ -1,0 +1,228 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_size_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_recent_free_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_recent_free_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_recent_free_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_size_hint_too_small",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_calls",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

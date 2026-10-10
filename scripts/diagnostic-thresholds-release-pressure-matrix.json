@@ -1,0 +1,487 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_reserve_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_commit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_decommit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_fixed_remap_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_protect_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_release_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vm_numa_hint_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "metadata_hot_vma_full_defers",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "metadata_hot_free_extent_full_defers",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "metadata_hot_vma_reclaimed",
+      "min_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_vma_hits",
+      "min_value": 3000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_vma_misses",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_vma_reclaimed",
+      "min_value": 3000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_free_extent_hits",
+      "min_value": 2500
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_free_extent_misses",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "metadata_hot_free_extent_reclaimed",
+      "min_value": 2500
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retained_bytes",
+      "max_value": 1048576
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retention_high_water_bytes",
+      "max_value": 1048576
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retention_max_high_water_bytes",
+      "max_value": 1048576
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retention_pressure_events",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retention_adaptive_grow_events",
+      "max_value": 2048
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "malloc_free_decommit_retention_adaptive_shrink_events",
+      "max_value": 2048
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "decommit_recommit_same_addr_events",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "malloc_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "malloc_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "vm_commit_calls",
+      "max_value": 5000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "vm_decommit_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "vm_decommit_calls",
+      "max_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_mark_max_pages",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_range_query_max_pages",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "page_lock_range_max_shards",
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "vm_commit_calls",
+      "max_value": 5000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "vm_decommit_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "vm_decommit_calls",
+      "max_value": 5000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "vm_protect_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "vm_protect_calls",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_commit_calls",
+      "max_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_decommit_calls",
+      "max_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_protect_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "vm_protect_calls",
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "page_mark_max_pages",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "page_range_query_max_pages",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

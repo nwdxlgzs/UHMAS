@@ -1,0 +1,431 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_commit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_decommit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_protect_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_fixed_remap_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vm_numa_hint_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "live_slow_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "live_tree_find_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "live_slow_fallback_scans",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "live_slow_fallback_aborts",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "live_slow_fallback_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "metadata_quarantine_drain_budget_exhausted",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "malloc_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "malloc_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 80
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 5000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 7000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "windows",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "win32",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 256
+    },
+    {
+      "platform": "wsl-i386",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 256
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 2500
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "vm_protect_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "vm_commit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "vm_decommit_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "vm_protect_calls",
+      "min_value": 1
+    }
+  ]
+}

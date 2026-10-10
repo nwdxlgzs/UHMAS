@@ -1,0 +1,113 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-current",
+      "key": "model_id",
+      "min_value": 0,
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-current",
+      "key": "request",
+      "min_value": 16,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-current",
+      "key": "line_overlap",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-compact16",
+      "key": "model_id",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-compact16",
+      "key": "inline_header",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-compact32",
+      "key": "model_id",
+      "min_value": 2,
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-compact32",
+      "key": "inline_header",
+      "min_value": 32,
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-side16",
+      "key": "model_id",
+      "min_value": 3,
+      "max_value": 3
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-side16",
+      "key": "metadata_in_payload",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-side16",
+      "key": "side_bytes",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-side16",
+      "key": "line_overlap",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-padded64",
+      "key": "model_id",
+      "min_value": 4,
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-padded64",
+      "key": "cacheline_padded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-ab-quick",
+      "name": "slab-slot-layout-ab-padded64",
+      "key": "line_overlap",
+      "max_value": 0
+    }
+  ]
+}

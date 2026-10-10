@@ -1,0 +1,544 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "query_has_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "query_get_expected_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "mark_malloc_live_budget_exceeded",
+      "max_value": 5000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "mark_malloc_decommitted_budget_exceeded",
+      "max_value": 3500
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc churn",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "query_has_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "query_get_expected_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "mark_malloc_live_budget_exceeded",
+      "max_value": 256
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "mark_malloc_decommitted_budget_exceeded",
+      "max_value": 7000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown malloc/free burst",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_overlaps_va_state_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap churn",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_overlaps_va_state_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mmap/munmap burst",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_overlaps_va_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_get_expected_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase release breakdown mprotect lifecycle",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_has_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_overlaps_va_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_get_expected_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_malloc_live_budget_exceeded",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "mark_malloc_decommitted_budget_exceeded",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "page-range-phase uhm release mixed long pressure",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown malloc churn",
+      "key": "overflows",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown malloc/free burst",
+      "key": "overflows",
+      "min_value": 1,
+      "max_value": 2000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mmap churn",
+      "key": "overflows",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mmap/munmap burst",
+      "key": "overflows",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mprotect lifecycle",
+      "key": "overflows",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache uhm release mixed long pressure",
+      "key": "overflows",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown malloc churn",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown malloc/free burst",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache uhm release mixed long pressure",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mmap churn",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mmap/munmap burst",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "tls-cache release breakdown mprotect lifecycle",
+      "key": "retained_page_pressure",
+      "max_value": 0
+    }
+  ]
+}

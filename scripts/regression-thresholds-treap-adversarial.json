@@ -1,0 +1,53 @@
+{
+  "same_run_rules": [
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 4.0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 4.0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 4.0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 2.0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 5.0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA protect pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 1.75
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "baseline_name": "treap vma live-tree pressure",
+      "max_ratio": 4.0
+    }
+  ]
+}

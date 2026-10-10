@@ -1,0 +1,64 @@
+{
+  "rules": [
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-scheduler-state", "key": "logical_cpus", "min_value": 1, "max_value": 4096 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-scheduler-state", "key": "affinity_cpus", "min_value": 1, "max_value": 4096 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-scheduler-state", "key": "affinity_query_ok", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-scheduler-state", "key": "priority_query_ok", "min_value": 1, "max_value": 1 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-cpu-cycle-calibration", "key": "cycles_per_ns_ppm", "min_value": 0, "max_value": 10000000000 },
+    { "platform": "windows", "profile": "spinlock-thresholds-*", "name": "spinlock-cpu-cycle-calibration", "key": "cycles_per_ns_ppm", "min_value": 1, "max_value": 10000000000 },
+    { "platform": "win32", "profile": "spinlock-thresholds-*", "name": "spinlock-cpu-cycle-calibration", "key": "cycles_per_ns_ppm", "min_value": 1, "max_value": 10000000000 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-order", "key": "sample_index", "min_value": 1, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-order", "key": "rotation", "min_value": 0, "max_value": 5 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-order", "key": "reverse", "min_value": 0, "max_value": 1 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_thread_count", "min_value": 1, "max_value": 4 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_cpu_work", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_cpu_work_is_cycles", "min_value": 0, "max_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_cpu_ns", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_wall_ns", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_wait_ns", "min_value": 0, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_max_wait_ns", "min_value": 0, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_cpu_ratio_ppm", "min_value": 0, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=* *", "key": "worker_wait_ratio_ppm", "min_value": 0, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=*", "key": "operations", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=*", "key": "wall_ns", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=*", "key": "cpu_work", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "runtime spinlock yield=*", "key": "cpu_work_is_cycles", "min_value": 0, "max_value": 1 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-runtime", "key": "wall_ns", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-runtime", "key": "cpu_ns", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-runtime", "key": "logical_cpus", "min_value": 1, "max_value": 4096 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-runtime", "key": "cpu_parallelism_ppm", "min_value": 1, "max_value": 8000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-matrix-runtime", "key": "cpu_capacity_ppm", "min_value": 1, "max_value": 1000000 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "wall_ratio_ppm", "min_value": 100000, "max_value": 10000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "cpu_work_ratio_ppm", "min_value": 100000, "max_value": 10000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "p99_ratio_ppm", "min_value": 1, "max_value": 100000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "worker_cpu_ratio_ppm", "min_value": 100000, "max_value": 10000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "worker_wait_ratio_ppm", "min_value": 0, "max_value": 9223372036854775807 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "wall_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "default_wall_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "cpu_work_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "default_cpu_work_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "p99_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "default_p99_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "worker_cpu_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "default_worker_cpu_ns_per_op", "min_value": 1, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "worker_wait_ns_per_op", "min_value": 0, "max_value": 1000000000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=* *", "key": "default_worker_wait_ns_per_op", "min_value": 0, "max_value": 1000000000000 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=default *", "key": "wall_ratio_ppm", "min_value": 1000000, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=default *", "key": "cpu_work_ratio_ppm", "min_value": 1000000, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=default *", "key": "p99_ratio_ppm", "min_value": 1000000, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=default *", "key": "worker_cpu_ratio_ppm", "min_value": 1000000, "max_value": 1000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=default *", "key": "worker_wait_ratio_ppm", "min_value": 1000000, "max_value": 1000000 }
+    ,
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=256 *", "key": "wall_ratio_ppm", "min_value": 500000, "max_value": 2000000, "max_failed_samples": 1, "min_samples_for_outlier_tolerance": 3 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=256 *", "key": "cpu_work_ratio_ppm", "min_value": 500000, "max_value": 2000000, "max_failed_samples": 1, "min_samples_for_outlier_tolerance": 3 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=256 *", "key": "p99_ratio_ppm", "min_value": 200000, "max_value": 5000000, "max_failed_samples": 1, "min_samples_for_outlier_tolerance": 3 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock-relative yield=256 *", "key": "worker_cpu_ratio_ppm", "min_value": 500000, "max_value": 2000000, "max_failed_samples": 1, "min_samples_for_outlier_tolerance": 3 }
+  ]
+}

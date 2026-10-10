@@ -1,0 +1,22 @@
+{
+  "rules": [
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "treap_health_flags", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "live_block_health_flags", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "vm_decommit_calls", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "vm_decommit_failures", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned *", "key": "vm_release_calls", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close pre-reserved *", "key": "vm_release_calls", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "vm_release_failures", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned *", "key": "vm_lock_held_calls", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close pre-reserved *", "key": "vm_lock_held_calls", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned *", "key": "vm_release_lock_held_calls", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close pre-reserved *", "key": "vm_release_lock_held_calls", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "vm_decommit_lock_held_calls", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "heap_lock_calls", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "heap_lock_max_hold_ns", "min_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "metadata_quarantine_drain_budget_exhausted", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "page_mark_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "page_range_query_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "page_lock_range_budget_exceeded", "max_value": 0 }
+  ]
+}

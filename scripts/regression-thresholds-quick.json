@@ -1,0 +1,11 @@
+{
+  "default_threshold_percent": 100.0,
+  "rules": [
+    {
+      "platform": "wsl",
+      "profile": "quick",
+      "name": "*",
+      "threshold_percent": 120.0
+    }
+  ]
+}

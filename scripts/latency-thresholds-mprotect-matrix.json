@@ -1,0 +1,366 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "samples",
+      "min_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "samples",
+      "min_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "samples",
+      "min_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "samples",
+      "min_value": 128
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 1500000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 1500000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 3000000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 3000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 2000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 2000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 3000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 3000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_ns",
+      "max_value": 1500000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 2500000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 4000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_ns",
+      "max_value": 2200000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_ns",
+      "max_value": 3000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_ns",
+      "max_value": 4000000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "work_units_per_sample",
+      "min_value": 65,
+      "max_value": 65
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "pages_per_sample",
+      "min_value": 128,
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "work_units_per_sample",
+      "min_value": 66,
+      "max_value": 66
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "pages_per_sample",
+      "min_value": 192,
+      "max_value": 192
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "work_units_per_sample",
+      "min_value": 129,
+      "max_value": 129
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "pages_per_sample",
+      "min_value": 256,
+      "max_value": 256
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "work_units_per_sample",
+      "min_value": 130,
+      "max_value": 130
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "pages_per_sample",
+      "min_value": 384,
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "work_units_per_sample",
+      "min_value": 257,
+      "max_value": 257
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress pass",
+      "key": "pages_per_sample",
+      "min_value": 512,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "work_units_per_sample",
+      "min_value": 258,
+      "max_value": 258
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "multi-VMA mprotect configurable stress rollback",
+      "key": "pages_per_sample",
+      "min_value": 768,
+      "max_value": 768
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_work_unit_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_work_unit_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_page_ns",
+      "max_value": 10000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p*-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_page_ns",
+      "max_value": 10000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_per_work_unit_ns",
+      "max_value": 6000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_work_unit_ns",
+      "max_value": 8000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_work_unit_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_per_page_ns",
+      "max_value": 3000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_page_ns",
+      "max_value": 4000
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_page_ns",
+      "max_value": 6000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_per_work_unit_ns",
+      "max_value": 8000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_work_unit_ns",
+      "max_value": 11000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_work_unit_ns",
+      "max_value": 13000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p95_per_page_ns",
+      "max_value": 4000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "p99_per_page_ns",
+      "max_value": 6000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "multi-VMA mprotect configurable stress *",
+      "key": "max_per_page_ns",
+      "max_value": 8000
+    }
+  ]
+}

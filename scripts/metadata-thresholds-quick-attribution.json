@@ -1,0 +1,306 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free multithread",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free multithread",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free multithread",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free multithread",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm small malloc/free multithread",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm large malloc/realloc/free",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm large malloc/realloc/free",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm large malloc/realloc/free",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm large malloc/realloc/free",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm large malloc/realloc/free",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mprotect split/merge cost",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mprotect split/merge cost",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mprotect split/merge cost",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mprotect split/merge cost",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mprotect split/merge cost",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm malloc/mmap collision pressure",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm malloc/mmap collision pressure",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm malloc/mmap collision pressure",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm malloc/mmap collision pressure",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm malloc/mmap collision pressure",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm release mixed long pressure",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm release mixed long pressure",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm release mixed long pressure",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm release mixed long pressure",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm release mixed long pressure",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "windows",
+      "profile": "quick",
+      "name": "attribution uhm mmap/munmap large",
+      "key": "page_span_pages",
+      "max_value": 35766
+    },
+    {
+      "platform": "*",
+      "profile": "quick",
+      "name": "attribution uhm mmap fixed/auto mix",
+      "key": "page_span_pages",
+      "max_value": 34000
+    }
+  ]
+}

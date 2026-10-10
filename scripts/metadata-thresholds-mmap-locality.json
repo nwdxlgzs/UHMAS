@@ -1,0 +1,627 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 2,
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 4,
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 4,
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 4,
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 2p",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 4p",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality size-hint churn 8p",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality same-bucket hint churn",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality deep-bucket hint churn",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 4,
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality fragmented-ring hint churn",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 2,
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality exact-front hot-cache metadata",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_range_free_extents_sum",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_range_free_pages_sum",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_range_largest_pages_max",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality sparse hot-cache maintenance",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_samples",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_exact_pages",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_range_free_extents_sum",
+      "min_value": 72,
+      "max_value": 72
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_range_free_pages_sum",
+      "min_value": 72,
+      "max_value": 72
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_range_largest_pages_max",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_range_fragmented_pages_sum",
+      "min_value": 71,
+      "max_value": 71
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_recent_cache_slots",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_size_hint_slots",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_exact_reuse_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_reuse_distance_pages_max",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "mmap locality adjacent-release recent lookup",
+      "key": "mmap_locality_range_fragmentation_ppm_max",
+      "min_value": 986111,
+      "max_value": 986111
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality size-hint churn 2p",
+      "key": "page_span_pages",
+      "max_value": 698500
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality size-hint churn 4p",
+      "key": "page_span_pages",
+      "max_value": 724500
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality size-hint churn 8p",
+      "key": "page_span_pages",
+      "max_value": 776500
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality same-bucket hint churn",
+      "key": "page_span_pages",
+      "max_value": 872000
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality deep-bucket hint churn",
+      "key": "page_span_pages",
+      "max_value": 926000
+    },
+    {
+      "platform": "*",
+      "profile": "mmap-locality-quick",
+      "name": "attribution mmap locality fragmented-ring hint churn",
+      "key": "page_span_pages",
+      "max_value": 1115500
+    }
+  ]
+}

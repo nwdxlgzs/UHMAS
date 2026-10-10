@@ -1,0 +1,2667 @@
+{
+  "publication_redaction": {
+    "version": 1,
+    "local_paths_replaced": true,
+    "original_numeric_measurements_preserved": true,
+    "existing_hashes_refer_to_original_measurement_inputs": true,
+    "usable_as_reference_only": true
+  },
+  "date": "2026-10-10",
+  "parent_commit": "08662fc",
+  "implementation": {
+    "batch_limit": 16,
+    "slab_state": "committed PARTIAL, remains PARTIAL",
+    "lock_scope": "entire validation/account/publication under slab raw_lock",
+    "new_drain_owner": false,
+    "caller_reader_and_slab_hazard_reused": true,
+    "detached_chain_outside_raw_lock": false,
+    "new_heap_fields": false,
+    "u64_lock_free_required": false,
+    "same_counter_sequence_per_batch": 1,
+    "ordinary_free_head_pending_decrement": false
+  },
+  "checks": {
+    "full_verify_32bit_gate": "PASS",
+    "full_gate_log": "artifacts/verify-32bit-raw-batch-20261010-final.log",
+    "full_gate_log_sha256": "146a82354679486898ea948aee9fbd76522447688ffdfa17c8d7871a43d77709",
+    "four_32bit_Debug_Release_basic_platform_after_reader_assertions": "PASS",
+    "Windows_x64_Release_basic_platform": "PASS",
+    "WSL_x64_Release_basic_platform": "PASS",
+    "updated_WSL_focused_verifier": "PASS",
+    "PowerShell_parser_and_shell_syntax": "PASS"
+  },
+  "whitebox": {
+    "remote_count": 20,
+    "first_reservation": 16,
+    "second_reservation": 4,
+    "third_malloc_ordinary_free_head_changes_pending": false,
+    "malloc_while_heap_lock_held": 3,
+    "rollback_cases": [
+      "post-account OOM",
+      "invalid next address",
+      "invalid slot owner",
+      "prefix cycle",
+      "insufficient pending/mirror",
+      "requested-size mirror drift"
+    ],
+    "reader_accounting_depth_hazard_cleanup": "PASS",
+    "final_check_close": "PASS"
+  },
+  "concurrency": {
+    "threads": 4,
+    "rounds_per_thread": 1000,
+    "slots_per_thread": 8,
+    "patterns": [
+      "free/reallocate each object",
+      "free entire burst then refill"
+    ],
+    "final_live_bytes": 0,
+    "payload_checks": "PASS"
+  },
+  "rejected_owner_candidate": {
+    "win32": {
+      "platform": "win32",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "ed1f936d74127b676009085dc19015f294e96e3a4b5cd1e16733240f2206b9b6",
+        "candidate": "70adddd8f5cf35107a8d15c3f8e0d3b8cd7eee048875b73d2467179fc3a1299a"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 382.2
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1078.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 2292.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 243.0
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 250.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 9607.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7659.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 16602.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 14456.4
+            }
+          },
+          "low_lock_over_locked": 2.8228676085818947
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 467.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1188.3
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 4312.3
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 238.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 244.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6738.3
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7287.8
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 14036.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12757.1
+            }
+          },
+          "low_lock_over_locked": 2.5439948619139368
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 427.8
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1096.1
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 2558.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 174.4
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 188.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6040.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7153.1
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 11620.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 13490.9
+            }
+          },
+          "low_lock_over_locked": 2.562178588125292
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 381.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 837.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1147.6
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 245.0
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 212.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 7021.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7555.5
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 13310.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9029.3
+            }
+          },
+          "low_lock_over_locked": 2.196433254655127
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 426.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 931.6
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1745.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 128.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 167.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5898.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5841.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 8705.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8883.2
+            }
+          },
+          "low_lock_over_locked": 2.1868544600938966
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 265.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 589.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 2172.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 128.9
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 131.1
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4021.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4850.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 8621.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 7583.2
+            }
+          },
+          "low_lock_over_locked": 2.2260377358490566
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 251.6
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 725.6
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1732.6
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 222.2
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 246.8
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6557.8
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5082.4
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 9769.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9313.0
+            }
+          },
+          "low_lock_over_locked": 2.8839427662957076
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 314.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 690.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1320.6
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 232.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 155.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6029.4
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5944.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 11548.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10471.5
+            }
+          },
+          "low_lock_over_locked": 2.196945593382119
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 633.8
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 979.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 8889.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 228.9
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 242.2
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6674.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7591.2
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 13010.1
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12420.5
+            }
+          },
+          "low_lock_over_locked": 1.5457557589144844
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 399.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1442.3
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 4513.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 257.1
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 223.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5429.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 10342.3
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 14007.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12407.0
+            }
+          },
+          "low_lock_over_locked": 3.6102628285356695
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 382.2,
+          "low_lock_ns": 931.6,
+          "median_sample_low_lock_over_locked": 2.196433254655127
+        },
+        "candidate": {
+          "locked_ns": 399.5,
+          "low_lock_ns": 1096.1,
+          "median_sample_low_lock_over_locked": 2.562178588125292
+        }
+      },
+      "low_lock_change_percent": 17.657793044224967,
+      "normalized_change_percent": 16.651784555483438
+    },
+    "wsl-i386": {
+      "platform": "wsl-i386",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "d47b3b358dfebdb00df108979109c179f8fc1a68fc6c9ac3f1a12ff01c1cc14d",
+        "candidate": "5e4090e77243f503da4358e3dc032a64c5ebf6e4acc299de117cecfd72790ee4"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 394.2
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 762.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1250.3
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 323.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 191.2
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3338.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5263.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 16357.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10008.0
+            }
+          },
+          "low_lock_over_locked": 1.9348046676813802
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 305.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 662.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1256.0
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 348.9
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 135.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3112.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7006.2
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 15353.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10733.2
+            }
+          },
+          "low_lock_over_locked": 2.16759410801964
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 257.2
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 496.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 910.3
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 285.1
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 125.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 2814.3
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4581.4
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 14707.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10076.3
+            }
+          },
+          "low_lock_over_locked": 1.9292379471228616
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 377.6
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 630.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1148.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 305.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 143.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3801.6
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5349.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 17940.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10461.7
+            }
+          },
+          "low_lock_over_locked": 1.6702860169491525
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 248.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 498.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1034.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 338.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 177.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4665.3
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7018.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 12390.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 7491.2
+            }
+          },
+          "low_lock_over_locked": 2.0088709677419354
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 241.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 464.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1064.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 277.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 110.6
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4703.8
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7561.7
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 16407.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9569.9
+            }
+          },
+          "low_lock_over_locked": 1.9221532091097309
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 330.2
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 681.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 847.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 309.0
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 103.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 2946.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4782.3
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 13876.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9577.0
+            }
+          },
+          "low_lock_over_locked": 2.063900666262871
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 484.9
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 867.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1346.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 477.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 249.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 7393.9
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 14309.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 24487.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12906.4
+            }
+          },
+          "low_lock_over_locked": 1.7894411218808004
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 434.9
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 849.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1447.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 476.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 253.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5814.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 6942.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 22683.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 15588.1
+            }
+          },
+          "low_lock_over_locked": 1.953322602897218
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 459.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 790.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1234.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 322.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 293.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6598.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 9029.1
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 21081.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 13027.0
+            }
+          },
+          "low_lock_over_locked": 1.720444154147616
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 394.2,
+          "low_lock_ns": 762.7,
+          "median_sample_low_lock_over_locked": 1.9348046676813802
+        },
+        "candidate": {
+          "locked_ns": 305.5,
+          "low_lock_ns": 662.2,
+          "median_sample_low_lock_over_locked": 1.9292379471228616
+        }
+      },
+      "low_lock_change_percent": -13.176871640225517,
+      "normalized_change_percent": -0.2877148609109814
+    }
+  },
+  "final_binary_ab": {
+    "win32": {
+      "platform": "win32",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "ed1f936d74127b676009085dc19015f294e96e3a4b5cd1e16733240f2206b9b6",
+        "candidate": "e2754042802da390d0ac13e4f1afdb9fe333d3940711799f7615190ed1824481"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 216.7
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 724.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1021.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 121.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 291.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4052.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5019.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7308.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8071.2
+            }
+          },
+          "low_lock_over_locked": 3.341024457775727
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 228.4
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 480.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 761.0
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 105.9
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 105.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3217.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 3921.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7080.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 6500.3
+            }
+          },
+          "low_lock_over_locked": 2.1055166374781082
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 218.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 508.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 847.5
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 121.0
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 128.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3817.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4476.4
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7789.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 6959.5
+            }
+          },
+          "low_lock_over_locked": 2.329206785878038
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 221.4
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 555.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 946.2
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 115.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 138.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3583.8
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4554.5
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7318.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 6568.5
+            }
+          },
+          "low_lock_over_locked": 2.5108401084010836
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 233.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 613.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 846.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 110.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 111.2
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3474.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4186.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7429.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 6734.2
+            }
+          },
+          "low_lock_over_locked": 2.629122055674518
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 318.8
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 541.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 823.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 125.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 172.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6145.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5459.0
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 8613.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9533.1
+            }
+          },
+          "low_lock_over_locked": 1.698557089084065
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 318.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 604.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 924.5
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 122.3
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 118.5
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3902.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4559.7
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 9133.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8409.0
+            }
+          },
+          "low_lock_over_locked": 1.898773970449544
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 244.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 573.8
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 982.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 124.1
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 121.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3995.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5310.3
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 9840.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9359.5
+            }
+          },
+          "low_lock_over_locked": 2.348751534997953
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 202.4
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 509.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 751.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 110.4
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 121.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 3419.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4107.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 9563.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 7250.4
+            }
+          },
+          "low_lock_over_locked": 2.5148221343873516
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 229.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 538.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1152.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 110.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 108.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4218.6
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 4293.1
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 7975.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 7294.6
+            }
+          },
+          "low_lock_over_locked": 2.3505019642077696
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 221.4,
+          "low_lock_ns": 573.8,
+          "median_sample_low_lock_over_locked": 2.5148221343873516
+        },
+        "candidate": {
+          "locked_ns": 229.1,
+          "low_lock_ns": 538.5,
+          "median_sample_low_lock_over_locked": 2.1055166374781082
+        }
+      },
+      "low_lock_change_percent": -6.151969327291729,
+      "normalized_change_percent": -16.275723492029638
+    },
+    "wsl-i386": {
+      "platform": "wsl-i386",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "d47b3b358dfebdb00df108979109c179f8fc1a68fc6c9ac3f1a12ff01c1cc14d",
+        "candidate": "f49a6fbc9e8852abafb249fd7f2575802d93ca904349d96827386c9f9ab7bff0"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 395.6
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 728.8
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1347.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 505.1
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 248.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5351.6
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 8116.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 16353.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12527.7
+            }
+          },
+          "low_lock_over_locked": 1.8422649140546004
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 348.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 708.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1362.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 499.7
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 233.6
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5671.6
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7766.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 23347.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 14513.7
+            }
+          },
+          "low_lock_over_locked": 2.0338983050847457
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 385.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 503.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1193.0
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 331.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 211.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4967.8
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 5608.6
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 18315.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 12280.9
+            }
+          },
+          "low_lock_over_locked": 1.3072930184271996
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 516.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1207.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1363.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 531.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 442.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6213.5
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 8684.5
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 23403.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 14248.3
+            }
+          },
+          "low_lock_over_locked": 2.338238141335915
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 389.9
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 704.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1072.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 330.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 205.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6396.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 10728.8
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 19359.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10218.9
+            }
+          },
+          "low_lock_over_locked": 1.806104129263914
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 542.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1174.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 2308.6
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 805.0
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 282.2
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 4359.2
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 9588.2
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 27814.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 18030.6
+            }
+          },
+          "low_lock_over_locked": 2.165714285714286
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 372.4
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 820.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1351.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 526.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 266.6
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 7195.6
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 7790.4
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 22490.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 19095.0
+            }
+          },
+          "low_lock_over_locked": 2.2038131041890443
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 519.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 938.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1535.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 1063.2
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 239.2
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 5431.2
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 15710.2
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 37365.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 21598.3
+            }
+          },
+          "low_lock_over_locked": 1.808707378154498
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 676.3
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 1606.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 1453.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 503.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 218.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 19102.2
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 20633.2
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 57885.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 24270.0
+            }
+          },
+          "low_lock_over_locked": 2.375720833949431
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 76800,
+              "ns_per_op": 492.7
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 76800,
+              "ns_per_op": 894.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 14400,
+              "ns_per_op": 2354.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 470.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 4800,
+              "ns_per_op": 249.8
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 640,
+              "ns_per_op": 6204.9
+            },
+            "uhm mremap resize cost": {
+              "operations": 1600,
+              "ns_per_op": 19027.9
+            },
+            "uhm mmap churn": {
+              "operations": 1696,
+              "ns_per_op": 24579.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 18734.1
+            }
+          },
+          "low_lock_over_locked": 1.8159123198701037
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 516.5,
+          "low_lock_ns": 938.9,
+          "median_sample_low_lock_over_locked": 1.8422649140546004
+        },
+        "candidate": {
+          "locked_ns": 385.3,
+          "low_lock_ns": 820.7,
+          "median_sample_low_lock_over_locked": 2.0338983050847457
+        }
+      },
+      "low_lock_change_percent": -12.58920012780913,
+      "normalized_change_percent": 10.402053991702175
+    },
+    "win32-stress": {
+      "platform": "win32",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "ed1f936d74127b676009085dc19015f294e96e3a4b5cd1e16733240f2206b9b6",
+        "candidate": "e2754042802da390d0ac13e4f1afdb9fe333d3940711799f7615190ed1824481"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 494.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 1100.5
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 4706.4
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 143.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 138.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 4060.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 5833.0
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 9875.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 11001.8
+            }
+          },
+          "low_lock_over_locked": 2.227732793522267
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 391.8
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 975.4
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1526.3
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 183.1
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 240.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 5901.9
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 5813.8
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 8547.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9214.9
+            }
+          },
+          "low_lock_over_locked": 2.4895354772843286
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 251.2
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 599.2
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1494.4
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 124.3
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 120.3
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 3915.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 4477.9
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 10941.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9176.1
+            }
+          },
+          "low_lock_over_locked": 2.385350318471338
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 334.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 818.0
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1604.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 234.4
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 286.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 6887.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 9247.6
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 15792.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9802.9
+            }
+          },
+          "low_lock_over_locked": 2.4491017964071857
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 393.7
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 1052.8
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1838.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 239.3
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 148.8
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 4315.0
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 5237.5
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 11360.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 9911.0
+            }
+          },
+          "low_lock_over_locked": 2.6741173482346965
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 306.6
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 596.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1351.3
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 158.4
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 162.8
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 5254.9
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 6107.5
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 10574.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8721.1
+            }
+          },
+          "low_lock_over_locked": 1.946183953033268
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 393.7,
+          "low_lock_ns": 1052.8,
+          "median_sample_low_lock_over_locked": 2.4491017964071857
+        },
+        "candidate": {
+          "locked_ns": 306.6,
+          "low_lock_ns": 599.2,
+          "median_sample_low_lock_over_locked": 2.385350318471338
+        }
+      },
+      "low_lock_change_percent": -43.08510638297872,
+      "normalized_change_percent": -2.603055456060288
+    },
+    "wsl-i386-stress": {
+      "platform": "wsl-i386",
+      "parent_commit": "08662fc",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "d47b3b358dfebdb00df108979109c179f8fc1a68fc6c9ac3f1a12ff01c1cc14d",
+        "candidate": "f49a6fbc9e8852abafb249fd7f2575802d93ca904349d96827386c9f9ab7bff0"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 253.9
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 524.6
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1259.8
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 276.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 108.7
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 3169.2
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 4991.3
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 17951.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8592.2
+            }
+          },
+          "low_lock_over_locked": 2.0661677825915716
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 296.4
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 496.6
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1568.7
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 305.8
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 123.9
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 2949.7
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 5383.9
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 16090.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 10601.0
+            }
+          },
+          "low_lock_over_locked": 1.6754385964912282
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 298.5
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 770.7
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 2116.4
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 450.4
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 236.1
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 4813.2
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 8467.9
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 25035.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 17169.4
+            }
+          },
+          "low_lock_over_locked": 2.5819095477386935
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 437.0
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 857.3
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1994.1
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 509.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 207.4
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 6126.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 7638.2
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 19758.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 13423.4
+            }
+          },
+          "low_lock_over_locked": 1.9617848970251714
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 474.7
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 745.6
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 2112.9
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 489.6
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 261.0
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 7185.1
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 8932.9
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 22096.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 8854.5
+            }
+          },
+          "low_lock_over_locked": 1.570676216557826
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm 32-bit locked partial burst": {
+              "operations": 512000,
+              "ns_per_op": 392.1
+            },
+            "uhm 32-bit low-lock partial burst": {
+              "operations": 512000,
+              "ns_per_op": 623.9
+            },
+            "false-share remote free/reuse": {
+              "operations": 96000,
+              "ns_per_op": 1845.5
+            },
+            "uhm thread ctx cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 492.5
+            },
+            "uhm TLS cache reuse": {
+              "operations": 32000,
+              "ns_per_op": 230.6
+            },
+            "uhm mprotect split/merge cost": {
+              "operations": 4800,
+              "ns_per_op": 5608.4
+            },
+            "uhm mremap resize cost": {
+              "operations": 12000,
+              "ns_per_op": 8561.7
+            },
+            "uhm mmap churn": {
+              "operations": 12096,
+              "ns_per_op": 21515.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "operations": 8192,
+              "ns_per_op": 13451.9
+            }
+          },
+          "low_lock_over_locked": 1.5911757204794694
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "locked_ns": 437.0,
+          "low_lock_ns": 745.6,
+          "median_sample_low_lock_over_locked": 1.9617848970251714
+        },
+        "candidate": {
+          "locked_ns": 298.5,
+          "low_lock_ns": 623.9,
+          "median_sample_low_lock_over_locked": 1.6754385964912282
+        }
+      },
+      "low_lock_change_percent": -16.322424892703868,
+      "normalized_change_percent": -14.596212916520845
+    }
+  },
+  "x64_machine_code": {
+    "previous": {
+      "virtual_size": 443164,
+      "raw_size": 443392,
+      "sha256": "d0a09672b47ebcab5d06ce443941714649fc6f3d6b8983765dac2bcba368dde4"
+    },
+    "final_rebuilt": {
+      "virtual_size": 443164,
+      "raw_size": 443392,
+      "sha256": "d0a09672b47ebcab5d06ce443941714649fc6f3d6b8983765dac2bcba368dde4"
+    }
+  },
+  "final_x64_benchmark": {
+    "artifact": "artifacts/benchmarks/bench-20261010-124515-windows-quick.json",
+    "samples": 3,
+    "comparison_status": "same-run-relative",
+    "comparison_skipped": true,
+    "results": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.006856,
+        "operations": 24128,
+        "ns_per_op": 284.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.001712,
+        "operations": 24128,
+        "ns_per_op": 71,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006683,
+        "operations": 28000,
+        "ns_per_op": 238.7,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001461,
+        "operations": 28000,
+        "ns_per_op": 52.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001382,
+        "operations": 2700,
+        "ns_per_op": 511.7,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000786,
+        "operations": 2700,
+        "ns_per_op": 291.3,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.01181,
+        "operations": 1000,
+        "ns_per_op": 11809.8,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.009586,
+        "operations": 1000,
+        "ns_per_op": 9585.5,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.003612,
+        "operations": 750,
+        "ns_per_op": 4815.6,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.003488,
+        "operations": 1000,
+        "ns_per_op": 3488.5,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.07214,
+        "operations": 8192,
+        "ns_per_op": 8806.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.057235,
+        "operations": 9000,
+        "ns_per_op": 6359.4,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      }
+    ]
+  },
+  "final_x64_vs_previous_percent": {
+    "uhm small malloc/free": 67.81,
+    "system malloc small": 29.56,
+    "uhm small malloc/free multithread": 14.05,
+    "system malloc multithread": 58.66,
+    "uhm large malloc/realloc/free": 14.3,
+    "system malloc large/realloc/free": -7.67,
+    "uhm mmap/munmap large": 18.75,
+    "system mmap/VirtualAlloc large": 32.04,
+    "uhm mmap fixed/auto mix": 29.02,
+    "uhm mprotect split/merge cost": 21.4,
+    "uhm malloc/mmap collision pressure": 45.68,
+    "uhm release mixed long pressure": 64.77
+  },
+  "limits": [
+    "WSL quick normalized low-lock regression +10.40%; no universal throughput claim",
+    "Both low-lock comparators remain slower than locked path in this single-thread burst",
+    "No formal throughput regression baseline comparison",
+    "x64 small/mixed latency increased despite identical .text; runtime conditions remain unresolved",
+    "No detached reservation, FULL/EMPTY acceleration, index/tag native queue or public low-lock capability closure"
+  ],
+  "source_sha256": {
+    "src/uhm_internal.h": "70d2fc2c7ae9e98076161f4b0b4882d6c81af1cedea018f3a7a9982cbc7801d5",
+    "src/uhm_slab_alloc_free.inc": "1cb5a8e4dea7e5ca6ce02577abbd0f9c4bedfe273ff5570cb8eb807706c432b6",
+    "src/uhm_slab_raw_batch.inc": "be6504bca96a940219a13c7b93867958cca42d947ad3920a2f9d626548d30dea",
+    "tests/bench_uhm_raw_remote.inc": "cfe1ccb42f4f09a7157e33d7ad59ea88b7f8e6a647d2e981965d6647644cb900",
+    "tests/bench_uhm_main.inc": "5a3bb8030dfb2714d5acae831c6c9d09d73d71afd2b92b74a01700abec9da177",
+    "tests/test_uhm_slab_raw_batch.inc": "01a406b58861439c34d51b36a5b57c1ca5153c4a2dc4ef90d196df7a9d210129",
+    "tests/test_uhm_slab_raw_ready.inc": "7103d1f3c13ee9bd5612a9e1a027358286cf24f4f3e874c58a8cd66ae8999672",
+    "scripts/verify_32bit_gate.ps1": "fc531581b784ad174a0e6bf3f7fddfd8552580303d7d1513c701c50b5930e1ad",
+    "scripts/verify_wsl_i386_gate_bench.sh": "632630fe8d3d1c4020fa01b90d083c227054a2b8e8821e93c7eac6c9d0c4c285"
+  }
+}

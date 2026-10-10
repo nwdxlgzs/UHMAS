@@ -1,0 +1,42 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "samples",
+      "min_value": 9,
+      "max_value": 9
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "p95_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "p99_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "work_units_per_sample",
+      "min_value": 12,
+      "max_value": 12
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "pages_per_sample",
+      "min_value": 12,
+      "max_value": 12
+    }
+  ]
+}

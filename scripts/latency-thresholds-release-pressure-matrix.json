@@ -1,0 +1,256 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "samples",
+      "min_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "samples",
+      "min_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "samples",
+      "min_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "samples",
+      "min_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "p95_ns",
+      "max_value": 20000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "p95_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "p95_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "p95_ns",
+      "max_value": 15000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "p95_ns",
+      "max_value": 2000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "p95_ns",
+      "max_value": 25000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "p95_ns",
+      "max_value": 60000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "p95_ns",
+      "max_value": 25000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "p95_ns",
+      "max_value": 20000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "p95_ns",
+      "max_value": 20000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "p95_ns",
+      "max_value": 3000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "p95_ns",
+      "max_value": 30000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "p99_ns",
+      "max_value": 100000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "p99_ns",
+      "max_value": 50000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "p99_ns",
+      "max_value": 50000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "p99_ns",
+      "max_value": 50000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "p99_ns",
+      "max_value": 10000
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "p99_ns",
+      "max_value": 100000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "max_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "max_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase malloc-only",
+      "key": "max_ns",
+      "max_value": 2000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase free-only",
+      "key": "max_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mmap-only",
+      "key": "max_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase munmap-only",
+      "key": "max_ns",
+      "max_value": 500000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase mprotect-only",
+      "key": "max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "wsl",
+      "profile": "release-pressure-matrix-quick",
+      "name": "release pressure phase full-mixed",
+      "key": "max_ns",
+      "max_value": 2000000
+    }
+  ]
+}

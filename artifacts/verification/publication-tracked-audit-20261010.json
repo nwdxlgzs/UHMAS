@@ -1,0 +1,13 @@
+{
+  "schema": "uhmas.publication-privacy.v1",
+  "passed": true,
+  "scope": "tracked-worktree",
+  "file_count": 226,
+  "findings": [],
+  "history": {
+    "checked": false
+  },
+  "limits": [
+    "Pattern checks are not a proof that all conceivable personal identifiers are absent; publication uses an explicit file allowlist."
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_hint_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_hint_stale",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_scan_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_scan_steps",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "vm_lock_held_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator hint-window churn",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_recent_hits",
+      "min_value": 96
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_hint_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_hint_stale",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_scan_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_scan_steps",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "control-allocator-churn-quick",
+      "name": "control allocator recent-extent churn",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

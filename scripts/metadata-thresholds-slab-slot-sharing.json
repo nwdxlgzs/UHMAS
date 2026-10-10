@@ -1,0 +1,41 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "slab-slot-sharing-quick",
+      "name": "slab-slot-sharing",
+      "key": "request",
+      "min_value": 16,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-sharing-quick",
+      "name": "slab-slot-sharing",
+      "key": "slot_stride",
+      "min_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-sharing-quick",
+      "name": "slab-slot-sharing",
+      "key": "total_slots",
+      "min_value": 3
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-sharing-quick",
+      "name": "slab-slot-sharing",
+      "key": "hot_line_overlap",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-slot-sharing-quick",
+      "name": "slab-slot-sharing",
+      "key": "far_available",
+      "min_value": 1,
+      "max_value": 1
+    }
+  ]
+}

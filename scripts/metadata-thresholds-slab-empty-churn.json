@@ -1,0 +1,194 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn *",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn *",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn *",
+      "key": "page_mark_pages",
+      "min_value": 7,
+      "max_value": 7
+    },
+    {
+      "platform": "windows",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 64B",
+      "key": "page_span_pages",
+      "max_value": 3866
+    },
+    {
+      "platform": "wsl",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 64B",
+      "key": "page_span_pages",
+      "max_value": 3866
+    },
+    {
+      "platform": "win32",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 64B",
+      "key": "page_span_pages",
+      "max_value": 3900
+    },
+    {
+      "platform": "wsl-i386",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 64B",
+      "key": "page_span_pages",
+      "max_value": 3576
+    },
+    {
+      "platform": "windows",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 512B",
+      "key": "page_span_pages",
+      "max_value": 862
+    },
+    {
+      "platform": "wsl",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 512B",
+      "key": "page_span_pages",
+      "max_value": 862
+    },
+    {
+      "platform": "win32",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 512B",
+      "key": "page_span_pages",
+      "max_value": 705
+    },
+    {
+      "platform": "wsl-i386",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty adaptive churn 512B",
+      "key": "page_span_pages",
+      "max_value": 705
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "operations",
+      "min_value": 9,
+      "max_value": 9
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "vm_calls",
+      "min_value": 9,
+      "max_value": 9
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "vm_commit_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "vm_decommit_calls",
+      "min_value": 9,
+      "max_value": 9
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "decommit_events",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "recommit_events",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "same_addr_events",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "page_span_pages",
+      "min_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "page_mark_pages",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "attribution slab empty full-drain batch 512B",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "pointer_size",
+      "min_value": 4,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "cacheline_size",
+      "min_value": 32,
+      "max_value": 256
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "page_size",
+      "min_value": 4096,
+      "max_value": 65536
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "heap",
+      "min_value": 1,
+      "max_value": 262144
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "heap_core",
+      "min_value": 1,
+      "max_value": 196608
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "thread_ctx",
+      "min_value": 1,
+      "max_value": 8192
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "tls_cache",
+      "min_value": 1,
+      "max_value": 8192
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "stats",
+      "min_value": 1,
+      "max_value": 32768
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "stats-cache-delta",
+      "key": "thread_ctx_cached_requested",
+      "min_value": 1,
+      "max_value": 8192
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "stats-cache-delta",
+      "key": "tls_cache_cached_requested",
+      "min_value": 1,
+      "max_value": 8192
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "stats-cache-delta",
+      "key": "malloc_live_stat_shards",
+      "min_value": 16,
+      "max_value": 256
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "slab",
+      "min_value": 1,
+      "max_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "slab_slot",
+      "min_value": 1,
+      "max_value": 96
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "slab_slot_header",
+      "min_value": 1,
+      "max_value": 96
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "tagged_freelist",
+      "min_value": 1,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "metadata_reader",
+      "min_value": 1,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "page_leaf",
+      "min_value": 1,
+      "max_value": 65536
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "block",
+      "min_value": 1,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "vma",
+      "min_value": 1,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "free_extent",
+      "min_value": 1,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "footprint",
+      "key": "control_extent",
+      "min_value": 1,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-layout",
+      "key": "next_free",
+      "min_value": 1,
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-layout",
+      "key": "remote_link",
+      "min_value": 1,
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-layout",
+      "key": "state_word",
+      "min_value": 1,
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "request",
+      "min_value": 16,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "slot_size",
+      "min_value": 16,
+      "max_value": 512
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "slot_stride",
+      "min_value": 16,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "header",
+      "max_value": 128
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "overhead_percent",
+      "max_value": 500
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "payload_density_percent",
+      "min_value": 10,
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "total_slots",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-sample",
+      "key": "stride_mod_cacheline",
+      "max_value": 255
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-current",
+      "key": "model_estimate",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-current",
+      "key": "effective_bytes",
+      "min_value": 16,
+      "max_value": 1024
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-current",
+      "key": "slots_per_page",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-current",
+      "key": "overhead_percent",
+      "max_value": 500
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-compact16",
+      "key": "inline_header",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-compact16",
+      "key": "bytes_extra_vs_current",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-compact32",
+      "key": "inline_header",
+      "min_value": 32,
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-compact32",
+      "key": "bytes_extra_vs_current",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-side16",
+      "key": "inline_header",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-side16",
+      "key": "side_bytes",
+      "min_value": 16,
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-side16",
+      "key": "metadata_in_payload",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-side16",
+      "key": "bytes_extra_vs_current",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-padded64",
+      "key": "cacheline_padded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "metadata-footprint-quick",
+      "name": "slab-slot-model-padded64",
+      "key": "stride_mod_cacheline",
+      "max_value": 0
+    }
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_priority_mix_max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_priority_mix_max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_priority_mix_max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_priority_mix_max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_priority_mix_max_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 2000000
+    },
+    {
+      "platform": "windows",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "live_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "vma_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "*",
+      "key": "mmap_free_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_free_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_remove_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_free_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "live_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "live_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "live_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "live_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_remove_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_priority_bucket_max",
+      "max_value": 768
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_priority_bucket_max",
+      "max_value": 768
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_remove_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_free_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_remove_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_remove_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_priority_mix_ns",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_priority_bucket_max",
+      "max_value": 384
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_remove_sink_steps",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_current_depth",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_max_insert_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "live_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_max_insert_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_max_find_steps",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree pressure",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_max_insert_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "live_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_max_insert_depth",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_max_find_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_tree_max_remove_sink_steps",
+      "max_value": 24
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap same-size malloc free-tree pressure",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "live_tree_max_insert_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_max_insert_depth",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_max_find_steps",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_tree_max_remove_sink_steps",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree remove pressure",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_max_insert_depth",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "live_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_max_insert_depth",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_max_find_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap malloc free-tree two-child remove pressure",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_max_insert_depth",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_max_find_steps",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap vma live-tree pressure",
+      "key": "vma_tree_current_depth",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_max_insert_depth",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_max_find_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "vma_tree_current_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_max_insert_depth",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap fixed sparse VMA build pressure",
+      "key": "mmap_free_tree_current_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_max_insert_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_max_find_steps",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "vma_tree_current_depth",
+      "max_value": 48
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_max_insert_depth",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_max_find_steps",
+      "max_value": 40
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_max_remove_sink_steps",
+      "max_value": 32
+    },
+    {
+      "platform": "*",
+      "profile": "treap-adversarial-quick",
+      "name": "treap mmap free-tree pressure",
+      "key": "mmap_free_tree_current_depth",
+      "max_value": 48
+    }
+  ]
+}
+

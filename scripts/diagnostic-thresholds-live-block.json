@@ -1,0 +1,629 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_block_health_flags",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_fallback_scans",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_fallback_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_fallback_aborts",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_fallback_throttles",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_fallback_scenario_throttles",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_scenario_candidates",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_scenario_candidates",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_scenario_candidates",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_usable_scenario_candidates",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_scenario_candidates",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_usable_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fail_invalid",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fail_header_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fail_payload_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_unknown_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fail_invalid",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fail_header_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fail_payload_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_free_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fail_invalid",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fail_header_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fail_payload_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_realloc_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_usable_fail_invalid",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_usable_fail_header_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_usable_fail_payload_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fail_invalid",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fail_header_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fail_payload_page",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_lookup_thread_ctx_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "windows",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_max_ns",
+      "max_value": 50000
+    },
+    {
+      "platform": "wsl",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "live_slow_max_ns",
+      "max_value": 100000
+    },
+    {
+      "platform": "windows",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 300000
+    },
+    {
+      "platform": "wsl",
+      "profile": "live-block-quick",
+      "name": "*",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 500000
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_fast",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_slow_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_tree_find_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_lookup_usable_slow",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_lookup_usable_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block valid fast lookup",
+      "key": "live_lookup_usable_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_fast_fail_descriptor",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_calls",
+      "min_value": 3000,
+      "max_value": 3000
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_tree_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_tree_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_tree_find_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_slow_max_scanned",
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_lookup_usable_slow",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_lookup_usable_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block descriptor slow lookup",
+      "key": "live_lookup_usable_fail_descriptor",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_fast_terminal_misses",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_fast_fail_range",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_slow_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_tree_find_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_lookup_usable_fail_range",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block invalid pointer miss",
+      "key": "live_lookup_usable_fail_descriptor",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_fast_fail_descriptor",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_calls",
+      "min_value": 3000,
+      "max_value": 3000
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_tree_hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_tree_misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_tree_find_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_slow_max_scanned",
+      "max_value": 16
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_lookup_usable_slow",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_lookup_usable_fail_range",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "live-block-quick",
+      "name": "live-block fragmented slow lifecycle",
+      "key": "live_lookup_usable_fail_descriptor",
+      "min_value": 1
+    }
+  ]
+}

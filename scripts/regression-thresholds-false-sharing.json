@@ -1,0 +1,17 @@
+{
+  "default_threshold_percent": 15.0,
+  "rules": [
+    {
+      "platform": "windows",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "threshold_percent": 25.0
+    },
+    {
+      "platform": "wsl",
+      "profile": "false-sharing-quick",
+      "name": "*",
+      "threshold_percent": 30.0
+    }
+  ]
+}

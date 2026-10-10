@@ -1,0 +1,206 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty adaptive churn *",
+      "key": "slab_empty_decommit_pressure_events",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty adaptive churn *",
+      "key": "slab_empty_committed_cache_adaptive_grow_events",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty adaptive churn *",
+      "key": "decommit_events",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty adaptive churn *",
+      "key": "recommit_events",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty adaptive churn *",
+      "key": "decommit_recommit_same_addr_events",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "slab_empty_decommit_pressure_events",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "slab_empty_committed_cache_adaptive_grow_events",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "decommit_events",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "recommit_events",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "decommit_recommit_same_addr_events",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "vm_commit_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "vm_decommit_calls",
+      "min_value": 9,
+      "max_value": 9
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "vm_decommit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "page_mark_calls",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "slab empty full-drain batch 512B",
+      "key": "page_mark_pages",
+      "min_value": 108,
+      "max_value": 108
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "vm_commit_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "vm_decommit_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "slab-empty-churn-quick",
+      "name": "*",
+      "key": "metadata_quarantine_drain_budget_exhausted",
+      "max_value": 0
+    }
+  ]
+}
+

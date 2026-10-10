@@ -1,0 +1,287 @@
+{
+  "changed_files": 47,
+  "files": [
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-false-sharing-quick.json",
+      "original_sha256": "2c75881d88069e74d6ac071d06244e1b92a7635e07825f5c9a6fd286244900e8",
+      "sanitized_sha256": "0740be6c87367cf3b575299de02b10f795f1bb8cdd987b5f266cbb9467692bf9",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-mprotect-multi-vma-p128-quick.json",
+      "original_sha256": "83fc1deee1bbaa44848d33d3d65256c107d4fa7fe456858a7d40f3a896330971",
+      "sanitized_sha256": "f99f8f8fc53998f0a34fcbe9ef8fb1e0603938512b0144c5b30dcb70a7a8c4c8",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-mprotect-multi-vma-p256-lat128-quick.json",
+      "original_sha256": "8b54cce1c33c561a26a49300dada7dcbdc2d75769966f80523d70873e56f6a8e",
+      "sanitized_sha256": "2d5afdb0598d121c82dff591aca3721426999fb3171a29686354b366a95d1231",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-mprotect-multi-vma-p256-quick.json",
+      "original_sha256": "f590698269034dc486d3618bd293357250c796e63fa77c65863243b890ef9733",
+      "sanitized_sha256": "1b5862b981d271f992fd0846c210e2faabed165cba0b3db0ad85aa5a08e5dea2",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-mprotect-multi-vma-p64-quick.json",
+      "original_sha256": "75409c38e8b513d256ea8471ac914e4f5e27e6dcb3210ce736ae6f646a562794",
+      "sanitized_sha256": "1db5ffbae3fc8f093f6f9de4718a81c67436c9a4eaddece1e87e448bfb05b427",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-munmap-multi-vma-quick.json",
+      "original_sha256": "da14df096d20d64d7d0dd774e8faa37f802e43c9944c6c4d5c5c8418c4bde204",
+      "sanitized_sha256": "96bb562c376ac64640d1cb003120dcb96707a4f649686cdf1b5ec3f90b9b1451",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-quick.json",
+      "original_sha256": "5df4223b5652699e5e25799f8c8ddc0c68c438ee610e848972ebc40e6aa77a57",
+      "sanitized_sha256": "dc247b0f6ba4a148c6a53697c931c56864e4ef34d031f84c2a1e8d0a72cf6b8c",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-release-breakdown-quick.json",
+      "original_sha256": "443be8226d8837b08ab9bdad08eacb7a6cd28de8f2dba8fe82ce8ef0d249aa54",
+      "sanitized_sha256": "4d30a1b26cff1cb3118beb58a1f63c2006fcf9eb1e7c3ebfffae6dd5f92f8dd9",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-release-pressure-matrix-quick.json",
+      "original_sha256": "2bb52f93f1f077b203079e8360f568a0dad925575c5a1195543976c2db30af56",
+      "sanitized_sha256": "859366452d17c17400b066eda782d249aeaaff4c678fd4398791ca371dd4de6a",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-windows-small-fast-path-quick.json",
+      "original_sha256": "f8ff0f8dda309203b0963598ad9e3320958fde33aeafc1cccac2c4caee745a2a",
+      "sanitized_sha256": "71c67c67ac84bade2744fce2be47640a8f91a88557f6eb8d3f460a39163a270b",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-false-sharing-quick.json",
+      "original_sha256": "fccfbc9e8608ff5a08fbd20bce51c197269662755e8f5f4ed7d125bd59887bdf",
+      "sanitized_sha256": "3f0960331578d3e2dd38c201bdec17494483227f575a03dcabc64b5868f96629",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-mprotect-multi-vma-p128-quick.json",
+      "original_sha256": "b414966454495e0a3a106ac68c189818be7a4eae0d005d5ee90fb27426dc53f7",
+      "sanitized_sha256": "539975ec384096b5cfacbd6a9a2565c3bed2ffc474146a6a1d53e7ab50b01de8",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-mprotect-multi-vma-p256-lat128-quick.json",
+      "original_sha256": "3bd51ee3774b0b42060706b22d9b850c8c66e6c80a8d75cf6f5f89417b937a40",
+      "sanitized_sha256": "0bb0e5558a20a2964fe1034dcf590b4f0bffe18c83e8af78b11dda2aa191f9b4",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-mprotect-multi-vma-p256-quick.json",
+      "original_sha256": "02f26c42420bff1c8b21a7113a95a4d856f3ef9ec6f8ea50820bdb8888811b96",
+      "sanitized_sha256": "42fe1aaa94401b80aea221f7844405f52b55240d4dbaadf06b0e503771d07bea",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-mprotect-multi-vma-p64-quick.json",
+      "original_sha256": "a575b8501714fff80d670ed8a72e588e4d1210addd5fc629f82fb6295aa7e48e",
+      "sanitized_sha256": "618bcea59e492cbbd9dd5d20f0c249d7501d9cbea649c844cc7dd4c5ee0bde5a",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-munmap-multi-vma-quick.json",
+      "original_sha256": "206e619616f3f20ff8fd9f5b1e9c3d1bf98589112c0714298b2d53bd639e897d",
+      "sanitized_sha256": "fc10a507143893ab74551f288497f64404cd2acb584cca3c0b367e5e8563612e",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-quick.json",
+      "original_sha256": "32a20d720ca3aed4bfb9aeba7e09039dbc6fb60cdf560819380fca4a313966ff",
+      "sanitized_sha256": "508f0c835cb561779e39f8a039f17577b77500a7351a8c522eed09157bbbefbb",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-release-breakdown-quick.json",
+      "original_sha256": "fda760c986364c0c4d043ae31674b2b74a3eeb2bab333baf87d73dc45a5f927d",
+      "sanitized_sha256": "943921dee52cae25c73f46ecde1a364749997e9df7b8f60e8fbb7831962c8c59",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-release-pressure-matrix-quick.json",
+      "original_sha256": "d38a3da7f1255ab31d8c6c895cff7e54c23b6192f63ae4654591a9df2dbe03c3",
+      "sanitized_sha256": "13220d6e08e8c79e1a42164748a2ccde63e6945eda5b95365ddd324408605b23",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/baseline-wsl-small-fast-path-quick.json",
+      "original_sha256": "83f8bed8c05af2abc555d7105067217780d48d2322b32fe11118722d8f6fee9c",
+      "sanitized_sha256": "e62d239c83fba2e1bc33b4ec9240b31e3d1c4eeeb687299d1e67d018356f094a",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/contract-v1-20260720-windows-small-fast-path-quick.json",
+      "original_sha256": "bf5bd4d41e437614e1537bf3abb0f4b2b665c349f0685e605ba4ee87cd83480e",
+      "sanitized_sha256": "a51547bb1b25fa8819ef3145b7f1b4d950ba917ac5a0d1a1414be7ed919cdee0",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/contract-v1-20260720-wsl-small-fast-path-quick.json",
+      "original_sha256": "4d7c4ec91a18017dcef0ba7d5f3afb0ab69091e63fb15c5c83ebb976962ed950",
+      "sanitized_sha256": "bd72dd7ee28daf9165594c2f3838bf022734ec6ffea4b59477c0413c674781ce",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-windows-munmap-multi-vma-quick.json",
+      "original_sha256": "50c03a5e9b37315b5886c6ffeb92f493cf6581249b308ca598e5fd7d70129193",
+      "sanitized_sha256": "3a7813f1e42e26384231c395cbbc0fe8d5cdeaaad4d2dcc6d5f8afe39112e819",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-windows-quick.json",
+      "original_sha256": "dac7b9ac16dc12405de69b0b988d594d085dd5d784dfe7c93856e9aa239f31b2",
+      "sanitized_sha256": "ffc5b01be31c475167a43479f3222df5765da4542a36a77c8ca91c664e9551e9",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-windows-release-pressure-matrix-quick.json",
+      "original_sha256": "d3c661f5a5fae16b37260855ffe0b74c2a2fc45200b76acfad5747c3fde8386b",
+      "sanitized_sha256": "35e058ce1e3e8fbb7c722d01a59a20f4b6e41515d26798273bd9b7d0d51dd6d9",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-wsl-munmap-multi-vma-quick.json",
+      "original_sha256": "6a265e248a3a73f2cdee0a1cfd05cbe9ac1d99f5b23c1655c146f5456e4bd10e",
+      "sanitized_sha256": "012d6ecdbacfed4848e456622685abda83b18a27ea8e0d852fe0cfce7238a674",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-wsl-quick.json",
+      "original_sha256": "b63ae9c89820ae5bff0a709732f408c0b0ffbbe5ef8903d28feeecaed52becc6",
+      "sanitized_sha256": "ec9c3c1971fc3599a4a517a6170775819ebecb972fc26e229dfc23b75f5b1a0f",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-20260707-wsl-release-pressure-matrix-quick.json",
+      "original_sha256": "4058c1d5b66e81020458fb3d617c757038e113d99620789d29895a142d06fb85",
+      "sanitized_sha256": "e697c890721df3b23dadfcfebaae962b4997c7603786af51a0f3cfb91ccf8fff",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-provenance-v1-windows-munmap-multi-vma-quick.json",
+      "original_sha256": "7722d37bd85a7a49489cd77def9b81e6be10729d34ef205ea7f1ec6e3bd0cd8c",
+      "sanitized_sha256": "d9fe31766151237e38bd2cf982f1eb5015eeee112b449c45388d786f56270ae4",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/legacy-provenance-v1-wsl-munmap-multi-vma-quick.json",
+      "original_sha256": "564cfdbc00ab045dd1d12a08096c2219cd4f9b958069d5184a68fc4df92b9c63",
+      "sanitized_sha256": "df6dc0acd0da84896942a5fe82ab64ab0240ea4c01d65f77f5f228761ed640e7",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-mprotect-multi-vma-p128-quick.json",
+      "original_sha256": "f9a802ef514fe372f82385317993a261587f69d111f1228d83dc635dd06c2665",
+      "sanitized_sha256": "98a0e4a2bb28a57075ed8bb3a8852ecb6504828196c79956171c935163080b55",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-mprotect-multi-vma-p256-lat128-quick.json",
+      "original_sha256": "69c848b2d0ac74b8c057a14f3b617c5eec3f9d2412d6319b38297d0a44797e06",
+      "sanitized_sha256": "42d7fb66c95f61d254807569e1d3d1c52806a31969aafc5a341f1f6ecddb70d3",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-mprotect-multi-vma-p256-quick.json",
+      "original_sha256": "539a14595337e8499134b8993774c3ebec7d8a8402937aff109d953a4cd50ada",
+      "sanitized_sha256": "964abb09a489dc4838e7f7bd3891e919cf724fc4e2213602a1e48c139aee2d11",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-mprotect-multi-vma-p64-quick.json",
+      "original_sha256": "880165763b66bb28c3da416aad186307b6e21f45c9da165afdee6d700bb511ba",
+      "sanitized_sha256": "5af5a78fea038ecf1f47e9ff46824932d6f467362e2f119a0ae74326841b119c",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-munmap-multi-vma-quick.json",
+      "original_sha256": "6cedf0343e242ea2e51de8940358e11b7c5a43a1df1a15812a8e0f51a31591b3",
+      "sanitized_sha256": "a0a99ae47dec51de5470f39051e4f9f8ff8e6fd133661a31999818126b32cbff",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-quick.json",
+      "original_sha256": "27adbd12427111b517d75f9beae5c49d9967be6d3431162918ca6f1eb1d829b0",
+      "sanitized_sha256": "c243efddd7b26076c36dcc72e85cab9d01abd51c361ece5194c1b1e6aacad017",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-windows-release-pressure-matrix-quick.json",
+      "original_sha256": "f3956b41b5a31bd43656bbe0bf153ce14f79b9cdb36ac476b19c4aa0776d6523",
+      "sanitized_sha256": "847178b405b3bbd34c0148a641b6df797c3e9063b7f7b41515fb106b7416eb1d",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-mprotect-multi-vma-p128-quick.json",
+      "original_sha256": "fe40249f2212aef4025e39acd57b96ac6267e4c93c9284ee80771a7147912b5a",
+      "sanitized_sha256": "91f60348740bf118f27a62826777f6a8898cac5f497e07ddd2754ecb5dbd5fb9",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-mprotect-multi-vma-p256-lat128-quick.json",
+      "original_sha256": "1887970de99d318b6d5edc9bc225b849652ad4265d227f622f9fde8cd55ffe13",
+      "sanitized_sha256": "58b722bdb0a4a78cae4bdd02be9567617ab2803518d29d272e181d86dff5bda4",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-mprotect-multi-vma-p256-quick.json",
+      "original_sha256": "4473a1abe313f20d70e74d3d3f73ae252338fe45e5cb63e32471f189c842ba56",
+      "sanitized_sha256": "aac864cd8d9ffa8e55f04afa17d1cc4e9a1db531c9b69b8a21458fef7e69a20e",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-mprotect-multi-vma-p64-quick.json",
+      "original_sha256": "ba8c2654712ad8ba6b61c45738bdc245c9b771c9ca07169f9dc35579d4ed5be3",
+      "sanitized_sha256": "f747b42b4123aba694037203fab4a603bee78e26bbb25d4a23f3de99b82e1715",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-munmap-multi-vma-quick.json",
+      "original_sha256": "13466ec8882276fb418536bd375d694180fbbc82140a8e5a4e48161c3ab4231d",
+      "sanitized_sha256": "1300d51473ea95dde9ff05dd90cc578de7ba3c142cebe9719772977c572c60a8",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-quick.json",
+      "original_sha256": "29fe96bd30552d9ef8914f5ba1bab603367bdf50c87e53a4dfbc44d1dd37fcfc",
+      "sanitized_sha256": "07c00ff46613d4a0ce8e17ab1ff995ead208204999db45e3a9d77c0c3715cdca",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/benchmarks/baselines/schema1-20260712-wsl-release-pressure-matrix-quick.json",
+      "original_sha256": "9e4e50b14a91a5975c7bc320f0dbf427d740c68bac554f07dae39148b883a9fe",
+      "sanitized_sha256": "0bf8074d45899d3e1e7a5e87400688e4c48da7e5f56c7ec778e07aa109f21e0c",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/verification/raw-batch-20261010.json",
+      "original_sha256": "8c11b9a41c666b0899f9e05df853228c9cbe64fddcd6ed143bfeb20e51922731",
+      "sanitized_sha256": "5d7e297579480c9335cc310ff38043e50a829c5235f16b3065145adb8e27edeb",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/verification/raw-ready-layout-20261010.json",
+      "original_sha256": "543afbf28ff57e34f224092a5ae24a7d981bf9974d4c0b5987bc79b117c22dc8",
+      "sanitized_sha256": "234407ff7855c010d407adfad968427f5b84fed1b4c8fb5860667b2598d52813",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    },
+    {
+      "path": "artifacts/verification/raw-single-20261010.json",
+      "original_sha256": "6157e7e236d0c8b0deef886ebb89916e6492b76d8d4478cba5b279c875b9e741",
+      "sanitized_sha256": "e86e80c5ed8db966984fb801850ed997e6eb67e37f704432ea05d3b6a0524142",
+      "original_byte_source": "tracked HEAD blob; measurement provenance unchanged"
+    }
+  ]
+}

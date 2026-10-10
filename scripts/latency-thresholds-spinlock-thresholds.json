@@ -1,0 +1,11 @@
+{
+  "rules": [
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* multithread small", "key": "samples", "min_value": 32, "max_value": 128 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* remote handoff", "key": "samples", "min_value": 32, "max_value": 128 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* page-map hotspot", "key": "samples", "min_value": 32, "max_value": 128 },
+    { "platform": "*", "profile": "spinlock-thresholds-quick", "name": "spinlock yield=* mixed release", "key": "samples", "min_value": 256, "max_value": 4096 },
+    { "platform": "*", "profile": "spinlock-thresholds-stress", "name": "spinlock yield=* mixed release", "key": "samples", "min_value": 30000, "max_value": 30000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* *", "key": "p95_ns", "min_value": 1, "max_value": 100000000 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* *", "key": "p99_ns", "min_value": 1, "max_value": 100000000 }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "vm_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "windows",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 150000
+    },
+    {
+      "platform": "wsl",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "page_mark_pages",
+      "max_value": 40000
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution munmap exact VMA pressure",
+      "key": "page_span_pages",
+      "max_value": 3600
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution munmap exact VMA pressure",
+      "key": "page_query_pages",
+      "max_value": 1600
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution munmap head tail middle pressure",
+      "key": "page_span_pages",
+      "max_value": 26400
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution munmap right-small middle pressure",
+      "key": "page_span_pages",
+      "max_value": 19000
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution multi-VMA munmap 8-page full",
+      "key": "page_span_pages",
+      "max_value": 42800
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution multi-VMA munmap partial trim",
+      "key": "page_span_pages",
+      "max_value": 17800
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution multi-VMA munmap 32-page full",
+      "key": "page_span_pages",
+      "max_value": 81500
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "page_query_pages",
+      "max_value": 50000
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "page_lock_shards",
+      "max_value": 16000
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "page_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "attribution *",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "munmap_vma_publish_queries",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vm_decommit_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vm_decommit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vma_tree_insert_rotation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap exact VMA pressure",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 200
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap exact VMA pressure",
+      "key": "munmap_vma_max_segments",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap head tail middle pressure",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 1400
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap head tail middle pressure",
+      "key": "munmap_vma_max_segments",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap right-small middle pressure",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 800
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "munmap right-small middle pressure",
+      "key": "munmap_vma_max_segments",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap 8-page full",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 400
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap 8-page full",
+      "key": "munmap_vma_max_segments",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap partial trim",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 800
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap partial trim",
+      "key": "munmap_vma_max_segments",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap 32-page full",
+      "key": "munmap_vma_collect_queries",
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "munmap-multi-vma-quick",
+      "name": "multi-VMA munmap 32-page full",
+      "key": "munmap_vma_max_segments",
+      "min_value": 32,
+      "max_value": 32
+    }
+  ]
+}

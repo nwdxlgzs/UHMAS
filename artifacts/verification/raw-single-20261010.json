@@ -1,0 +1,781 @@
+{
+  "publication_redaction": {
+    "version": 1,
+    "local_paths_replaced": true,
+    "original_numeric_measurements_preserved": true,
+    "existing_hashes_refer_to_original_measurement_inputs": true,
+    "usable_as_reference_only": true
+  },
+  "schema": "uhmas.raw-single-counter-verification.v1",
+  "date": "2026-10-10",
+  "parent_commit": "0a233c4",
+  "defect": {
+    "path": "32-bit committed PARTIAL raw remote single-node malloc",
+    "before": "slot/head/live/free published before pending decrement; missing mirror returns NULL after consuming slot",
+    "after": "validate/decrement both pending counters under existing raw lock before slot/head/live publication",
+    "counter_failure_changes_slot_or_live": false,
+    "counter_failure_requeues_ready_notification": true,
+    "new_locks_owners_reservations_fields_globals": false,
+    "complete_state_transitions_or_native_queue_closed": false
+  },
+  "red_green": {
+    "parent_Win32_Release_test_exit_code": 1,
+    "parent_failure": "raw single counter failure leaves allocation unpublished",
+    "fixed_Win32_Release_basic_platform_exit_code": 0,
+    "whitebox_modes": [
+      "success",
+      "pending mirror zero",
+      "pending zero"
+    ],
+    "failure_assertions": [
+      "exact corruption error",
+      "remote/free heads and queued slot unchanged",
+      "live/free counts and live-byte stats unchanged",
+      "pending/mirror/counter sequence unchanged",
+      "ready notification reachable"
+    ],
+    "retry_assertions": [
+      "original slot reused by worker while heap lock held",
+      "pending/mirror consumed once",
+      "counter sequence advances once",
+      "reader accounting clear",
+      "final check/close pass"
+    ]
+  },
+  "checks": {
+    "full_Win32_WSL_i386_Debug_Release_and_focused_gate_exit_code": 0,
+    "Windows_x64_Release_basic_platform_exit_code": 0,
+    "WSL_x64_Release_basic_platform_exit_code": 0,
+    "git_diff_check_exit_code": 0,
+    "documents_encoding": {
+      "PLAN.MD": {
+        "strict_utf8": true,
+        "bom": false,
+        "replacement_count": 0,
+        "known_corruption_count": 0,
+        "sha256": "11e98b0c0a17b74cacdf8c38313ce052787d582f4ffe565de5550034e2720543"
+      },
+      "TODO.MD": {
+        "strict_utf8": true,
+        "bom": false,
+        "replacement_count": 0,
+        "known_corruption_count": 0,
+        "sha256": "e4eae41e1f823b85bee0118a0ed24603d123385ec71cba21eb4a7fb527f4262e"
+      }
+    },
+    "persistent_Git_encoding_TODO_remains_unchecked": true
+  },
+  "x64_binary": {
+    "sha256": "2d9a958fadf78816826a31ac4c6c2e5afdbcc4d25d03e9c00acc37ac23d55163",
+    "text_section": {
+      "size": 443212,
+      "sha256": "d4baf164ca8448d2a4c9b3c918246f595756a4537d5ab3f65b72a5df47c164e3"
+    },
+    "previous_text_section": {
+      "size": 443212,
+      "sha256": "d4baf164ca8448d2a4c9b3c918246f595756a4537d5ab3f65b72a5df47c164e3"
+    },
+    "text_identical_to_previous_stage": true
+  },
+  "logs_sha256": {
+    "artifacts/verify-raw-single-red-20261010.log": "beadac360706d1040321ba6ff49b80db9feddfefc4c973f993bdf251a16a5c7b",
+    "artifacts/verify-raw-single-win32-green-20261010.log": "d19f37acb036eeec2c437ff23758a8050d3cd4f8303bcb0be433457b516e5062",
+    "artifacts/verify-32bit-raw-single-20261010.log": "9b80fc15f5ce4d2857816543c44d92634c2e6b8a8e77a3ce9f1b48aa8e210f94",
+    "artifacts/verify-raw-single-x64-windows-20261010.log": "94aa18d83a71ee6bb1f780b32e3671c30eae10a560b28e61b6538d359656d788",
+    "artifacts/verify-raw-single-x64-wsl-20261010.log": "0fb8b16af3763de9036b4a4b243a8998889b6f21583a27ae83084f7cff752915",
+    "artifacts/verify-raw-single-final-quick-20261010.log": "ec67623d878e36fe697aaae58e661825b6defb651adc8a9071a19b5dec84d41e"
+  },
+  "sources_sha256": {
+    "src/uhm_slab_alloc_free.inc": "c555a1cb13a488a9ea6c50cb6b8cdeff05d61963feab15519f90cccc619302e3",
+    "tests/test_uhm_slab_raw_batch.inc": "631e2e3a54f95c985422450065453cabc112310cbd9a0bf0c6c54e545a1228e3",
+    "tests/test_uhm_vm_ranges_main.inc": "2982c66da9acc90848ce6028f385b91b8291cabe90ea9f95fa66582df236ad97"
+  },
+  "benchmark_context": {
+    "user_confirmed_different_power_limits_across_plugged_in_environments": true,
+    "per_sample_power_watts_recorded": false,
+    "cross_run_absolute_numbers": "reference only; prioritize same-run system comparators",
+    "no_repeated_fast_reruns_to_replace_slow_samples": true,
+    "formal_regression_baseline_comparison": false
+  },
+  "final_Windows_x64_Release_quick": {
+    "artifact": "bench-20261010-131255-windows-quick.json",
+    "artifact_sha256": "51de11660cec405191ec71720549da5e4c78b54fc5c0c1151fb72049150c2c7c",
+    "rebuilt": true,
+    "samples": 3,
+    "provenance": {
+      "schema": 3,
+      "source_sha256": "5ba9864760d173b4015bbf291697a8f8060cfdf68f52f69b54c8443b63cb5c9e",
+      "workload_sha256": "6d88e51a191ea98997adb935d896848c2e1d6eaf5ae1d047384746134a67c28c",
+      "source_file_count": 38,
+      "workload_file_count": 14,
+      "configuration": "Release",
+      "profile": "quick",
+      "diagnostics_enabled": false,
+      "diagnostics_timing_enabled": false,
+      "workload_contract": {
+        "schema": 1,
+        "id": "quick",
+        "version": 1
+      },
+      "binaries": {
+        "windows": "2d9a958fadf78816826a31ac4c6c2e5afdbcc4d25d03e9c00acc37ac23d55163"
+      }
+    },
+    "results": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.007845,
+        "operations": 24128,
+        "ns_per_op": 325.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002434,
+        "operations": 24128,
+        "ns_per_op": 100.9,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006503,
+        "operations": 28000,
+        "ns_per_op": 232.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001559,
+        "operations": 28000,
+        "ns_per_op": 55.7,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.002281,
+        "operations": 2700,
+        "ns_per_op": 844.8,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.001338,
+        "operations": 2700,
+        "ns_per_op": 495.7,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.013693,
+        "operations": 1000,
+        "ns_per_op": 13693,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.008365,
+        "operations": 1000,
+        "ns_per_op": 8364.6,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.005975,
+        "operations": 750,
+        "ns_per_op": 7967.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.004055,
+        "operations": 1000,
+        "ns_per_op": 4055.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.064034,
+        "operations": 8192,
+        "ns_per_op": 7816.7,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.045649,
+        "operations": 9000,
+        "ns_per_op": 5072.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      }
+    ],
+    "sample_results": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.008774,
+        "operations": 24128,
+        "ns_per_op": 363.6,
+        "raw": "uhm small malloc/free                    0.008774 s       24128 ops       363.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002434,
+        "operations": 24128,
+        "ns_per_op": 100.9,
+        "raw": "system malloc small                      0.002434 s       24128 ops       100.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.005867,
+        "operations": 28000,
+        "ns_per_op": 209.5,
+        "raw": "uhm small malloc/free multithread        0.005867 s       28000 ops       209.5 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001652,
+        "operations": 28000,
+        "ns_per_op": 59,
+        "raw": "system malloc multithread                0.001652 s       28000 ops        59.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.002376,
+        "operations": 2700,
+        "ns_per_op": 880.1,
+        "raw": "uhm large malloc/realloc/free            0.002376 s        2700 ops       880.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.001573,
+        "operations": 2700,
+        "ns_per_op": 582.6,
+        "raw": "system malloc large/realloc/free         0.001573 s        2700 ops       582.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.015027,
+        "operations": 1000,
+        "ns_per_op": 15027.3,
+        "raw": "uhm mmap/munmap large                    0.015027 s        1000 ops     15027.3 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.011856,
+        "operations": 1000,
+        "ns_per_op": 11856,
+        "raw": "system mmap/VirtualAlloc large           0.011856 s        1000 ops     11856.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.005977,
+        "operations": 750,
+        "ns_per_op": 7969.7,
+        "raw": "uhm mmap fixed/auto mix                  0.005977 s         750 ops      7969.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.003686,
+        "operations": 1000,
+        "ns_per_op": 3686.2,
+        "raw": "uhm mprotect split/merge cost            0.003686 s        1000 ops      3686.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.064034,
+        "operations": 8192,
+        "ns_per_op": 7816.7,
+        "raw": "uhm malloc/mmap collision pressure       0.064034 s        8192 ops      7816.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.049335,
+        "operations": 9000,
+        "ns_per_op": 5481.7,
+        "raw": "uhm release mixed long pressure          0.049335 s        9000 ops      5481.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.005311,
+        "operations": 24128,
+        "ns_per_op": 220.1,
+        "raw": "uhm small malloc/free                    0.005311 s       24128 ops       220.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.001763,
+        "operations": 24128,
+        "ns_per_op": 73.1,
+        "raw": "system malloc small                      0.001763 s       24128 ops        73.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.007297,
+        "operations": 28000,
+        "ns_per_op": 260.6,
+        "raw": "uhm small malloc/free multithread        0.007297 s       28000 ops       260.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001484,
+        "operations": 28000,
+        "ns_per_op": 53,
+        "raw": "system malloc multithread                0.001484 s       28000 ops        53.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001351,
+        "operations": 2700,
+        "ns_per_op": 500.2,
+        "raw": "uhm large malloc/realloc/free            0.001351 s        2700 ops       500.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000731,
+        "operations": 2700,
+        "ns_per_op": 270.7,
+        "raw": "system malloc large/realloc/free         0.000731 s        2700 ops       270.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.010258,
+        "operations": 1000,
+        "ns_per_op": 10257.7,
+        "raw": "uhm mmap/munmap large                    0.010258 s        1000 ops     10257.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.006571,
+        "operations": 1000,
+        "ns_per_op": 6570.7,
+        "raw": "system mmap/VirtualAlloc large           0.006571 s        1000 ops      6570.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.00459,
+        "operations": 750,
+        "ns_per_op": 6120.7,
+        "raw": "uhm mmap fixed/auto mix                  0.004590 s         750 ops      6120.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.004055,
+        "operations": 1000,
+        "ns_per_op": 4055.1,
+        "raw": "uhm mprotect split/merge cost            0.004055 s        1000 ops      4055.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.048757,
+        "operations": 8192,
+        "ns_per_op": 5951.8,
+        "raw": "uhm malloc/mmap collision pressure       0.048757 s        8192 ops      5951.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.035448,
+        "operations": 9000,
+        "ns_per_op": 3938.7,
+        "raw": "uhm release mixed long pressure          0.035448 s        9000 ops      3938.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.007845,
+        "operations": 24128,
+        "ns_per_op": 325.1,
+        "raw": "uhm small malloc/free                    0.007845 s       24128 ops       325.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002785,
+        "operations": 24128,
+        "ns_per_op": 115.4,
+        "raw": "system malloc small                      0.002785 s       24128 ops       115.4 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006503,
+        "operations": 28000,
+        "ns_per_op": 232.2,
+        "raw": "uhm small malloc/free multithread        0.006503 s       28000 ops       232.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001559,
+        "operations": 28000,
+        "ns_per_op": 55.7,
+        "raw": "system malloc multithread                0.001559 s       28000 ops        55.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.002281,
+        "operations": 2700,
+        "ns_per_op": 844.8,
+        "raw": "uhm large malloc/realloc/free            0.002281 s        2700 ops       844.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.001338,
+        "operations": 2700,
+        "ns_per_op": 495.7,
+        "raw": "system malloc large/realloc/free         0.001338 s        2700 ops       495.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.013693,
+        "operations": 1000,
+        "ns_per_op": 13693,
+        "raw": "uhm mmap/munmap large                    0.013693 s        1000 ops     13693.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.008365,
+        "operations": 1000,
+        "ns_per_op": 8364.6,
+        "raw": "system mmap/VirtualAlloc large           0.008365 s        1000 ops      8364.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.005975,
+        "operations": 750,
+        "ns_per_op": 7967.1,
+        "raw": "uhm mmap fixed/auto mix                  0.005975 s         750 ops      7967.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.005402,
+        "operations": 1000,
+        "ns_per_op": 5402,
+        "raw": "uhm mprotect split/merge cost            0.005402 s        1000 ops      5402.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.0645,
+        "operations": 8192,
+        "ns_per_op": 7873.5,
+        "raw": "uhm malloc/mmap collision pressure       0.064500 s        8192 ops      7873.5 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.045649,
+        "operations": 9000,
+        "ns_per_op": 5072.1,
+        "raw": "uhm release mixed long pressure          0.045649 s        9000 ops      5072.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      }
+    ],
+    "quick_summary": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "small_malloc",
+        "label": "small malloc",
+        "uhm_name": "uhm small malloc/free",
+        "uhm_ns_per_op": 325.1,
+        "baseline_name": "system malloc small",
+        "baseline_label": "system malloc",
+        "baseline_ns_per_op": 100.9,
+        "uhm_to_baseline_ratio": 3.2220019821605552,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "multithread_small",
+        "label": "multithread small",
+        "uhm_name": "uhm small malloc/free multithread",
+        "uhm_ns_per_op": 232.2,
+        "baseline_name": "system malloc multithread",
+        "baseline_label": "system malloc",
+        "baseline_ns_per_op": 55.7,
+        "uhm_to_baseline_ratio": 4.168761220825853,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "large_realloc_free",
+        "label": "large realloc/free",
+        "uhm_name": "uhm large malloc/realloc/free",
+        "uhm_ns_per_op": 844.8,
+        "baseline_name": "system malloc large/realloc/free",
+        "baseline_label": "system malloc",
+        "baseline_ns_per_op": 495.7,
+        "uhm_to_baseline_ratio": 1.7042566068186402,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "mmap_munmap",
+        "label": "mmap/munmap",
+        "uhm_name": "uhm mmap/munmap large",
+        "uhm_ns_per_op": 13693,
+        "baseline_name": "system mmap/VirtualAlloc large",
+        "baseline_label": "system mmap/VirtualAlloc",
+        "baseline_ns_per_op": 8364.6,
+        "uhm_to_baseline_ratio": 1.6370179088061592,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "mprotect",
+        "label": "mprotect",
+        "uhm_name": "uhm mprotect split/merge cost",
+        "uhm_ns_per_op": 4055.1,
+        "baseline_name": "",
+        "baseline_label": "",
+        "baseline_ns_per_op": null,
+        "uhm_to_baseline_ratio": null,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "collision",
+        "label": "collision",
+        "uhm_name": "uhm malloc/mmap collision pressure",
+        "uhm_ns_per_op": 7816.7,
+        "baseline_name": "",
+        "baseline_label": "",
+        "baseline_ns_per_op": null,
+        "uhm_to_baseline_ratio": null,
+        "status": "ok"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "key": "release_mixed",
+        "label": "release mixed",
+        "uhm_name": "uhm release mixed long pressure",
+        "uhm_ns_per_op": 5072.1,
+        "baseline_name": "",
+        "baseline_label": "",
+        "baseline_ns_per_op": null,
+        "uhm_to_baseline_ratio": null,
+        "status": "ok"
+      }
+    ]
+  },
+  "reference_change_percent_vs_previous_stage": {
+    "uhm small malloc/free": 3.8,
+    "system malloc small": 0.0,
+    "uhm small malloc/free multithread": -6.48,
+    "system malloc multithread": -2.11,
+    "uhm large malloc/realloc/free": 33.0,
+    "system malloc large/realloc/free": 38.35,
+    "uhm mmap/munmap large": 15.04,
+    "system mmap/VirtualAlloc large": 3.1,
+    "uhm mmap fixed/auto mix": 77.0,
+    "uhm mprotect split/merge cost": 13.08,
+    "uhm malloc/mmap collision pressure": 0.15,
+    "uhm release mixed long pressure": -21.81
+  },
+  "limits": [
+    "No universal 32-bit throughput improvement claimed",
+    "Power-limit context does not quantitatively explain every historical sample difference",
+    "FULL/EMPTY transitions, native index/tag queue, detached reservation and formal baseline remain open"
+  ]
+}

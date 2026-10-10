@@ -1,0 +1,102 @@
+# ========================
+# 1. 构建输出目录 (CMake out-of-source builds)
+# ========================
+build*/
+out/
+cmake-build-*/
+
+# ========================
+# 2. CMake 生成的临时文件
+# ========================
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+CMakeScripts/
+*.stamp
+*.stamp.depend
+*.stamp.list
+*.marks
+*.hashes
+*.make
+*.internal
+*.ts
+*.rsp
+*.yaml
+
+# ========================
+# 3. Visual Studio / MSBuild 产物
+# ========================
+# CMake 会自动生成这些，不同开发者的 VS 版本不同，不应提交
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.vs/
+x64/
+Win32/
+*.tlog/
+*.recipe
+*.lastbuildstate
+
+# ========================
+# 4. 编译器通用产物 (GCC/Clang/MSVC)
+# ========================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.bin
+*.out
+*.d
+*.pdb
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+
+# ========================
+# 5. 测试与基准测试产物 (artifacts)
+# ========================
+artifacts/benchmarks/*
+!artifacts/benchmarks/baselines/
+!artifacts/benchmarks/baselines/*.json
+artifacts/last-*.log
+*.log
+
+# 文档恢复过程中的乱码备份、临时前缀和烟雾测试文件不进入 Git。
+# 已显式提交的 reference-20260802 文件仍会继续被 Git 跟踪。
+artifacts/doc-recovery-*/
+
+# ========================
+# 6. 操作系统与编辑器
+# ========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+
+# ========================
+# 7. Agent 工作目录
+# ========================
+agent-worktree/*
+
+# ========================
+# 8. 其他杂项
+# ========================
+draft/publish/
+.env
+.env.*
+*.dmp
+__pycache__/
+*.pyc

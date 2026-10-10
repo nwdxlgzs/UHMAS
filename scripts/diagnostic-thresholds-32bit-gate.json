@@ -1,0 +1,585 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "live_slow_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "live_slow_fallback_scans",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "live_slow_fallback_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "live_lookup_free_slow",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "live_lookup_free_fallback",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_health_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_repair_pending_flags",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_repair_rebuilds",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_repair_rehashes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_repair_nodes",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "treap_repair_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_priority_ties",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_depth_limit_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_insert_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_find_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_remove_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "malloc_free_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vma_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "mmap_free_tree_current_depth",
+      "max_value": 64
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "metadata_quarantine_drain_budget_exhausted",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_commit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_decommit_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_protect_failures",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_commit_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_protect_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_lock_held_calls",
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "vm_decommit_lock_held_calls",
+      "max_value": 2
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm thread ctx cache reuse",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm TLS cache reuse",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "vm_lock_held_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 4000
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "*",
+      "key": "control_alloc_scan_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "page_mark_budget_exceeded",
+      "max_value": 4000
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "page_range_query_budget_exceeded",
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "page_lock_range_budget_exceeded",
+      "max_value": 100
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "treap_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "treap_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "treap_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "treap_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "live_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "malloc_tree_priority_mix_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "live_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "malloc_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "vma_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "mmap_free_tree_priority_mix_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mprotect split/merge cost",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mremap resize cost",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm mmap churn",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "live_tree_priority_bucket_used",
+      "min_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "malloc_tree_priority_bucket_used",
+      "min_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "vma_tree_priority_bucket_used",
+      "min_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "uhm malloc/mmap collision pressure",
+      "key": "mmap_free_tree_priority_bucket_used",
+      "min_value": 4
+    }
+  ]
+}

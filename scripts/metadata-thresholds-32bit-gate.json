@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "32bit-gate-quick",
+      "name": "attribution uhm mremap resize cost",
+      "key": "page_span_pages",
+      "max_value": 16800
+    }
+  ]
+}

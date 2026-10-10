@@ -1,0 +1,4658 @@
+{
+  "publication_redaction": {
+    "version": 1,
+    "local_paths_replaced": true,
+    "original_numeric_measurements_preserved": true,
+    "existing_hashes_refer_to_original_measurement_inputs": true,
+    "usable_as_reference_only": true
+  },
+  "schema": "uhmas.raw-ready-layout-verification.v1",
+  "date": "2026-10-10",
+  "created_utc": "2026-10-10T13:06:25.415949+00:00",
+  "parent_commit": "0eaba5e",
+  "closure": "Architecture-specific storage, correctness and footprint verified; throughput impact unresolved",
+  "implementation": {
+    "x64_raw_directory_removed_bytes": 1792,
+    "class_count": 28,
+    "32bit_raw_directory_preserved": true,
+    "new_public_symbols": false,
+    "new_mutable_global_state": false,
+    "abi_version_changed": false,
+    "ordinary_quick_stress_workload_changed": false,
+    "heap_core_fields_after_directory_shift_bytes": -1792,
+    "cacheline_modulo_offsets_preserved": true,
+    "cache_set_effect_excluded": false
+  },
+  "checks": {
+    "full_Win32_WSL_i386_Debug_Release_gate_exit_code": 0,
+    "full_gate_log": "artifacts/verify-32bit-raw-ready-layout-20261010.log",
+    "full_gate_log_sha256": "472e2309f262499be6b5a2cb4c0976be749db59edb8d246ba4232fede097199f",
+    "Windows_x64_Debug_Release_basic_platform": "PASS",
+    "WSL_x64_Release_basic_platform": "PASS",
+    "Windows_WSL_release_nodiag_build_symbol_stdout_JSON_selfcheck": "PASS",
+    "release_nodiag_formal_regression_comparison": false,
+    "x64_metadata_comparison_count": 312,
+    "x64_metadata_failed": 0,
+    "four_architecture_footprint_and_raw_directory_assertions": "PASS",
+    "git_diff_check_exit_code": 0,
+    "documents_encoding": {
+      "PLAN.MD": {
+        "strict_utf8": true,
+        "bom": false,
+        "replacement_count": 0,
+        "known_corruption_count": 0,
+        "sha256": "c95b9481b15071c1a1799256ab81b4d56b3ce44af5982f793756b5d2006f2631"
+      },
+      "TODO.MD": {
+        "strict_utf8": true,
+        "bom": false,
+        "replacement_count": 0,
+        "known_corruption_count": 0,
+        "sha256": "9c382d7fac615e07e2cfc912bb3742404af8a511bce05b3a00457ce6ab36218e"
+      }
+    },
+    "persistent_Git_encoding_TODO_remains_unchecked": true
+  },
+  "footprints": {
+    "windows": {
+      "parent": {
+        "heap": 155072,
+        "heap_core": 51456,
+        "pointer_size": 8
+      },
+      "candidate": {
+        "heap": 153280,
+        "heap_core": 49664,
+        "pointer_size": 8
+      },
+      "candidate_raw_ready_layout": {
+        "platform": "windows",
+        "profile": "metadata-footprint-quick",
+        "name": "raw-ready-layout",
+        "raw": "metadata raw-ready-layout: pointer_size=8 directory_bytes=0 class_count=28 ready_seq_end=13440 pending_mask_offset=13440",
+        "pointer_size": 8,
+        "directory_bytes": 0,
+        "class_count": 28,
+        "ready_seq_end": 13440,
+        "pending_mask_offset": 13440,
+        "sample_index": 1
+      }
+    },
+    "wsl": {
+      "parent": {
+        "heap": 155072,
+        "heap_core": 51456,
+        "pointer_size": 8
+      },
+      "candidate": {
+        "heap": 153280,
+        "heap_core": 49664,
+        "pointer_size": 8
+      },
+      "candidate_raw_ready_layout": {
+        "platform": "wsl",
+        "profile": "metadata-footprint-quick",
+        "name": "raw-ready-layout",
+        "raw": "metadata raw-ready-layout: pointer_size=8 directory_bytes=0 class_count=28 ready_seq_end=13440 pending_mask_offset=13440",
+        "pointer_size": 8,
+        "directory_bytes": 0,
+        "class_count": 28,
+        "ready_seq_end": 13440,
+        "pending_mask_offset": 13440,
+        "sample_index": 1
+      }
+    },
+    "win32": {
+      "parent_artifact": "bench-20261010-124231-win32-metadata-footprint-quick.json",
+      "candidate_artifact": "bench-20261010-125515-win32-metadata-footprint-quick.json",
+      "parent": {
+        "heap": 105600,
+        "heap_core": 49216,
+        "pointer_size": 4
+      },
+      "candidate": {
+        "heap": 105600,
+        "heap_core": 49216,
+        "pointer_size": 4
+      },
+      "candidate_raw_ready_layout": {
+        "platform": "win32",
+        "profile": "metadata-footprint-quick",
+        "name": "raw-ready-layout",
+        "raw": "metadata raw-ready-layout: pointer_size=4 directory_bytes=1792 class_count=28 ready_seq_end=13056 pending_mask_offset=14848",
+        "pointer_size": 4,
+        "directory_bytes": 1792,
+        "class_count": 28,
+        "ready_seq_end": 13056,
+        "pending_mask_offset": 14848,
+        "sample_index": 1
+      },
+      "parent_machine_code_identity_proved": false
+    },
+    "wsl-i386": {
+      "parent_artifact": "bench-20261010-124336-wsl-i386-metadata-footprint-quick.json",
+      "candidate_artifact": "bench-20261010-125716-wsl-i386-metadata-footprint-quick.json",
+      "parent": {
+        "heap": 105408,
+        "heap_core": 49088,
+        "pointer_size": 4
+      },
+      "candidate": {
+        "heap": 105408,
+        "heap_core": 49088,
+        "pointer_size": 4
+      },
+      "candidate_raw_ready_layout": {
+        "platform": "wsl-i386",
+        "profile": "metadata-footprint-quick",
+        "name": "raw-ready-layout",
+        "raw": "metadata raw-ready-layout: pointer_size=4 directory_bytes=1792 class_count=28 ready_seq_end=13056 pending_mask_offset=14848",
+        "pointer_size": 4,
+        "directory_bytes": 1792,
+        "class_count": 28,
+        "ready_seq_end": 13056,
+        "pending_mask_offset": 14848,
+        "sample_index": 1
+      },
+      "parent_machine_code_identity_proved": false
+    }
+  },
+  "binaries": {
+    "parent_windows": {
+      "sha256": "78b325dfb41e265714da480c6262ca8e83d814d46d109001e64556a5850d7a6e",
+      "text_section": {
+        "size": 443164,
+        "sha256": "d0a09672b47ebcab5d06ce443941714649fc6f3d6b8983765dac2bcba368dde4"
+      }
+    },
+    "candidate_windows": {
+      "sha256": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db",
+      "text_section": {
+        "size": 443212,
+        "sha256": "d4baf164ca8448d2a4c9b3c918246f595756a4537d5ab3f65b72a5df47c164e3"
+      }
+    },
+    "parent_wsl": {
+      "sha256": "04cb351c58e880874d0778357904b86025217737a967f3d241138338d225dea6",
+      "text_section": {
+        "size": 441877,
+        "sha256": "a267e091a2f6b513008c9edb40b441b4872b160450cc8b5683e95f9e2bfda544"
+      }
+    },
+    "candidate_wsl": {
+      "sha256": "0820ea608c2e3c04124d6efcd87a3e39bd92e81ef020e115aed47088d15dc604",
+      "text_section": {
+        "size": 441733,
+        "sha256": "2ab782378daf9b70e1cad46523e880069023c023d7054dde2ad930d7e91182e3"
+      }
+    }
+  },
+  "method": {
+    "warmup_per_variant": 1,
+    "quick_pairs": 5,
+    "stress_pairs": 3,
+    "same_exe_control_stress_pairs": 3,
+    "same_exe_control_labels_execute_candidate_SHA": true,
+    "platforms_and_profiles_sequential": true,
+    "concurrent_project_builds_during_AB": false,
+    "external_host_activity_and_frequency_not_controlled": true,
+    "formal_baseline_comparison": false,
+    "no_samples_replaced_or_omitted": true,
+    "raw_runner_sha256": "ce1b3fdeb4c23fb1fc5505308df907a1ac5dfd60891b1e3bd992049da5dd237b",
+    "commands": [
+      "python run_ab.py windows",
+      "python run_ab.py windows stress",
+      "python run_ab.py wsl",
+      "python run_ab.py wsl stress",
+      "python run_ab.py windows stress sham",
+      "python run_ab.py wsl stress sham"
+    ]
+  },
+  "AB": {
+    "windows-quick": {
+      "platform": "windows",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:00:19.511789+00:00",
+      "end_utc": "2026-10-10T13:00:21.106277+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "stress": false,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "78b325dfb41e265714da480c6262ca8e83d814d46d109001e64556a5850d7a6e",
+        "candidate": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.004118,
+              "operations": 24128,
+              "ns_per_op": 170.7
+            },
+            "system malloc small": {
+              "seconds": 0.001284,
+              "operations": 24128,
+              "ns_per_op": 53.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.004618,
+              "operations": 28000,
+              "ns_per_op": 164.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.000886,
+              "operations": 28000,
+              "ns_per_op": 31.6
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001073,
+              "operations": 2700,
+              "ns_per_op": 397.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000567,
+              "operations": 2700,
+              "ns_per_op": 209.9
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007847,
+              "operations": 1000,
+              "ns_per_op": 7847.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.006686,
+              "operations": 1000,
+              "ns_per_op": 6686.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002596,
+              "operations": 750,
+              "ns_per_op": 3462.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002295,
+              "operations": 1000,
+              "ns_per_op": 2295.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.0406,
+              "operations": 8192,
+              "ns_per_op": 4956.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.029795,
+              "operations": 9000,
+              "ns_per_op": 3310.6
+            }
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003849,
+              "operations": 24128,
+              "ns_per_op": 159.5
+            },
+            "system malloc small": {
+              "seconds": 0.001453,
+              "operations": 24128,
+              "ns_per_op": 60.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.005937,
+              "operations": 28000,
+              "ns_per_op": 212.0
+            },
+            "system malloc multithread": {
+              "seconds": 0.000815,
+              "operations": 28000,
+              "ns_per_op": 29.1
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001085,
+              "operations": 2700,
+              "ns_per_op": 402.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000628,
+              "operations": 2700,
+              "ns_per_op": 232.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009195,
+              "operations": 1000,
+              "ns_per_op": 9195.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.005401,
+              "operations": 1000,
+              "ns_per_op": 5400.6
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002455,
+              "operations": 750,
+              "ns_per_op": 3272.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.00233,
+              "operations": 1000,
+              "ns_per_op": 2329.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.046211,
+              "operations": 8192,
+              "ns_per_op": 5641.0
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.031917,
+              "operations": 9000,
+              "ns_per_op": 3546.3
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003787,
+              "operations": 24128,
+              "ns_per_op": 156.9
+            },
+            "system malloc small": {
+              "seconds": 0.001266,
+              "operations": 24128,
+              "ns_per_op": 52.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.004428,
+              "operations": 28000,
+              "ns_per_op": 158.1
+            },
+            "system malloc multithread": {
+              "seconds": 0.000919,
+              "operations": 28000,
+              "ns_per_op": 32.8
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001094,
+              "operations": 2700,
+              "ns_per_op": 405.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000497,
+              "operations": 2700,
+              "ns_per_op": 184.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009379,
+              "operations": 1000,
+              "ns_per_op": 9379.2
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.005553,
+              "operations": 1000,
+              "ns_per_op": 5553.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.003492,
+              "operations": 750,
+              "ns_per_op": 4655.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002991,
+              "operations": 1000,
+              "ns_per_op": 2991.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.044098,
+              "operations": 8192,
+              "ns_per_op": 5383.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.034215,
+              "operations": 9000,
+              "ns_per_op": 3801.6
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003687,
+              "operations": 24128,
+              "ns_per_op": 152.8
+            },
+            "system malloc small": {
+              "seconds": 0.001169,
+              "operations": 24128,
+              "ns_per_op": 48.4
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.00515,
+              "operations": 28000,
+              "ns_per_op": 183.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.000948,
+              "operations": 28000,
+              "ns_per_op": 33.9
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001106,
+              "operations": 2700,
+              "ns_per_op": 409.6
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00055,
+              "operations": 2700,
+              "ns_per_op": 203.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007355,
+              "operations": 1000,
+              "ns_per_op": 7355.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.006278,
+              "operations": 1000,
+              "ns_per_op": 6277.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002505,
+              "operations": 750,
+              "ns_per_op": 3339.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002409,
+              "operations": 1000,
+              "ns_per_op": 2409.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.044803,
+              "operations": 8192,
+              "ns_per_op": 5469.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.032905,
+              "operations": 9000,
+              "ns_per_op": 3656.1
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.005052,
+              "operations": 24128,
+              "ns_per_op": 209.4
+            },
+            "system malloc small": {
+              "seconds": 0.001391,
+              "operations": 24128,
+              "ns_per_op": 57.7
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.005934,
+              "operations": 28000,
+              "ns_per_op": 211.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.000931,
+              "operations": 28000,
+              "ns_per_op": 33.2
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001132,
+              "operations": 2700,
+              "ns_per_op": 419.1
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000566,
+              "operations": 2700,
+              "ns_per_op": 209.4
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009407,
+              "operations": 1000,
+              "ns_per_op": 9407.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.005866,
+              "operations": 1000,
+              "ns_per_op": 5866.0
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002599,
+              "operations": 750,
+              "ns_per_op": 3464.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002678,
+              "operations": 1000,
+              "ns_per_op": 2677.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.041377,
+              "operations": 8192,
+              "ns_per_op": 5050.9
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.031297,
+              "operations": 9000,
+              "ns_per_op": 3477.4
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.004155,
+              "operations": 24128,
+              "ns_per_op": 172.2
+            },
+            "system malloc small": {
+              "seconds": 0.001563,
+              "operations": 24128,
+              "ns_per_op": 64.8
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.005447,
+              "operations": 28000,
+              "ns_per_op": 194.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.001012,
+              "operations": 28000,
+              "ns_per_op": 36.2
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001139,
+              "operations": 2700,
+              "ns_per_op": 421.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000667,
+              "operations": 2700,
+              "ns_per_op": 247.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009324,
+              "operations": 1000,
+              "ns_per_op": 9324.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.007171,
+              "operations": 1000,
+              "ns_per_op": 7171.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.00342,
+              "operations": 750,
+              "ns_per_op": 4560.5
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.003436,
+              "operations": 1000,
+              "ns_per_op": 3436.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.04161,
+              "operations": 8192,
+              "ns_per_op": 5079.3
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.030578,
+              "operations": 9000,
+              "ns_per_op": 3397.6
+            }
+          }
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003993,
+              "operations": 24128,
+              "ns_per_op": 165.5
+            },
+            "system malloc small": {
+              "seconds": 0.001455,
+              "operations": 24128,
+              "ns_per_op": 60.3
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.005412,
+              "operations": 28000,
+              "ns_per_op": 193.3
+            },
+            "system malloc multithread": {
+              "seconds": 0.000869,
+              "operations": 28000,
+              "ns_per_op": 31.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001092,
+              "operations": 2700,
+              "ns_per_op": 404.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00062,
+              "operations": 2700,
+              "ns_per_op": 229.6
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007515,
+              "operations": 1000,
+              "ns_per_op": 7514.9
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.005665,
+              "operations": 1000,
+              "ns_per_op": 5664.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002583,
+              "operations": 750,
+              "ns_per_op": 3443.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002462,
+              "operations": 1000,
+              "ns_per_op": 2462.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.040249,
+              "operations": 8192,
+              "ns_per_op": 4913.2
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.036404,
+              "operations": 9000,
+              "ns_per_op": 4044.9
+            }
+          }
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003648,
+              "operations": 24128,
+              "ns_per_op": 151.2
+            },
+            "system malloc small": {
+              "seconds": 0.001114,
+              "operations": 24128,
+              "ns_per_op": 46.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.005218,
+              "operations": 28000,
+              "ns_per_op": 186.4
+            },
+            "system malloc multithread": {
+              "seconds": 0.000835,
+              "operations": 28000,
+              "ns_per_op": 29.8
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.000961,
+              "operations": 2700,
+              "ns_per_op": 356.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000586,
+              "operations": 2700,
+              "ns_per_op": 217.2
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007563,
+              "operations": 1000,
+              "ns_per_op": 7563.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.005861,
+              "operations": 1000,
+              "ns_per_op": 5861.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002654,
+              "operations": 750,
+              "ns_per_op": 3538.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002626,
+              "operations": 1000,
+              "ns_per_op": 2625.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.040226,
+              "operations": 8192,
+              "ns_per_op": 4910.4
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.029721,
+              "operations": 9000,
+              "ns_per_op": 3302.4
+            }
+          }
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.0039,
+              "operations": 24128,
+              "ns_per_op": 161.7
+            },
+            "system malloc small": {
+              "seconds": 0.001028,
+              "operations": 24128,
+              "ns_per_op": 42.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.004642,
+              "operations": 28000,
+              "ns_per_op": 165.8
+            },
+            "system malloc multithread": {
+              "seconds": 0.00088,
+              "operations": 28000,
+              "ns_per_op": 31.4
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001508,
+              "operations": 2700,
+              "ns_per_op": 558.7
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00047,
+              "operations": 2700,
+              "ns_per_op": 174.1
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007382,
+              "operations": 1000,
+              "ns_per_op": 7381.5
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.00575,
+              "operations": 1000,
+              "ns_per_op": 5749.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002516,
+              "operations": 750,
+              "ns_per_op": 3355.2
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002271,
+              "operations": 1000,
+              "ns_per_op": 2271.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.038548,
+              "operations": 8192,
+              "ns_per_op": 4705.6
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.035771,
+              "operations": 9000,
+              "ns_per_op": 3974.6
+            }
+          }
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.003932,
+              "operations": 24128,
+              "ns_per_op": 163.0
+            },
+            "system malloc small": {
+              "seconds": 0.001318,
+              "operations": 24128,
+              "ns_per_op": 54.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.004226,
+              "operations": 28000,
+              "ns_per_op": 150.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.000824,
+              "operations": 28000,
+              "ns_per_op": 29.4
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.000984,
+              "operations": 2700,
+              "ns_per_op": 364.4
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000565,
+              "operations": 2700,
+              "ns_per_op": 209.4
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.007342,
+              "operations": 1000,
+              "ns_per_op": 7341.9
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.004585,
+              "operations": 1000,
+              "ns_per_op": 4585.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002422,
+              "operations": 750,
+              "ns_per_op": 3228.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002356,
+              "operations": 1000,
+              "ns_per_op": 2355.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.039085,
+              "operations": 8192,
+              "ns_per_op": 4771.2
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.029632,
+              "operations": 9000,
+              "ns_per_op": 3292.4
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 161.7,
+          "system malloc small": 48.4,
+          "uhm small malloc/free multithread": 183.9,
+          "system malloc multithread": 31.6,
+          "uhm large malloc/realloc/free": 409.6,
+          "system malloc large/realloc/free": 209.4,
+          "uhm mmap/munmap large": 7563.4,
+          "system mmap/VirtualAlloc large": 5866.0,
+          "uhm mmap fixed/auto mix": 3462.0,
+          "uhm mprotect split/merge cost": 2409.2,
+          "uhm malloc/mmap collision pressure": 4956.1,
+          "uhm release mixed long pressure": 3477.4
+        },
+        "candidate": {
+          "uhm small malloc/free": 163.0,
+          "system malloc small": 60.2,
+          "uhm small malloc/free multithread": 193.3,
+          "system malloc multithread": 31.0,
+          "uhm large malloc/realloc/free": 404.5,
+          "system malloc large/realloc/free": 229.6,
+          "uhm mmap/munmap large": 9195.1,
+          "system mmap/VirtualAlloc large": 5553.4,
+          "uhm mmap fixed/auto mix": 3443.7,
+          "uhm mprotect split/merge cost": 2462.3,
+          "uhm malloc/mmap collision pressure": 5079.3,
+          "uhm release mixed long pressure": 3546.3
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 161.7,
+          "candidate_ns": 163.0,
+          "change_percent": 0.8039579468150926,
+          "median_pair_change_percent": 0.8039579468150926
+        },
+        "system malloc small": {
+          "parent_ns": 48.4,
+          "candidate_ns": 60.2,
+          "change_percent": 24.38016528925622,
+          "median_pair_change_percent": 13.157894736842103
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 183.9,
+          "candidate_ns": 193.3,
+          "change_percent": 5.111473626971175,
+          "median_pair_change_percent": -8.211420481359132
+        },
+        "system malloc multithread": {
+          "parent_ns": 31.6,
+          "candidate_ns": 31.0,
+          "change_percent": -1.898734177215189,
+          "median_pair_change_percent": -3.2448377581120957
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 409.6,
+          "candidate_ns": 404.5,
+          "change_percent": -1.2451171875,
+          "median_pair_change_percent": 0.6680983058935608
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 209.4,
+          "candidate_ns": 229.6,
+          "change_percent": 9.646609360076397,
+          "median_pair_change_percent": 10.86231538828013
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 7563.4,
+          "candidate_ns": 9195.1,
+          "change_percent": 21.573630906735076,
+          "median_pair_change_percent": -0.5364763259500194
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 5866.0,
+          "candidate_ns": 5553.4,
+          "change_percent": -5.329014660756915,
+          "median_pair_change_percent": -11.534846674631627
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 3462.0,
+          "candidate_ns": 3443.7,
+          "change_percent": -0.5285961871750455,
+          "median_pair_change_percent": -2.6846016898861125
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 2409.2,
+          "candidate_ns": 2462.3,
+          "change_percent": 2.204051137306995,
+          "median_pair_change_percent": 3.7205001761183576
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 4956.1,
+          "candidate_ns": 5079.3,
+          "change_percent": 2.485825548314202,
+          "median_pair_change_percent": 0.5622760300144636
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 3477.4,
+          "candidate_ns": 3546.3,
+          "change_percent": 1.9813653879335202,
+          "median_pair_change_percent": 3.9796504471978356
+        }
+      }
+    },
+    "windows-stress": {
+      "platform": "windows",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:00:27.357731+00:00",
+      "end_utc": "2026-10-10T13:00:33.749629+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "78b325dfb41e265714da480c6262ca8e83d814d46d109001e64556a5850d7a6e",
+        "candidate": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.039764,
+              "operations": 240128,
+              "ns_per_op": 165.6
+            },
+            "system malloc small": {
+              "seconds": 0.011644,
+              "operations": 240128,
+              "ns_per_op": 48.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.04346,
+              "operations": 280000,
+              "ns_per_op": 155.2
+            },
+            "system malloc multithread": {
+              "seconds": 0.008025,
+              "operations": 280000,
+              "ns_per_op": 28.7
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.015187,
+              "operations": 27000,
+              "ns_per_op": 562.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.006816,
+              "operations": 27000,
+              "ns_per_op": 252.5
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.109812,
+              "operations": 10000,
+              "ns_per_op": 10981.2
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.072944,
+              "operations": 10000,
+              "ns_per_op": 7294.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.031842,
+              "operations": 7500,
+              "ns_per_op": 4245.6
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.030902,
+              "operations": 10000,
+              "ns_per_op": 3090.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.053456,
+              "operations": 8192,
+              "ns_per_op": 6525.4
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.345644,
+              "operations": 90000,
+              "ns_per_op": 3840.5
+            }
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.054905,
+              "operations": 240128,
+              "ns_per_op": 228.6
+            },
+            "system malloc small": {
+              "seconds": 0.013651,
+              "operations": 240128,
+              "ns_per_op": 56.8
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.054266,
+              "operations": 280000,
+              "ns_per_op": 193.8
+            },
+            "system malloc multithread": {
+              "seconds": 0.006872,
+              "operations": 280000,
+              "ns_per_op": 24.5
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.015921,
+              "operations": 27000,
+              "ns_per_op": 589.6
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.008451,
+              "operations": 27000,
+              "ns_per_op": 313.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.106354,
+              "operations": 10000,
+              "ns_per_op": 10635.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.0679,
+              "operations": 10000,
+              "ns_per_op": 6790.0
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.038561,
+              "operations": 7500,
+              "ns_per_op": 5141.4
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.044394,
+              "operations": 10000,
+              "ns_per_op": 4439.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.054964,
+              "operations": 8192,
+              "ns_per_op": 6709.4
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.365438,
+              "operations": 90000,
+              "ns_per_op": 4060.4
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.041756,
+              "operations": 240128,
+              "ns_per_op": 173.9
+            },
+            "system malloc small": {
+              "seconds": 0.013101,
+              "operations": 240128,
+              "ns_per_op": 54.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.056417,
+              "operations": 280000,
+              "ns_per_op": 201.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.004236,
+              "operations": 280000,
+              "ns_per_op": 15.1
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.01481,
+              "operations": 27000,
+              "ns_per_op": 548.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.005736,
+              "operations": 27000,
+              "ns_per_op": 212.5
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.090442,
+              "operations": 10000,
+              "ns_per_op": 9044.2
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.070317,
+              "operations": 10000,
+              "ns_per_op": 7031.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.030437,
+              "operations": 7500,
+              "ns_per_op": 4058.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.027023,
+              "operations": 10000,
+              "ns_per_op": 2702.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.044342,
+              "operations": 8192,
+              "ns_per_op": 5412.9
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.309982,
+              "operations": 90000,
+              "ns_per_op": 3444.2
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.041888,
+              "operations": 240128,
+              "ns_per_op": 174.4
+            },
+            "system malloc small": {
+              "seconds": 0.013501,
+              "operations": 240128,
+              "ns_per_op": 56.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.045835,
+              "operations": 280000,
+              "ns_per_op": 163.7
+            },
+            "system malloc multithread": {
+              "seconds": 0.005306,
+              "operations": 280000,
+              "ns_per_op": 18.9
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.010221,
+              "operations": 27000,
+              "ns_per_op": 378.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00577,
+              "operations": 27000,
+              "ns_per_op": 213.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.091819,
+              "operations": 10000,
+              "ns_per_op": 9181.9
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.055911,
+              "operations": 10000,
+              "ns_per_op": 5591.1
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.028528,
+              "operations": 7500,
+              "ns_per_op": 3803.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.03216,
+              "operations": 10000,
+              "ns_per_op": 3216.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.053025,
+              "operations": 8192,
+              "ns_per_op": 6472.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.312254,
+              "operations": 90000,
+              "ns_per_op": 3469.5
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.042851,
+              "operations": 240128,
+              "ns_per_op": 178.5
+            },
+            "system malloc small": {
+              "seconds": 0.012691,
+              "operations": 240128,
+              "ns_per_op": 52.8
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.043411,
+              "operations": 280000,
+              "ns_per_op": 155.0
+            },
+            "system malloc multithread": {
+              "seconds": 0.005242,
+              "operations": 280000,
+              "ns_per_op": 18.7
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.010426,
+              "operations": 27000,
+              "ns_per_op": 386.2
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.005134,
+              "operations": 27000,
+              "ns_per_op": 190.2
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.088409,
+              "operations": 10000,
+              "ns_per_op": 8840.9
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.060404,
+              "operations": 10000,
+              "ns_per_op": 6040.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.040812,
+              "operations": 7500,
+              "ns_per_op": 5441.6
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.040358,
+              "operations": 10000,
+              "ns_per_op": 4035.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.046723,
+              "operations": 8192,
+              "ns_per_op": 5703.5
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.343266,
+              "operations": 90000,
+              "ns_per_op": 3814.1
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.051662,
+              "operations": 240128,
+              "ns_per_op": 215.1
+            },
+            "system malloc small": {
+              "seconds": 0.019473,
+              "operations": 240128,
+              "ns_per_op": 81.1
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.054237,
+              "operations": 280000,
+              "ns_per_op": 193.7
+            },
+            "system malloc multithread": {
+              "seconds": 0.007836,
+              "operations": 280000,
+              "ns_per_op": 28.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.017221,
+              "operations": 27000,
+              "ns_per_op": 637.8
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.007695,
+              "operations": 27000,
+              "ns_per_op": 285.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.134115,
+              "operations": 10000,
+              "ns_per_op": 13411.5
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.108983,
+              "operations": 10000,
+              "ns_per_op": 10898.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.042807,
+              "operations": 7500,
+              "ns_per_op": 5707.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.043355,
+              "operations": 10000,
+              "ns_per_op": 4335.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.056472,
+              "operations": 8192,
+              "ns_per_op": 6893.5
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.42196,
+              "operations": 90000,
+              "ns_per_op": 4688.4
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 174.4,
+          "system malloc small": 52.8,
+          "uhm small malloc/free multithread": 155.2,
+          "system malloc multithread": 18.9,
+          "uhm large malloc/realloc/free": 386.2,
+          "system malloc large/realloc/free": 213.7,
+          "uhm mmap/munmap large": 9181.9,
+          "system mmap/VirtualAlloc large": 6040.4,
+          "uhm mmap fixed/auto mix": 4245.6,
+          "uhm mprotect split/merge cost": 3216.0,
+          "uhm malloc/mmap collision pressure": 6472.8,
+          "uhm release mixed long pressure": 3814.1
+        },
+        "candidate": {
+          "uhm small malloc/free": 215.1,
+          "system malloc small": 56.8,
+          "uhm small malloc/free multithread": 193.8,
+          "system malloc multithread": 24.5,
+          "uhm large malloc/realloc/free": 589.6,
+          "system malloc large/realloc/free": 285.0,
+          "uhm mmap/munmap large": 10635.4,
+          "system mmap/VirtualAlloc large": 7031.7,
+          "uhm mmap fixed/auto mix": 5141.4,
+          "uhm mprotect split/merge cost": 4335.5,
+          "uhm malloc/mmap collision pressure": 6709.4,
+          "uhm release mixed long pressure": 4060.4
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 174.4,
+          "candidate_ns": 215.1,
+          "change_percent": 23.33715596330275,
+          "median_pair_change_percent": 20.504201680672264
+        },
+        "system malloc small": {
+          "parent_ns": 52.8,
+          "candidate_ns": 56.8,
+          "change_percent": 7.575757575757569,
+          "median_pair_change_percent": 17.113402061855652
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 155.2,
+          "candidate_ns": 193.8,
+          "change_percent": 24.87113402061858,
+          "median_pair_change_percent": 24.87113402061858
+        },
+        "system malloc multithread": {
+          "parent_ns": 18.9,
+          "candidate_ns": 24.5,
+          "change_percent": 29.62962962962965,
+          "median_pair_change_percent": -14.634146341463417
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 386.2,
+          "candidate_ns": 589.6,
+          "change_percent": 52.667011910926995,
+          "median_pair_change_percent": 44.91413474240422
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 213.7,
+          "candidate_ns": 285.0,
+          "change_percent": 33.36452971455313,
+          "median_pair_change_percent": 23.96039603960396
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 9181.9,
+          "candidate_ns": 10635.4,
+          "change_percent": 15.830056959888484,
+          "median_pair_change_percent": -1.4996896067262622
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 6040.4,
+          "candidate_ns": 7031.7,
+          "change_percent": 16.41116482352163,
+          "median_pair_change_percent": 25.76594945538444
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 4245.6,
+          "candidate_ns": 5141.4,
+          "change_percent": 21.099491237987557,
+          "median_pair_change_percent": 6.6906777433093145
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 3216.0,
+          "candidate_ns": 4335.5,
+          "change_percent": 34.81032338308459,
+          "median_pair_change_percent": 7.426036969126315
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 6472.8,
+          "candidate_ns": 6709.4,
+          "change_percent": 3.655296007910014,
+          "median_pair_change_percent": 2.819750513378483
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 3814.1,
+          "candidate_ns": 4060.4,
+          "change_percent": 6.457617786633807,
+          "median_pair_change_percent": 5.72581695091785
+        }
+      }
+    },
+    "wsl-quick": {
+      "platform": "wsl",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:00:34.032852+00:00",
+      "end_utc": "2026-10-10T13:00:38.909252+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 5,
+      "stress": false,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "04cb351c58e880874d0778357904b86025217737a967f3d241138338d225dea6",
+        "candidate": "0820ea608c2e3c04124d6efcd87a3e39bd92e81ef020e115aed47088d15dc604"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.005998,
+              "operations": 24128,
+              "ns_per_op": 248.6
+            },
+            "system malloc small": {
+              "seconds": 0.000543,
+              "operations": 24128,
+              "ns_per_op": 22.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.006566,
+              "operations": 28000,
+              "ns_per_op": 234.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.000645,
+              "operations": 28000,
+              "ns_per_op": 23.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001554,
+              "operations": 2700,
+              "ns_per_op": 575.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000289,
+              "operations": 2700,
+              "ns_per_op": 107.2
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009104,
+              "operations": 1000,
+              "ns_per_op": 9103.7
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.007272,
+              "operations": 1000,
+              "ns_per_op": 7272.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002398,
+              "operations": 750,
+              "ns_per_op": 3197.4
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002573,
+              "operations": 1000,
+              "ns_per_op": 2573.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.072001,
+              "operations": 8192,
+              "ns_per_op": 8789.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.05624,
+              "operations": 9000,
+              "ns_per_op": 6248.9
+            }
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.007519,
+              "operations": 24128,
+              "ns_per_op": 311.6
+            },
+            "system malloc small": {
+              "seconds": 0.000619,
+              "operations": 24128,
+              "ns_per_op": 25.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.008381,
+              "operations": 28000,
+              "ns_per_op": 299.3
+            },
+            "system malloc multithread": {
+              "seconds": 0.000785,
+              "operations": 28000,
+              "ns_per_op": 28.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001946,
+              "operations": 2700,
+              "ns_per_op": 720.8
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000307,
+              "operations": 2700,
+              "ns_per_op": 113.8
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.017826,
+              "operations": 1000,
+              "ns_per_op": 17826.0
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.011223,
+              "operations": 1000,
+              "ns_per_op": 11223.4
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.004216,
+              "operations": 750,
+              "ns_per_op": 5620.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.005728,
+              "operations": 1000,
+              "ns_per_op": 5727.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.068628,
+              "operations": 8192,
+              "ns_per_op": 8377.5
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.056224,
+              "operations": 9000,
+              "ns_per_op": 6247.1
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.006331,
+              "operations": 24128,
+              "ns_per_op": 262.4
+            },
+            "system malloc small": {
+              "seconds": 0.000531,
+              "operations": 24128,
+              "ns_per_op": 22.0
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.006843,
+              "operations": 28000,
+              "ns_per_op": 244.4
+            },
+            "system malloc multithread": {
+              "seconds": 0.000545,
+              "operations": 28000,
+              "ns_per_op": 19.5
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001464,
+              "operations": 2700,
+              "ns_per_op": 542.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000194,
+              "operations": 2700,
+              "ns_per_op": 71.9
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.011881,
+              "operations": 1000,
+              "ns_per_op": 11881.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.007514,
+              "operations": 1000,
+              "ns_per_op": 7513.8
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002411,
+              "operations": 750,
+              "ns_per_op": 3214.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002507,
+              "operations": 1000,
+              "ns_per_op": 2506.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.061488,
+              "operations": 8192,
+              "ns_per_op": 7505.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.0378,
+              "operations": 9000,
+              "ns_per_op": 4200.0
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.009669,
+              "operations": 24128,
+              "ns_per_op": 400.7
+            },
+            "system malloc small": {
+              "seconds": 0.000624,
+              "operations": 24128,
+              "ns_per_op": 25.9
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.007016,
+              "operations": 28000,
+              "ns_per_op": 250.6
+            },
+            "system malloc multithread": {
+              "seconds": 0.000519,
+              "operations": 28000,
+              "ns_per_op": 18.5
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001223,
+              "operations": 2700,
+              "ns_per_op": 452.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000231,
+              "operations": 2700,
+              "ns_per_op": 85.4
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.010252,
+              "operations": 1000,
+              "ns_per_op": 10251.6
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.007793,
+              "operations": 1000,
+              "ns_per_op": 7793.2
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.003488,
+              "operations": 750,
+              "ns_per_op": 4651.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.002733,
+              "operations": 1000,
+              "ns_per_op": 2733.2
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.075602,
+              "operations": 8192,
+              "ns_per_op": 9228.7
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.070911,
+              "operations": 9000,
+              "ns_per_op": 7879.0
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.009899,
+              "operations": 24128,
+              "ns_per_op": 410.3
+            },
+            "system malloc small": {
+              "seconds": 0.000665,
+              "operations": 24128,
+              "ns_per_op": 27.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.007742,
+              "operations": 28000,
+              "ns_per_op": 276.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.000593,
+              "operations": 28000,
+              "ns_per_op": 21.2
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001531,
+              "operations": 2700,
+              "ns_per_op": 566.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000194,
+              "operations": 2700,
+              "ns_per_op": 71.9
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.011753,
+              "operations": 1000,
+              "ns_per_op": 11753.2
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.009104,
+              "operations": 1000,
+              "ns_per_op": 9103.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.00286,
+              "operations": 750,
+              "ns_per_op": 3812.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.003189,
+              "operations": 1000,
+              "ns_per_op": 3189.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.083036,
+              "operations": 8192,
+              "ns_per_op": 10136.2
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.067631,
+              "operations": 9000,
+              "ns_per_op": 7514.6
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.006978,
+              "operations": 24128,
+              "ns_per_op": 289.2
+            },
+            "system malloc small": {
+              "seconds": 0.000618,
+              "operations": 24128,
+              "ns_per_op": 25.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.007355,
+              "operations": 28000,
+              "ns_per_op": 262.7
+            },
+            "system malloc multithread": {
+              "seconds": 0.000849,
+              "operations": 28000,
+              "ns_per_op": 30.3
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001238,
+              "operations": 2700,
+              "ns_per_op": 458.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000192,
+              "operations": 2700,
+              "ns_per_op": 71.3
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.009867,
+              "operations": 1000,
+              "ns_per_op": 9867.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.007457,
+              "operations": 1000,
+              "ns_per_op": 7457.0
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.002493,
+              "operations": 750,
+              "ns_per_op": 3324.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.00256,
+              "operations": 1000,
+              "ns_per_op": 2559.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.068374,
+              "operations": 8192,
+              "ns_per_op": 8346.4
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.05233,
+              "operations": 9000,
+              "ns_per_op": 5814.5
+            }
+          }
+        },
+        {
+          "pair": 3,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.008537,
+              "operations": 24128,
+              "ns_per_op": 353.8
+            },
+            "system malloc small": {
+              "seconds": 0.000733,
+              "operations": 24128,
+              "ns_per_op": 30.4
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.009181,
+              "operations": 28000,
+              "ns_per_op": 327.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.000615,
+              "operations": 28000,
+              "ns_per_op": 21.9
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001353,
+              "operations": 2700,
+              "ns_per_op": 501.1
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000194,
+              "operations": 2700,
+              "ns_per_op": 72.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.012357,
+              "operations": 1000,
+              "ns_per_op": 12357.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.010397,
+              "operations": 1000,
+              "ns_per_op": 10396.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.004297,
+              "operations": 750,
+              "ns_per_op": 5728.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.003964,
+              "operations": 1000,
+              "ns_per_op": 3964.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.078779,
+              "operations": 8192,
+              "ns_per_op": 9616.6
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.064744,
+              "operations": 9000,
+              "ns_per_op": 7193.8
+            }
+          }
+        },
+        {
+          "pair": 3,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.011625,
+              "operations": 24128,
+              "ns_per_op": 481.8
+            },
+            "system malloc small": {
+              "seconds": 0.001293,
+              "operations": 24128,
+              "ns_per_op": 53.6
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.007161,
+              "operations": 28000,
+              "ns_per_op": 255.7
+            },
+            "system malloc multithread": {
+              "seconds": 0.000664,
+              "operations": 28000,
+              "ns_per_op": 23.7
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.002505,
+              "operations": 2700,
+              "ns_per_op": 927.8
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000289,
+              "operations": 2700,
+              "ns_per_op": 107.2
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.011625,
+              "operations": 1000,
+              "ns_per_op": 11624.5
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.010112,
+              "operations": 1000,
+              "ns_per_op": 10111.8
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.004137,
+              "operations": 750,
+              "ns_per_op": 5515.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.004954,
+              "operations": 1000,
+              "ns_per_op": 4954.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.086907,
+              "operations": 8192,
+              "ns_per_op": 10608.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.071728,
+              "operations": 9000,
+              "ns_per_op": 7969.8
+            }
+          }
+        },
+        {
+          "pair": 4,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.013094,
+              "operations": 24128,
+              "ns_per_op": 542.7
+            },
+            "system malloc small": {
+              "seconds": 0.000752,
+              "operations": 24128,
+              "ns_per_op": 31.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.007976,
+              "operations": 28000,
+              "ns_per_op": 284.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.001285,
+              "operations": 28000,
+              "ns_per_op": 45.9
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.001748,
+              "operations": 2700,
+              "ns_per_op": 647.4
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000304,
+              "operations": 2700,
+              "ns_per_op": 112.5
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.018045,
+              "operations": 1000,
+              "ns_per_op": 18045.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.013632,
+              "operations": 1000,
+              "ns_per_op": 13631.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.005693,
+              "operations": 750,
+              "ns_per_op": 7590.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.004505,
+              "operations": 1000,
+              "ns_per_op": 4504.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.104074,
+              "operations": 8192,
+              "ns_per_op": 12704.3
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.099711,
+              "operations": 9000,
+              "ns_per_op": 11079.0
+            }
+          }
+        },
+        {
+          "pair": 4,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.018961,
+              "operations": 24128,
+              "ns_per_op": 785.9
+            },
+            "system malloc small": {
+              "seconds": 0.003881,
+              "operations": 24128,
+              "ns_per_op": 160.9
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.011403,
+              "operations": 28000,
+              "ns_per_op": 407.2
+            },
+            "system malloc multithread": {
+              "seconds": 0.000731,
+              "operations": 28000,
+              "ns_per_op": 26.1
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.002031,
+              "operations": 2700,
+              "ns_per_op": 752.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.000312,
+              "operations": 2700,
+              "ns_per_op": 115.6
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.01672,
+              "operations": 1000,
+              "ns_per_op": 16719.9
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.011022,
+              "operations": 1000,
+              "ns_per_op": 11022.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.004799,
+              "operations": 750,
+              "ns_per_op": 6398.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.004768,
+              "operations": 1000,
+              "ns_per_op": 4767.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.093764,
+              "operations": 8192,
+              "ns_per_op": 11445.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.065416,
+              "operations": 9000,
+              "ns_per_op": 7268.4
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 410.3,
+          "system malloc small": 27.5,
+          "uhm small malloc/free multithread": 255.7,
+          "system malloc multithread": 23.0,
+          "uhm large malloc/realloc/free": 575.5,
+          "system malloc large/realloc/free": 107.2,
+          "uhm mmap/munmap large": 11624.5,
+          "system mmap/VirtualAlloc large": 9103.7,
+          "uhm mmap fixed/auto mix": 4651.0,
+          "uhm mprotect split/merge cost": 3189.4,
+          "uhm malloc/mmap collision pressure": 10136.2,
+          "uhm release mixed long pressure": 7879.0
+        },
+        "candidate": {
+          "uhm small malloc/free": 311.6,
+          "system malloc small": 25.6,
+          "uhm small malloc/free multithread": 299.3,
+          "system malloc multithread": 26.1,
+          "uhm large malloc/realloc/free": 542.3,
+          "system malloc large/realloc/free": 72.0,
+          "uhm mmap/munmap large": 12357.3,
+          "system mmap/VirtualAlloc large": 10396.7,
+          "uhm mmap fixed/auto mix": 5620.9,
+          "uhm mprotect split/merge cost": 3964.0,
+          "uhm malloc/mmap collision pressure": 8377.5,
+          "uhm release mixed long pressure": 6247.1
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 410.3,
+          "candidate_ns": 311.6,
+          "change_percent": -24.055569095783568,
+          "median_pair_change_percent": -26.567040265670407
+        },
+        "system malloc small": {
+          "parent_ns": 27.5,
+          "candidate_ns": 25.6,
+          "change_percent": -6.909090909090909,
+          "median_pair_change_percent": -6.909090909090909
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 255.7,
+          "candidate_ns": 299.3,
+          "change_percent": 17.05123191239735,
+          "median_pair_change_percent": 27.633262260127943
+        },
+        "system malloc multithread": {
+          "parent_ns": 23.0,
+          "candidate_ns": 26.1,
+          "change_percent": 13.47826086956523,
+          "median_pair_change_percent": 5.405405405405395
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 575.5,
+          "candidate_ns": 542.3,
+          "change_percent": -5.76889661164206,
+          "median_pair_change_percent": 16.203274637009567
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 107.2,
+          "candidate_ns": 72.0,
+          "change_percent": -32.835820895522396,
+          "median_pair_change_percent": -0.834492350486804
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 11624.5,
+          "candidate_ns": 12357.3,
+          "change_percent": 6.303927050625835,
+          "median_pair_change_percent": 6.303927050625835
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 9103.7,
+          "candidate_ns": 10396.7,
+          "change_percent": 14.203016355987131,
+          "median_pair_change_percent": -3.585176820818148
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 4651.0,
+          "candidate_ns": 5620.9,
+          "change_percent": 20.853579875295637,
+          "median_pair_change_percent": -12.819974821653378
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 3189.4,
+          "candidate_ns": 3964.0,
+          "change_percent": 24.28669969273216,
+          "median_pair_change_percent": -8.279672179130682
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 10136.2,
+          "candidate_ns": 8377.5,
+          "change_percent": -17.350683688167166,
+          "median_pair_change_percent": -9.906094786804465
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 7879.0,
+          "candidate_ns": 6247.1,
+          "change_percent": -20.712019291788298,
+          "median_pair_change_percent": -22.62395869374285
+        }
+      }
+    },
+    "wsl-stress": {
+      "platform": "wsl",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:00:39.369463+00:00",
+      "end_utc": "2026-10-10T13:00:49.474444+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "binary_sha256": {
+        "parent": "04cb351c58e880874d0778357904b86025217737a967f3d241138338d225dea6",
+        "candidate": "0820ea608c2e3c04124d6efcd87a3e39bd92e81ef020e115aed47088d15dc604"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.041421,
+              "operations": 240128,
+              "ns_per_op": 172.5
+            },
+            "system malloc small": {
+              "seconds": 0.005017,
+              "operations": 240128,
+              "ns_per_op": 20.9
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.049264,
+              "operations": 280000,
+              "ns_per_op": 175.9
+            },
+            "system malloc multithread": {
+              "seconds": 0.003096,
+              "operations": 280000,
+              "ns_per_op": 11.1
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.011422,
+              "operations": 27000,
+              "ns_per_op": 423.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.001674,
+              "operations": 27000,
+              "ns_per_op": 62.0
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.098967,
+              "operations": 10000,
+              "ns_per_op": 9896.7
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.096331,
+              "operations": 10000,
+              "ns_per_op": 9633.1
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.040382,
+              "operations": 7500,
+              "ns_per_op": 5384.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.041931,
+              "operations": 10000,
+              "ns_per_op": 4193.1
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.100828,
+              "operations": 8192,
+              "ns_per_op": 12308.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.643068,
+              "operations": 90000,
+              "ns_per_op": 7145.2
+            }
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.108974,
+              "operations": 240128,
+              "ns_per_op": 453.8
+            },
+            "system malloc small": {
+              "seconds": 0.011853,
+              "operations": 240128,
+              "ns_per_op": 49.4
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.076288,
+              "operations": 280000,
+              "ns_per_op": 272.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.00364,
+              "operations": 280000,
+              "ns_per_op": 13.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.024093,
+              "operations": 27000,
+              "ns_per_op": 892.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.004436,
+              "operations": 27000,
+              "ns_per_op": 164.3
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.146363,
+              "operations": 10000,
+              "ns_per_op": 14636.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.099709,
+              "operations": 10000,
+              "ns_per_op": 9970.9
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.033139,
+              "operations": 7500,
+              "ns_per_op": 4418.5
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.03393,
+              "operations": 10000,
+              "ns_per_op": 3393.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.083212,
+              "operations": 8192,
+              "ns_per_op": 10157.7
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.605901,
+              "operations": 90000,
+              "ns_per_op": 6732.2
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.085333,
+              "operations": 240128,
+              "ns_per_op": 355.4
+            },
+            "system malloc small": {
+              "seconds": 0.007648,
+              "operations": 240128,
+              "ns_per_op": 31.9
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.056957,
+              "operations": 280000,
+              "ns_per_op": 203.4
+            },
+            "system malloc multithread": {
+              "seconds": 0.003252,
+              "operations": 280000,
+              "ns_per_op": 11.6
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.016923,
+              "operations": 27000,
+              "ns_per_op": 626.8
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.001865,
+              "operations": 27000,
+              "ns_per_op": 69.1
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.12416,
+              "operations": 10000,
+              "ns_per_op": 12416.0
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.100407,
+              "operations": 10000,
+              "ns_per_op": 10040.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.036767,
+              "operations": 7500,
+              "ns_per_op": 4902.2
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.03509,
+              "operations": 10000,
+              "ns_per_op": 3509.0
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.083494,
+              "operations": 8192,
+              "ns_per_op": 10192.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.632807,
+              "operations": 90000,
+              "ns_per_op": 7031.2
+            }
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.08232,
+              "operations": 240128,
+              "ns_per_op": 342.8
+            },
+            "system malloc small": {
+              "seconds": 0.011467,
+              "operations": 240128,
+              "ns_per_op": 47.8
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.068832,
+              "operations": 280000,
+              "ns_per_op": 245.8
+            },
+            "system malloc multithread": {
+              "seconds": 0.003039,
+              "operations": 280000,
+              "ns_per_op": 10.9
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.012326,
+              "operations": 27000,
+              "ns_per_op": 456.5
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.002602,
+              "operations": 27000,
+              "ns_per_op": 96.4
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.095573,
+              "operations": 10000,
+              "ns_per_op": 9557.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.084542,
+              "operations": 10000,
+              "ns_per_op": 8454.2
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.034802,
+              "operations": 7500,
+              "ns_per_op": 4640.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.033884,
+              "operations": 10000,
+              "ns_per_op": 3388.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.067207,
+              "operations": 8192,
+              "ns_per_op": 8204.0
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.452422,
+              "operations": 90000,
+              "ns_per_op": 5026.9
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.049563,
+              "operations": 240128,
+              "ns_per_op": 206.4
+            },
+            "system malloc small": {
+              "seconds": 0.005062,
+              "operations": 240128,
+              "ns_per_op": 21.1
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.052946,
+              "operations": 280000,
+              "ns_per_op": 189.1
+            },
+            "system malloc multithread": {
+              "seconds": 0.003165,
+              "operations": 280000,
+              "ns_per_op": 11.3
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.013365,
+              "operations": 27000,
+              "ns_per_op": 495.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00194,
+              "operations": 27000,
+              "ns_per_op": 71.8
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.093546,
+              "operations": 10000,
+              "ns_per_op": 9354.6
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.067265,
+              "operations": 10000,
+              "ns_per_op": 6726.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.024082,
+              "operations": 7500,
+              "ns_per_op": 3210.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.028556,
+              "operations": 10000,
+              "ns_per_op": 2855.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.077191,
+              "operations": 8192,
+              "ns_per_op": 9422.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.565294,
+              "operations": 90000,
+              "ns_per_op": 6281.0
+            }
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.081539,
+              "operations": 240128,
+              "ns_per_op": 339.6
+            },
+            "system malloc small": {
+              "seconds": 0.009914,
+              "operations": 240128,
+              "ns_per_op": 41.3
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.073129,
+              "operations": 280000,
+              "ns_per_op": 261.2
+            },
+            "system malloc multithread": {
+              "seconds": 0.006446,
+              "operations": 280000,
+              "ns_per_op": 23.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.024749,
+              "operations": 27000,
+              "ns_per_op": 916.6
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.002573,
+              "operations": 27000,
+              "ns_per_op": 95.3
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.187574,
+              "operations": 10000,
+              "ns_per_op": 18757.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.112235,
+              "operations": 10000,
+              "ns_per_op": 11223.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.029054,
+              "operations": 7500,
+              "ns_per_op": 3873.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.033551,
+              "operations": 10000,
+              "ns_per_op": 3355.1
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.076533,
+              "operations": 8192,
+              "ns_per_op": 9342.4
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.534088,
+              "operations": 90000,
+              "ns_per_op": 5934.3
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 206.4,
+          "system malloc small": 21.1,
+          "uhm small malloc/free multithread": 189.1,
+          "system malloc multithread": 11.1,
+          "uhm large malloc/realloc/free": 456.5,
+          "system malloc large/realloc/free": 71.8,
+          "uhm mmap/munmap large": 9557.3,
+          "system mmap/VirtualAlloc large": 8454.2,
+          "uhm mmap fixed/auto mix": 4640.3,
+          "uhm mprotect split/merge cost": 3388.4,
+          "uhm malloc/mmap collision pressure": 9422.8,
+          "uhm release mixed long pressure": 6281.0
+        },
+        "candidate": {
+          "uhm small malloc/free": 355.4,
+          "system malloc small": 41.3,
+          "uhm small malloc/free multithread": 261.2,
+          "system malloc multithread": 13.0,
+          "uhm large malloc/realloc/free": 892.3,
+          "system malloc large/realloc/free": 95.3,
+          "uhm mmap/munmap large": 14636.3,
+          "system mmap/VirtualAlloc large": 10040.7,
+          "uhm mmap fixed/auto mix": 4418.5,
+          "uhm mprotect split/merge cost": 3393.0,
+          "uhm malloc/mmap collision pressure": 10157.7,
+          "uhm release mixed long pressure": 6732.2
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 206.4,
+          "candidate_ns": 355.4,
+          "change_percent": 72.18992248062015,
+          "median_pair_change_percent": 64.53488372093024
+        },
+        "system malloc small": {
+          "parent_ns": 21.1,
+          "candidate_ns": 41.3,
+          "change_percent": 95.73459715639807,
+          "median_pair_change_percent": 95.73459715639807
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 189.1,
+          "candidate_ns": 261.2,
+          "change_percent": 38.12797461660497,
+          "median_pair_change_percent": 38.12797461660497
+        },
+        "system malloc multithread": {
+          "parent_ns": 11.1,
+          "candidate_ns": 13.0,
+          "change_percent": 17.117117117117118,
+          "median_pair_change_percent": 17.117117117117118
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 456.5,
+          "candidate_ns": 892.3,
+          "change_percent": 95.46549835706462,
+          "median_pair_change_percent": 85.17171717171719
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 71.8,
+          "candidate_ns": 95.3,
+          "change_percent": 32.729805013927574,
+          "median_pair_change_percent": 32.729805013927574
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 9557.3,
+          "candidate_ns": 14636.3,
+          "change_percent": 53.14262396283469,
+          "median_pair_change_percent": 47.89071104509581
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 8454.2,
+          "candidate_ns": 10040.7,
+          "change_percent": 18.765820538903743,
+          "median_pair_change_percent": 18.765820538903743
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 4640.3,
+          "candidate_ns": 4418.5,
+          "change_percent": -4.779863370902748,
+          "median_pair_change_percent": 5.644031635885605
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 3388.4,
+          "candidate_ns": 3393.0,
+          "change_percent": 0.13575728957619937,
+          "median_pair_change_percent": 3.559201983236915
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 9422.8,
+          "candidate_ns": 10157.7,
+          "change_percent": 7.799167975548693,
+          "median_pair_change_percent": -0.8532495648851723
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 6281.0,
+          "candidate_ns": 6732.2,
+          "change_percent": 7.183569495303299,
+          "median_pair_change_percent": -5.519821684445148
+        }
+      }
+    }
+  },
+  "same_exe_control": {
+    "windows-stress-same-exe": {
+      "platform": "windows",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:02:29.909584+00:00",
+      "end_utc": "2026-10-10T13:02:36.211226+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "same_executable_control": true,
+      "binary_sha256": {
+        "parent": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db",
+        "candidate": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.041241,
+              "operations": 240128,
+              "ns_per_op": 171.7
+            },
+            "system malloc small": {
+              "seconds": 0.011933,
+              "operations": 240128,
+              "ns_per_op": 49.7
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.050279,
+              "operations": 280000,
+              "ns_per_op": 179.6
+            },
+            "system malloc multithread": {
+              "seconds": 0.008317,
+              "operations": 280000,
+              "ns_per_op": 29.7
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.012662,
+              "operations": 27000,
+              "ns_per_op": 469.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.006207,
+              "operations": 27000,
+              "ns_per_op": 229.9
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.095943,
+              "operations": 10000,
+              "ns_per_op": 9594.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.07684,
+              "operations": 10000,
+              "ns_per_op": 7684.0
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.029669,
+              "operations": 7500,
+              "ns_per_op": 3955.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.031701,
+              "operations": 10000,
+              "ns_per_op": 3170.1
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.051537,
+              "operations": 8192,
+              "ns_per_op": 6291.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.327239,
+              "operations": 90000,
+              "ns_per_op": 3636.0
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.7615816000015911,
+            "kernel_cpu_seconds": 0.234375,
+            "user_cpu_seconds": 0.625
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.054191,
+              "operations": 240128,
+              "ns_per_op": 225.7
+            },
+            "system malloc small": {
+              "seconds": 0.01831,
+              "operations": 240128,
+              "ns_per_op": 76.2
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.047908,
+              "operations": 280000,
+              "ns_per_op": 171.1
+            },
+            "system malloc multithread": {
+              "seconds": 0.006613,
+              "operations": 280000,
+              "ns_per_op": 23.6
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.010996,
+              "operations": 27000,
+              "ns_per_op": 407.3
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.00582,
+              "operations": 27000,
+              "ns_per_op": 215.6
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.090203,
+              "operations": 10000,
+              "ns_per_op": 9020.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.072927,
+              "operations": 10000,
+              "ns_per_op": 7292.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.028227,
+              "operations": 7500,
+              "ns_per_op": 3763.7
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.027718,
+              "operations": 10000,
+              "ns_per_op": 2771.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.045824,
+              "operations": 8192,
+              "ns_per_op": 5593.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.337632,
+              "operations": 90000,
+              "ns_per_op": 3751.5
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.7640788999997312,
+            "kernel_cpu_seconds": 0.28125,
+            "user_cpu_seconds": 0.5625
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.046001,
+              "operations": 240128,
+              "ns_per_op": 191.6
+            },
+            "system malloc small": {
+              "seconds": 0.011606,
+              "operations": 240128,
+              "ns_per_op": 48.3
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.053629,
+              "operations": 280000,
+              "ns_per_op": 191.5
+            },
+            "system malloc multithread": {
+              "seconds": 0.006108,
+              "operations": 280000,
+              "ns_per_op": 21.8
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.016009,
+              "operations": 27000,
+              "ns_per_op": 592.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.006257,
+              "operations": 27000,
+              "ns_per_op": 231.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.107801,
+              "operations": 10000,
+              "ns_per_op": 10780.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.084873,
+              "operations": 10000,
+              "ns_per_op": 8487.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.037825,
+              "operations": 7500,
+              "ns_per_op": 5043.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.040364,
+              "operations": 10000,
+              "ns_per_op": 4036.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.059197,
+              "operations": 8192,
+              "ns_per_op": 7226.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.35609,
+              "operations": 90000,
+              "ns_per_op": 3956.6
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.8438690999992104,
+            "kernel_cpu_seconds": 0.359375,
+            "user_cpu_seconds": 0.625
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.038596,
+              "operations": 240128,
+              "ns_per_op": 160.7
+            },
+            "system malloc small": {
+              "seconds": 0.010931,
+              "operations": 240128,
+              "ns_per_op": 45.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.044315,
+              "operations": 280000,
+              "ns_per_op": 158.3
+            },
+            "system malloc multithread": {
+              "seconds": 0.004755,
+              "operations": 280000,
+              "ns_per_op": 17.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.011603,
+              "operations": 27000,
+              "ns_per_op": 429.8
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.006579,
+              "operations": 27000,
+              "ns_per_op": 243.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.126826,
+              "operations": 10000,
+              "ns_per_op": 12682.6
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.10114,
+              "operations": 10000,
+              "ns_per_op": 10114.0
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.033204,
+              "operations": 7500,
+              "ns_per_op": 4427.2
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.032583,
+              "operations": 10000,
+              "ns_per_op": 3258.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.047128,
+              "operations": 8192,
+              "ns_per_op": 5753.0
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.330727,
+              "operations": 90000,
+              "ns_per_op": 3674.7
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.8058348999984446,
+            "kernel_cpu_seconds": 0.328125,
+            "user_cpu_seconds": 0.59375
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.049476,
+              "operations": 240128,
+              "ns_per_op": 206.0
+            },
+            "system malloc small": {
+              "seconds": 0.012125,
+              "operations": 240128,
+              "ns_per_op": 50.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.050523,
+              "operations": 280000,
+              "ns_per_op": 180.4
+            },
+            "system malloc multithread": {
+              "seconds": 0.005134,
+              "operations": 280000,
+              "ns_per_op": 18.3
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.012013,
+              "operations": 27000,
+              "ns_per_op": 444.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.006258,
+              "operations": 27000,
+              "ns_per_op": 231.8
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.109903,
+              "operations": 10000,
+              "ns_per_op": 10990.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.062292,
+              "operations": 10000,
+              "ns_per_op": 6229.2
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.037965,
+              "operations": 7500,
+              "ns_per_op": 5061.9
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.037768,
+              "operations": 10000,
+              "ns_per_op": 3776.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.04833,
+              "operations": 8192,
+              "ns_per_op": 5899.7
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.318518,
+              "operations": 90000,
+              "ns_per_op": 3539.1
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.7671476000014081,
+            "kernel_cpu_seconds": 0.390625,
+            "user_cpu_seconds": 0.5
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.038816,
+              "operations": 240128,
+              "ns_per_op": 161.6
+            },
+            "system malloc small": {
+              "seconds": 0.012004,
+              "operations": 240128,
+              "ns_per_op": 50.0
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.04368,
+              "operations": 280000,
+              "ns_per_op": 156.0
+            },
+            "system malloc multithread": {
+              "seconds": 0.005599,
+              "operations": 280000,
+              "ns_per_op": 20.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.012876,
+              "operations": 27000,
+              "ns_per_op": 476.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.008257,
+              "operations": 27000,
+              "ns_per_op": 305.8
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.12378,
+              "operations": 10000,
+              "ns_per_op": 12378.0
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.075486,
+              "operations": 10000,
+              "ns_per_op": 7548.6
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.033827,
+              "operations": 7500,
+              "ns_per_op": 4510.3
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.034679,
+              "operations": 10000,
+              "ns_per_op": 3467.9
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.058182,
+              "operations": 8192,
+              "ns_per_op": 7102.3
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.324754,
+              "operations": 90000,
+              "ns_per_op": 3608.4
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 0.788712100000339,
+            "kernel_cpu_seconds": 0.359375,
+            "user_cpu_seconds": 0.5625
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 171.7,
+          "system malloc small": 49.7,
+          "uhm small malloc/free multithread": 179.6,
+          "system malloc multithread": 18.3,
+          "uhm large malloc/realloc/free": 444.9,
+          "system malloc large/realloc/free": 231.8,
+          "uhm mmap/munmap large": 10990.3,
+          "system mmap/VirtualAlloc large": 7684.0,
+          "uhm mmap fixed/auto mix": 4427.2,
+          "uhm mprotect split/merge cost": 3258.3,
+          "uhm malloc/mmap collision pressure": 5899.7,
+          "uhm release mixed long pressure": 3636.0
+        },
+        "candidate": {
+          "uhm small malloc/free": 191.6,
+          "system malloc small": 50.0,
+          "uhm small malloc/free multithread": 171.1,
+          "system malloc multithread": 21.8,
+          "uhm large malloc/realloc/free": 476.9,
+          "system malloc large/realloc/free": 231.7,
+          "uhm mmap/munmap large": 10780.1,
+          "system mmap/VirtualAlloc large": 7548.6,
+          "uhm mmap fixed/auto mix": 4510.3,
+          "uhm mprotect split/merge cost": 3467.9,
+          "uhm malloc/mmap collision pressure": 7102.3,
+          "uhm release mixed long pressure": 3751.5
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 171.7,
+          "candidate_ns": 191.6,
+          "change_percent": 11.589982527664544,
+          "median_pair_change_percent": 19.22837585563162
+        },
+        "system malloc small": {
+          "parent_ns": 49.7,
+          "candidate_ns": 50.0,
+          "change_percent": 0.6036217303822866,
+          "median_pair_change_percent": 6.153846153846154
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 179.6,
+          "candidate_ns": 171.1,
+          "change_percent": -4.732739420935417,
+          "median_pair_change_percent": -4.732739420935417
+        },
+        "system malloc multithread": {
+          "parent_ns": 18.3,
+          "candidate_ns": 21.8,
+          "change_percent": 19.12568306010929,
+          "median_pair_change_percent": 9.289617486338786
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 444.9,
+          "candidate_ns": 476.9,
+          "change_percent": 7.192627556754316,
+          "median_pair_change_percent": 7.192627556754316
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 231.8,
+          "candidate_ns": 231.7,
+          "change_percent": -0.043140638481464766,
+          "median_pair_change_percent": -4.924086992203525
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 10990.3,
+          "candidate_ns": 10780.1,
+          "change_percent": -1.912595652529947,
+          "median_pair_change_percent": -5.982718906017115
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 7684.0,
+          "candidate_ns": 7548.6,
+          "change_percent": -1.7621030713170227,
+          "median_pair_change_percent": -5.092399791775115
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 4427.2,
+          "candidate_ns": 4510.3,
+          "change_percent": 1.8770328876039022,
+          "median_pair_change_percent": -4.858565686695826
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 3258.3,
+          "candidate_ns": 3467.9,
+          "change_percent": 6.432802381610037,
+          "median_pair_change_percent": -8.17888159288287
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 5899.7,
+          "candidate_ns": 7102.3,
+          "change_percent": 20.38408732647423,
+          "median_pair_change_percent": 20.38408732647423
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 3636.0,
+          "candidate_ns": 3751.5,
+          "change_percent": 3.176567656765683,
+          "median_pair_change_percent": 3.176567656765683
+        }
+      }
+    },
+    "wsl-stress-same-exe": {
+      "platform": "wsl",
+      "parent_commit": "0eaba5e",
+      "start_utc": "2026-10-10T13:02:36.419493+00:00",
+      "end_utc": "2026-10-10T13:02:46.135563+00:00",
+      "warmup_per_variant": 1,
+      "samples_per_variant": 3,
+      "stress": true,
+      "order": "alternating paired parent/candidate, sequential platforms and profiles",
+      "formal_baseline_comparison": false,
+      "same_executable_control": true,
+      "binary_sha256": {
+        "parent": "0820ea608c2e3c04124d6efcd87a3e39bd92e81ef020e115aed47088d15dc604",
+        "candidate": "0820ea608c2e3c04124d6efcd87a3e39bd92e81ef020e115aed47088d15dc604"
+      },
+      "samples": [
+        {
+          "pair": 0,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.051905,
+              "operations": 240128,
+              "ns_per_op": 216.2
+            },
+            "system malloc small": {
+              "seconds": 0.006174,
+              "operations": 240128,
+              "ns_per_op": 25.7
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.052172,
+              "operations": 280000,
+              "ns_per_op": 186.3
+            },
+            "system malloc multithread": {
+              "seconds": 0.002451,
+              "operations": 280000,
+              "ns_per_op": 8.8
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.010145,
+              "operations": 27000,
+              "ns_per_op": 375.7
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.001651,
+              "operations": 27000,
+              "ns_per_op": 61.1
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.104283,
+              "operations": 10000,
+              "ns_per_op": 10428.3
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.084807,
+              "operations": 10000,
+              "ns_per_op": 8480.7
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.029007,
+              "operations": 7500,
+              "ns_per_op": 3867.6
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.030267,
+              "operations": 10000,
+              "ns_per_op": 3026.7
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.077058,
+              "operations": 8192,
+              "ns_per_op": 9406.5
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.528139,
+              "operations": 90000,
+              "ns_per_op": 5868.2
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.1616845999997167,
+            "guest_wall_seconds": 0.99,
+            "user_cpu_seconds": 0.74,
+            "kernel_cpu_seconds": 0.37,
+            "voluntary_switches": 61,
+            "involuntary_switches": 182
+          }
+        },
+        {
+          "pair": 0,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.075232,
+              "operations": 240128,
+              "ns_per_op": 313.3
+            },
+            "system malloc small": {
+              "seconds": 0.009008,
+              "operations": 240128,
+              "ns_per_op": 37.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.063724,
+              "operations": 280000,
+              "ns_per_op": 227.6
+            },
+            "system malloc multithread": {
+              "seconds": 0.003633,
+              "operations": 280000,
+              "ns_per_op": 13.0
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.018683,
+              "operations": 27000,
+              "ns_per_op": 691.9
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.002155,
+              "operations": 27000,
+              "ns_per_op": 79.8
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.140041,
+              "operations": 10000,
+              "ns_per_op": 14004.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.119101,
+              "operations": 10000,
+              "ns_per_op": 11910.1
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.041558,
+              "operations": 7500,
+              "ns_per_op": 5541.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.048615,
+              "operations": 10000,
+              "ns_per_op": 4861.5
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.091836,
+              "operations": 8192,
+              "ns_per_op": 11210.5
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.506236,
+              "operations": 90000,
+              "ns_per_op": 5624.8
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.3473305000006803,
+            "guest_wall_seconds": 1.13,
+            "user_cpu_seconds": 0.89,
+            "kernel_cpu_seconds": 0.4,
+            "voluntary_switches": 60,
+            "involuntary_switches": 20
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.065745,
+              "operations": 240128,
+              "ns_per_op": 273.8
+            },
+            "system malloc small": {
+              "seconds": 0.009795,
+              "operations": 240128,
+              "ns_per_op": 40.8
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.062043,
+              "operations": 280000,
+              "ns_per_op": 221.6
+            },
+            "system malloc multithread": {
+              "seconds": 0.003555,
+              "operations": 280000,
+              "ns_per_op": 12.7
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.01162,
+              "operations": 27000,
+              "ns_per_op": 430.4
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.001743,
+              "operations": 27000,
+              "ns_per_op": 64.5
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.107402,
+              "operations": 10000,
+              "ns_per_op": 10740.2
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.072743,
+              "operations": 10000,
+              "ns_per_op": 7274.3
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.02778,
+              "operations": 7500,
+              "ns_per_op": 3704.0
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.026876,
+              "operations": 10000,
+              "ns_per_op": 2687.6
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.064699,
+              "operations": 8192,
+              "ns_per_op": 7897.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.441058,
+              "operations": 90000,
+              "ns_per_op": 4900.6
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.105982800001584,
+            "guest_wall_seconds": 0.9,
+            "user_cpu_seconds": 0.76,
+            "kernel_cpu_seconds": 0.29,
+            "voluntary_switches": 58,
+            "involuntary_switches": 102
+          }
+        },
+        {
+          "pair": 1,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.073894,
+              "operations": 240128,
+              "ns_per_op": 307.7
+            },
+            "system malloc small": {
+              "seconds": 0.005492,
+              "operations": 240128,
+              "ns_per_op": 22.9
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.061871,
+              "operations": 280000,
+              "ns_per_op": 221.0
+            },
+            "system malloc multithread": {
+              "seconds": 0.003261,
+              "operations": 280000,
+              "ns_per_op": 11.6
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.017325,
+              "operations": 27000,
+              "ns_per_op": 641.7
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.002745,
+              "operations": 27000,
+              "ns_per_op": 101.7
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.107457,
+              "operations": 10000,
+              "ns_per_op": 10745.7
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.085225,
+              "operations": 10000,
+              "ns_per_op": 8522.5
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.033576,
+              "operations": 7500,
+              "ns_per_op": 4476.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.031474,
+              "operations": 10000,
+              "ns_per_op": 3147.4
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.078466,
+              "operations": 8192,
+              "ns_per_op": 9578.3
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.553675,
+              "operations": 90000,
+              "ns_per_op": 6151.9
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.2529587000008178,
+            "guest_wall_seconds": 1.06,
+            "user_cpu_seconds": 0.81,
+            "kernel_cpu_seconds": 0.4,
+            "voluntary_switches": 60,
+            "involuntary_switches": 158
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "parent",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.086153,
+              "operations": 240128,
+              "ns_per_op": 358.8
+            },
+            "system malloc small": {
+              "seconds": 0.007922,
+              "operations": 240128,
+              "ns_per_op": 33.0
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.070196,
+              "operations": 280000,
+              "ns_per_op": 250.7
+            },
+            "system malloc multithread": {
+              "seconds": 0.004046,
+              "operations": 280000,
+              "ns_per_op": 14.4
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.016578,
+              "operations": 27000,
+              "ns_per_op": 614.0
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.002554,
+              "operations": 27000,
+              "ns_per_op": 94.6
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.176784,
+              "operations": 10000,
+              "ns_per_op": 17678.4
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.124506,
+              "operations": 10000,
+              "ns_per_op": 12450.6
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.037776,
+              "operations": 7500,
+              "ns_per_op": 5036.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.042943,
+              "operations": 10000,
+              "ns_per_op": 4294.3
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.074914,
+              "operations": 8192,
+              "ns_per_op": 9144.8
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.685751,
+              "operations": 90000,
+              "ns_per_op": 7619.5
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.5907676000006177,
+            "guest_wall_seconds": 1.35,
+            "user_cpu_seconds": 1.0,
+            "kernel_cpu_seconds": 0.52,
+            "voluntary_switches": 63,
+            "involuntary_switches": 134
+          }
+        },
+        {
+          "pair": 2,
+          "variant": "candidate",
+          "results": {
+            "uhm small malloc/free": {
+              "seconds": 0.054375,
+              "operations": 240128,
+              "ns_per_op": 226.4
+            },
+            "system malloc small": {
+              "seconds": 0.005895,
+              "operations": 240128,
+              "ns_per_op": 24.5
+            },
+            "uhm small malloc/free multithread": {
+              "seconds": 0.064851,
+              "operations": 280000,
+              "ns_per_op": 231.6
+            },
+            "system malloc multithread": {
+              "seconds": 0.00314,
+              "operations": 280000,
+              "ns_per_op": 11.2
+            },
+            "uhm large malloc/realloc/free": {
+              "seconds": 0.010614,
+              "operations": 27000,
+              "ns_per_op": 393.1
+            },
+            "system malloc large/realloc/free": {
+              "seconds": 0.001805,
+              "operations": 27000,
+              "ns_per_op": 66.9
+            },
+            "uhm mmap/munmap large": {
+              "seconds": 0.097751,
+              "operations": 10000,
+              "ns_per_op": 9775.1
+            },
+            "system mmap/VirtualAlloc large": {
+              "seconds": 0.086128,
+              "operations": 10000,
+              "ns_per_op": 8612.8
+            },
+            "uhm mmap fixed/auto mix": {
+              "seconds": 0.025806,
+              "operations": 7500,
+              "ns_per_op": 3440.8
+            },
+            "uhm mprotect split/merge cost": {
+              "seconds": 0.028318,
+              "operations": 10000,
+              "ns_per_op": 2831.8
+            },
+            "uhm malloc/mmap collision pressure": {
+              "seconds": 0.062825,
+              "operations": 8192,
+              "ns_per_op": 7669.1
+            },
+            "uhm release mixed long pressure": {
+              "seconds": 0.416898,
+              "operations": 90000,
+              "ns_per_op": 4632.2
+            }
+          },
+          "resources": {
+            "host_process_wall_seconds": 1.1189033999999083,
+            "guest_wall_seconds": 0.87,
+            "user_cpu_seconds": 0.66,
+            "kernel_cpu_seconds": 0.36,
+            "voluntary_switches": 64,
+            "involuntary_switches": 266
+          }
+        }
+      ],
+      "aggregate": {
+        "parent": {
+          "uhm small malloc/free": 307.7,
+          "system malloc small": 25.7,
+          "uhm small malloc/free multithread": 221.0,
+          "system malloc multithread": 11.6,
+          "uhm large malloc/realloc/free": 614.0,
+          "system malloc large/realloc/free": 94.6,
+          "uhm mmap/munmap large": 10745.7,
+          "system mmap/VirtualAlloc large": 8522.5,
+          "uhm mmap fixed/auto mix": 4476.8,
+          "uhm mprotect split/merge cost": 3147.4,
+          "uhm malloc/mmap collision pressure": 9406.5,
+          "uhm release mixed long pressure": 6151.9
+        },
+        "candidate": {
+          "uhm small malloc/free": 273.8,
+          "system malloc small": 37.5,
+          "uhm small malloc/free multithread": 227.6,
+          "system malloc multithread": 12.7,
+          "uhm large malloc/realloc/free": 430.4,
+          "system malloc large/realloc/free": 66.9,
+          "uhm mmap/munmap large": 10740.2,
+          "system mmap/VirtualAlloc large": 8612.8,
+          "uhm mmap fixed/auto mix": 3704.0,
+          "uhm mprotect split/merge cost": 2831.8,
+          "uhm malloc/mmap collision pressure": 7897.8,
+          "uhm release mixed long pressure": 4900.6
+        }
+      },
+      "comparisons": {
+        "uhm small malloc/free": {
+          "parent_ns": 307.7,
+          "candidate_ns": 273.8,
+          "change_percent": -11.017224569385753,
+          "median_pair_change_percent": -11.017224569385753
+        },
+        "system malloc small": {
+          "parent_ns": 25.7,
+          "candidate_ns": 37.5,
+          "change_percent": 45.91439688715955,
+          "median_pair_change_percent": 45.91439688715955
+        },
+        "uhm small malloc/free multithread": {
+          "parent_ns": 221.0,
+          "candidate_ns": 227.6,
+          "change_percent": 2.9864253393665052,
+          "median_pair_change_percent": 0.2714932126696823
+        },
+        "system malloc multithread": {
+          "parent_ns": 11.6,
+          "candidate_ns": 12.7,
+          "change_percent": 9.482758620689658,
+          "median_pair_change_percent": 9.482758620689658
+        },
+        "uhm large malloc/realloc/free": {
+          "parent_ns": 614.0,
+          "candidate_ns": 430.4,
+          "change_percent": -29.902280130293168,
+          "median_pair_change_percent": -32.92815957612593
+        },
+        "system malloc large/realloc/free": {
+          "parent_ns": 94.6,
+          "candidate_ns": 66.9,
+          "change_percent": -29.28118393234671,
+          "median_pair_change_percent": -29.28118393234671
+        },
+        "uhm mmap/munmap large": {
+          "parent_ns": 10745.7,
+          "candidate_ns": 10740.2,
+          "change_percent": -0.05118326400327389,
+          "median_pair_change_percent": -0.05118326400327389
+        },
+        "system mmap/VirtualAlloc large": {
+          "parent_ns": 8522.5,
+          "candidate_ns": 8612.8,
+          "change_percent": 1.059548254620113,
+          "median_pair_change_percent": -14.645937224992666
+        },
+        "uhm mmap fixed/auto mix": {
+          "parent_ns": 4476.8,
+          "candidate_ns": 3704.0,
+          "change_percent": -17.26233023588277,
+          "median_pair_change_percent": -17.26233023588277
+        },
+        "uhm mprotect split/merge cost": {
+          "parent_ns": 3147.4,
+          "candidate_ns": 2831.8,
+          "change_percent": -10.027324140560456,
+          "median_pair_change_percent": -14.608883522907801
+        },
+        "uhm malloc/mmap collision pressure": {
+          "parent_ns": 9406.5,
+          "candidate_ns": 7897.8,
+          "change_percent": -16.03890926487004,
+          "median_pair_change_percent": -16.13703962907881
+        },
+        "uhm release mixed long pressure": {
+          "parent_ns": 6151.9,
+          "candidate_ns": 4900.6,
+          "change_percent": -20.340057543198032,
+          "median_pair_change_percent": -20.340057543198032
+        }
+      }
+    }
+  },
+  "release_nodiag_WSL_outlier": {
+    "artifact": "bench-20261010-125617-both-release-nodiag-quick.json",
+    "concurrent_32bit_build": true,
+    "cause": "unresolved",
+    "results": [
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.023449,
+        "operations": 24128,
+        "ns_per_op": 971.8,
+        "raw": "uhm small malloc/free                    0.023449 s       24128 ops       971.8 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "system malloc small",
+        "seconds": 0.001089,
+        "operations": 24128,
+        "ns_per_op": 45.1,
+        "raw": "system malloc small                      0.001089 s       24128 ops        45.1 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.121358,
+        "operations": 28000,
+        "ns_per_op": 4334.2,
+        "raw": "uhm small malloc/free multithread        0.121358 s       28000 ops      4334.2 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "system malloc multithread",
+        "seconds": 0.000996,
+        "operations": 28000,
+        "ns_per_op": 35.6,
+        "raw": "system malloc multithread                0.000996 s       28000 ops        35.6 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001485,
+        "operations": 2700,
+        "ns_per_op": 550.1,
+        "raw": "uhm large malloc/realloc/free            0.001485 s        2700 ops       550.1 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000244,
+        "operations": 2700,
+        "ns_per_op": 90.2,
+        "raw": "system malloc large/realloc/free         0.000244 s        2700 ops        90.2 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.013553,
+        "operations": 1000,
+        "ns_per_op": 13553.1,
+        "raw": "uhm mmap/munmap large                    0.013553 s        1000 ops     13553.1 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.01719,
+        "operations": 1000,
+        "ns_per_op": 17190.1,
+        "raw": "system mmap/VirtualAlloc large           0.017190 s        1000 ops     17190.1 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.00549,
+        "operations": 750,
+        "ns_per_op": 7320.3,
+        "raw": "uhm mmap fixed/auto mix                  0.005490 s         750 ops      7320.3 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.01099,
+        "operations": 1000,
+        "ns_per_op": 10990,
+        "raw": "uhm mprotect split/merge cost            0.010990 s        1000 ops     10990.0 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.128096,
+        "operations": 8192,
+        "ns_per_op": 15636.7,
+        "raw": "uhm malloc/mmap collision pressure       0.128096 s        8192 ops     15636.7 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      },
+      {
+        "platform": "wsl",
+        "profile": "release-nodiag-quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.070959,
+        "operations": 9000,
+        "ns_per_op": 7884.3,
+        "raw": "uhm release mixed long pressure          0.070959 s        9000 ops      7884.3 ns/op",
+        "command": "wsl.exe bash -lc set -eu\ncd '<PROJECT_ROOT>'\n\n    cd 'build-wsl-release-nodiag'\n    sha256sum ./uhmas_benchmarks\n    env UHMAS_BENCH_SAMPLE_INDEX=1 ./uhmas_benchmarks",
+        "sample_index": 1
+      }
+    ]
+  },
+  "final_Windows_x64_Release_quick": {
+    "artifact": "bench-20261010-130329-windows-quick.json",
+    "artifact_sha256": "72409edf1b99f47def9ce2a7c4455e4b2bf431bf8ad5eddf1854b00a2789683c",
+    "rebuilt": true,
+    "candidate_SHA_matches": true,
+    "samples": 3,
+    "formal_baseline_comparison": false,
+    "provenance": {
+      "schema": 3,
+      "source_sha256": "44a967dfe15634b39fb36fb49d5faa097233f6137571220a457d09b810f93937",
+      "workload_sha256": "6d88e51a191ea98997adb935d896848c2e1d6eaf5ae1d047384746134a67c28c",
+      "source_file_count": 38,
+      "workload_file_count": 14,
+      "configuration": "Release",
+      "profile": "quick",
+      "diagnostics_enabled": false,
+      "diagnostics_timing_enabled": false,
+      "workload_contract": {
+        "schema": 1,
+        "id": "quick",
+        "version": 1
+      },
+      "binaries": {
+        "windows": "4099ec5291512b10119d9b18ca6d54d1b71ea1a21be95a0705a8cb9c1609e6db"
+      }
+    },
+    "results": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.007557,
+        "operations": 24128,
+        "ns_per_op": 313.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002435,
+        "operations": 24128,
+        "ns_per_op": 100.9,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006953,
+        "operations": 28000,
+        "ns_per_op": 248.3,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001592,
+        "operations": 28000,
+        "ns_per_op": 56.9,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001715,
+        "operations": 2700,
+        "ns_per_op": 635.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000967,
+        "operations": 2700,
+        "ns_per_op": 358.3,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.011903,
+        "operations": 1000,
+        "ns_per_op": 11902.9,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.008113,
+        "operations": 1000,
+        "ns_per_op": 8112.9,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.003376,
+        "operations": 750,
+        "ns_per_op": 4501.1,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.003586,
+        "operations": 1000,
+        "ns_per_op": 3586.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.06394,
+        "operations": 8192,
+        "ns_per_op": 7805.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.058385,
+        "operations": 9000,
+        "ns_per_op": 6487.2,
+        "raw": "aggregated:median samples=3",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_count": 3,
+        "sample_aggregation": "median"
+      }
+    ],
+    "sample_results": [
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.007641,
+        "operations": 24128,
+        "ns_per_op": 316.7,
+        "raw": "uhm small malloc/free                    0.007641 s       24128 ops       316.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002813,
+        "operations": 24128,
+        "ns_per_op": 116.6,
+        "raw": "system malloc small                      0.002813 s       24128 ops       116.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.007458,
+        "operations": 28000,
+        "ns_per_op": 266.4,
+        "raw": "uhm small malloc/free multithread        0.007458 s       28000 ops       266.4 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001592,
+        "operations": 28000,
+        "ns_per_op": 56.9,
+        "raw": "system malloc multithread                0.001592 s       28000 ops        56.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001548,
+        "operations": 2700,
+        "ns_per_op": 573.3,
+        "raw": "uhm large malloc/realloc/free            0.001548 s        2700 ops       573.3 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000921,
+        "operations": 2700,
+        "ns_per_op": 341.3,
+        "raw": "system malloc large/realloc/free         0.000921 s        2700 ops       341.3 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.011857,
+        "operations": 1000,
+        "ns_per_op": 11857.5,
+        "raw": "uhm mmap/munmap large                    0.011857 s        1000 ops     11857.5 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.008113,
+        "operations": 1000,
+        "ns_per_op": 8112.9,
+        "raw": "system mmap/VirtualAlloc large           0.008113 s        1000 ops      8112.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.003349,
+        "operations": 750,
+        "ns_per_op": 4465.2,
+        "raw": "uhm mmap fixed/auto mix                  0.003349 s         750 ops      4465.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.003586,
+        "operations": 1000,
+        "ns_per_op": 3586.2,
+        "raw": "uhm mprotect split/merge cost            0.003586 s        1000 ops      3586.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.06394,
+        "operations": 8192,
+        "ns_per_op": 7805.2,
+        "raw": "uhm malloc/mmap collision pressure       0.063940 s        8192 ops      7805.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.058385,
+        "operations": 9000,
+        "ns_per_op": 6487.2,
+        "raw": "uhm release mixed long pressure          0.058385 s        9000 ops      6487.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 1
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.006412,
+        "operations": 24128,
+        "ns_per_op": 265.7,
+        "raw": "uhm small malloc/free                    0.006412 s       24128 ops       265.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.002435,
+        "operations": 24128,
+        "ns_per_op": 100.9,
+        "raw": "system malloc small                      0.002435 s       24128 ops       100.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006762,
+        "operations": 28000,
+        "ns_per_op": 241.5,
+        "raw": "uhm small malloc/free multithread        0.006762 s       28000 ops       241.5 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001589,
+        "operations": 28000,
+        "ns_per_op": 56.8,
+        "raw": "system malloc multithread                0.001589 s       28000 ops        56.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001715,
+        "operations": 2700,
+        "ns_per_op": 635.2,
+        "raw": "uhm large malloc/realloc/free            0.001715 s        2700 ops       635.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.000967,
+        "operations": 2700,
+        "ns_per_op": 358.3,
+        "raw": "system malloc large/realloc/free         0.000967 s        2700 ops       358.3 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.013158,
+        "operations": 1000,
+        "ns_per_op": 13158.2,
+        "raw": "uhm mmap/munmap large                    0.013158 s        1000 ops     13158.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.008405,
+        "operations": 1000,
+        "ns_per_op": 8405,
+        "raw": "system mmap/VirtualAlloc large           0.008405 s        1000 ops      8405.0 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.00439,
+        "operations": 750,
+        "ns_per_op": 5853.6,
+        "raw": "uhm mmap fixed/auto mix                  0.004390 s         750 ops      5853.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.004021,
+        "operations": 1000,
+        "ns_per_op": 4020.7,
+        "raw": "uhm mprotect split/merge cost            0.004021 s        1000 ops      4020.7 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.074704,
+        "operations": 8192,
+        "ns_per_op": 9119.1,
+        "raw": "uhm malloc/mmap collision pressure       0.074704 s        8192 ops      9119.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.059915,
+        "operations": 9000,
+        "ns_per_op": 6657.2,
+        "raw": "uhm release mixed long pressure          0.059915 s        9000 ops      6657.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 2
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free",
+        "seconds": 0.007557,
+        "operations": 24128,
+        "ns_per_op": 313.2,
+        "raw": "uhm small malloc/free                    0.007557 s       24128 ops       313.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc small",
+        "seconds": 0.00191,
+        "operations": 24128,
+        "ns_per_op": 79.1,
+        "raw": "system malloc small                      0.001910 s       24128 ops        79.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm small malloc/free multithread",
+        "seconds": 0.006953,
+        "operations": 28000,
+        "ns_per_op": 248.3,
+        "raw": "uhm small malloc/free multithread        0.006953 s       28000 ops       248.3 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc multithread",
+        "seconds": 0.001657,
+        "operations": 28000,
+        "ns_per_op": 59.2,
+        "raw": "system malloc multithread                0.001657 s       28000 ops        59.2 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm large malloc/realloc/free",
+        "seconds": 0.001914,
+        "operations": 2700,
+        "ns_per_op": 708.9,
+        "raw": "uhm large malloc/realloc/free            0.001914 s        2700 ops       708.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system malloc large/realloc/free",
+        "seconds": 0.001104,
+        "operations": 2700,
+        "ns_per_op": 408.8,
+        "raw": "system malloc large/realloc/free         0.001104 s        2700 ops       408.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap/munmap large",
+        "seconds": 0.011903,
+        "operations": 1000,
+        "ns_per_op": 11902.9,
+        "raw": "uhm mmap/munmap large                    0.011903 s        1000 ops     11902.9 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "system mmap/VirtualAlloc large",
+        "seconds": 0.00768,
+        "operations": 1000,
+        "ns_per_op": 7680.1,
+        "raw": "system mmap/VirtualAlloc large           0.007680 s        1000 ops      7680.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mmap fixed/auto mix",
+        "seconds": 0.003376,
+        "operations": 750,
+        "ns_per_op": 4501.1,
+        "raw": "uhm mmap fixed/auto mix                  0.003376 s         750 ops      4501.1 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm mprotect split/merge cost",
+        "seconds": 0.003142,
+        "operations": 1000,
+        "ns_per_op": 3141.8,
+        "raw": "uhm mprotect split/merge cost            0.003142 s        1000 ops      3141.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm malloc/mmap collision pressure",
+        "seconds": 0.063675,
+        "operations": 8192,
+        "ns_per_op": 7772.8,
+        "raw": "uhm malloc/mmap collision pressure       0.063675 s        8192 ops      7772.8 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      },
+      {
+        "platform": "windows",
+        "profile": "quick",
+        "name": "uhm release mixed long pressure",
+        "seconds": 0.046706,
+        "operations": 9000,
+        "ns_per_op": 5189.6,
+        "raw": "uhm release mixed long pressure          0.046706 s        9000 ops      5189.6 ns/op",
+        "command": "<PROJECT_ROOT>\\build-release\\Release\\uhmas_benchmarks.exe ",
+        "sample_index": 3
+      }
+    ]
+  },
+  "final_vs_previous_stage_percent": {
+    "uhm small malloc/free": 10.24,
+    "system malloc small": 42.11,
+    "uhm small malloc/free multithread": 4.02,
+    "system malloc multithread": 9.0,
+    "uhm large malloc/realloc/free": 24.14,
+    "system malloc large/realloc/free": 23.0,
+    "uhm mmap/munmap large": 0.79,
+    "system mmap/VirtualAlloc large": -15.36,
+    "uhm mmap fixed/auto mix": -6.53,
+    "uhm mprotect split/merge cost": 2.8,
+    "uhm malloc/mmap collision pressure": -11.37,
+    "uhm release mixed long pressure": 2.01
+  },
+  "limits": [
+    "Windows and WSL stress AB show large negative results; no universal throughput improvement or regression closure",
+    "Identical-executable controls show sampling bias but do not fully explain candidate regressions",
+    "Stress large windows remain about 10-25ms; sustained timing and runtime conditions need attribution",
+    "Cacheline alignment preserved does not exclude cache-set or page-offset effects",
+    "No parent/candidate 32-bit machine-code identity claim",
+    "WSL release-nodiag slow outlier remains unresolved",
+    "32-bit native/index queue, complete transitions and throughput baseline remain open"
+  ]
+}

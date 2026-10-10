@@ -1,0 +1,627 @@
+{
+    "rules":  [
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_health_flags",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_repair_pending_flags",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_repair_rebuilds",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_repair_rehashes",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_repair_nodes",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "treap_repair_failures",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "mprotect_vma_mark_queries",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "mprotect_vma_publish_queries",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "mprotect_vma_restore_queries",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "vm_protect_lock_held_calls",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "page_lock_range_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect pass pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  201
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect rollback pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  401
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect wide pass pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  51
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect wide rollback pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  101
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect merge pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  200
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "partial-edge mprotect merge pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  400
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "partial-edge mprotect merge pressure",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "partial-edge mprotect merge pressure",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "partial-edge mprotect merge pressure",
+                      "key":  "mprotect_rollback_calls",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "partial-edge mprotect merge pressure",
+                      "key":  "vm_protect_failures",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect merge rollback pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  400
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect random fault pressure",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  300
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  17
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  33
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  17
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  33
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  17
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  33
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "vma_tree_find_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "vma_tree_insert_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "vma_tree_insert_rotation_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "*",
+                      "name":  "*",
+                      "key":  "vma_tree_remove_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect rollback pressure",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect rollback pressure",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect wide rollback pressure",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect wide rollback pressure",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect merge rollback pressure",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect merge rollback pressure",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect random fault pressure",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-quick",
+                      "name":  "multi-VMA mprotect random fault pressure",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  0
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  2163
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  2220
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  2163
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  2252
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  6515
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  6572
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  6515
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  6604
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_find_steps",
+                      "max_value":  13000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_remove_sink_steps",
+                      "max_value":  3200
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_find_steps",
+                      "max_value":  16
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_remove_sink_steps",
+                      "max_value":  12
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_insert_depth",
+                      "max_value":  16
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p64-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_rotations",
+                      "max_value":  9000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_find_steps",
+                      "max_value":  13000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_remove_sink_steps",
+                      "max_value":  3200
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_find_steps",
+                      "max_value":  16
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_remove_sink_steps",
+                      "max_value":  12
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_insert_depth",
+                      "max_value":  16
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_rotations",
+                      "max_value":  9000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_find_steps",
+                      "max_value":  30000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_remove_sink_steps",
+                      "max_value":  5000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_find_steps",
+                      "max_value":  18
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_remove_sink_steps",
+                      "max_value":  14
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_insert_depth",
+                      "max_value":  18
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_rotations",
+                      "max_value":  14000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress pass",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  134
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_vma_collect_queries",
+                      "max_value":  262
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "mprotect_rollback_calls",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress rollback",
+                      "key":  "vm_protect_failures",
+                      "min_value":  1
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress *",
+                      "key":  "page_mark_budget_exceeded",
+                      "max_value":  52000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "multi-VMA mprotect configurable stress *",
+                      "key":  "page_range_query_budget_exceeded",
+                      "max_value":  52200
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_find_steps",
+                      "max_value":  240000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_remove_sink_steps",
+                      "max_value":  40000
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_find_steps",
+                      "max_value":  20
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_remove_sink_steps",
+                      "max_value":  14
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_max_insert_depth",
+                      "max_value":  20
+                  },
+                  {
+                      "platform":  "*",
+                      "profile":  "mprotect-multi-vma-p256-lat128-quick",
+                      "name":  "*",
+                      "key":  "vma_tree_rotations",
+                      "max_value":  120000
+                  }
+              ]
+}

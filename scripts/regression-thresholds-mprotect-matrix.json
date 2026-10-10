@@ -1,0 +1,23 @@
+{
+  "default_threshold_percent": 120.0,
+  "rules": [
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p64*-quick",
+      "name": "*",
+      "threshold_percent": 160.0
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p128*-quick",
+      "name": "*",
+      "threshold_percent": 160.0
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256*-quick",
+      "name": "*",
+      "threshold_percent": 160.0
+    }
+  ]
+}

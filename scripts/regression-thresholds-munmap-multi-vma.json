@@ -1,0 +1,11 @@
+{
+  "default_threshold_percent": 60.0,
+  "rules": [
+    {
+      "platform": "wsl",
+      "profile": "munmap-multi-vma-quick",
+      "name": "*",
+      "threshold_percent": 85.0
+    }
+  ]
+}

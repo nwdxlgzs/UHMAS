@@ -1,0 +1,28 @@
+{
+  "rules": [
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "treap_health_flags", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "treap_repair_pending_flags", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "treap_repair_failures", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "vm_lock_held_calls", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_mark_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_mark_max_pages", "max_value": 64 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_range_query_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_range_query_max_pages", "max_value": 64 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_lock_range_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "page_lock_range_max_shards", "max_value": 2 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "malloc_tree_find_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "malloc_tree_insert_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "malloc_tree_remove_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "vma_tree_find_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "vma_tree_insert_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "vma_tree_remove_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "mmap_free_tree_find_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "mmap_free_tree_insert_budget_exceeded", "max_value": 0 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "*", "key": "mmap_free_tree_remove_budget_exceeded", "max_value": 0 },
+
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* *", "key": "heap_lock_calls", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* mixed release", "key": "vm_commit_calls", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* mixed release", "key": "vm_decommit_calls", "min_value": 1 },
+    { "platform": "*", "profile": "spinlock-thresholds-*", "name": "spinlock yield=* mixed release", "key": "vm_protect_calls", "min_value": 1 }
+  ]
+}

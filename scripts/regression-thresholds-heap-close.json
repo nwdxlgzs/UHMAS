@@ -1,0 +1,75 @@
+{
+  "same_run_rules": [
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned ctx/class queue",
+      "baseline_name": "heap close owned ctx 9",
+      "max_ratio": 2.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned ctx 3",
+      "baseline_name": "heap close owned ctx 1",
+      "max_ratio": 2.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned ctx 9",
+      "baseline_name": "heap close owned ctx 1",
+      "max_ratio": 2.5
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned TLS workers 3",
+      "baseline_name": "heap close owned TLS workers 1",
+      "max_ratio": 2.5
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned mixed ctx/TLS/class queue",
+      "baseline_name": "heap close owned mixed ctx/TLS/class queue q1",
+      "max_ratio": 2.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned mixed ctx/TLS/class queue q8",
+      "baseline_name": "heap close owned mixed ctx/TLS/class queue q1",
+      "max_ratio": 2.5
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned mixed ctx/TLS/class queue q32",
+      "baseline_name": "heap close owned mixed ctx/TLS/class queue q1",
+      "min_ratio": 0.5,
+      "max_ratio": 3.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned q32 phase final class publish",
+      "baseline_name": "heap close owned q1 phase final class publish",
+      "max_ratio": 8.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close owned q32 phase arena release",
+      "baseline_name": "heap close owned q1 phase arena release",
+      "max_ratio": 3.0
+    },
+    {
+      "platform": "*",
+      "profile": "heap-close-quick",
+      "name": "heap close pre-reserved mixed ctx/TLS/class queue",
+      "baseline_name": "heap close owned mixed ctx/TLS/class queue q1",
+      "max_ratio": 0.75
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath default small",
+      "key": "hits",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath default multithread",
+      "key": "hits",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath lockless small",
+      "key": "hits",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath lockless multithread",
+      "key": "hits",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls small",
+      "key": "hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls small",
+      "key": "pushes",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls small",
+      "key": "misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls multithread",
+      "key": "hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls multithread",
+      "key": "pushes",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls multithread",
+      "key": "misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless small",
+      "key": "hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless small",
+      "key": "pushes",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless small",
+      "key": "misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless multithread",
+      "key": "hits",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless multithread",
+      "key": "pushes",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "tls-cache small fastpath tls-lockless multithread",
+      "key": "misses",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls small",
+      "key": "page_span_pages",
+      "min_value": 12000,
+      "max_value": 12500
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls small",
+      "key": "page_lock_shards",
+      "min_value": 11500,
+      "max_value": 12200
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls multithread",
+      "key": "page_span_pages",
+      "min_value": 17000,
+      "max_value": 23000
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls multithread",
+      "key": "page_lock_shards",
+      "min_value": 15000,
+      "max_value": 21500
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls-lockless small",
+      "key": "page_span_pages",
+      "min_value": 12000,
+      "max_value": 12500
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls-lockless small",
+      "key": "page_lock_shards",
+      "min_value": 11500,
+      "max_value": 12200
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls-lockless multithread",
+      "key": "page_span_pages",
+      "min_value": 17000,
+      "max_value": 23000
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "attribution small fastpath tls-lockless multithread",
+      "key": "page_lock_shards",
+      "min_value": 15000,
+      "max_value": 21500
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "prepared_proof",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "hint_count",
+      "min_value": 8,
+      "max_value": 8
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "hint_ways",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "anchor_hint_present",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "target_hint_present",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "target_cached_slots",
+      "min_value": 6,
+      "max_value": 6
+    },
+    {
+      "platform": "*",
+      "profile": "small-fast-path-quick",
+      "name": "retained-hint collision",
+      "key": "samples",
+      "min_value": 1
+    }
+  ]
+}

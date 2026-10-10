@@ -1,0 +1,270 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase malloc-only",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mmap-only",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase munmap-only",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mprotect-only",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase malloc-only",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase malloc-only",
+      "key": "query_has_owner_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "query_has_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mmap-only",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mmap-only",
+      "key": "query_is_free_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mmap-only",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase munmap-only",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase munmap-only",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase munmap-only",
+      "key": "query_overlaps_va_state_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mprotect-only",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mprotect-only",
+      "key": "query_overlaps_va_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase mprotect-only",
+      "key": "query_get_expected_state_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "mark_malloc_decommitted_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "mark_malloc_decommitted_pages",
+      "max_value": 8192
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase free-only",
+      "key": "query_has_state_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase munmap-only",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 4
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_malloc_live_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "mark_malloc_decommitted_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "query_is_free_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "query_has_owner_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "page-range-phase release pressure phase full-mixed",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "attribution release pressure phase malloc-only",
+      "key": "page_span_pages",
+      "max_value": 24792
+    },
+    {
+      "platform": "windows",
+      "profile": "release-pressure-matrix-quick",
+      "name": "attribution release pressure phase free-only",
+      "key": "page_span_pages",
+      "max_value": 594746
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "attribution release pressure phase mmap-only",
+      "key": "page_span_pages",
+      "max_value": 51456
+    },
+    {
+      "platform": "*",
+      "profile": "release-pressure-matrix-quick",
+      "name": "attribution release pressure phase full-mixed",
+      "key": "page_span_pages",
+      "max_value": 548606
+    }
+  ]
+}

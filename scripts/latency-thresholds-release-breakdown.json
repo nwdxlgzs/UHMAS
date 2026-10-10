@@ -1,0 +1,88 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "samples",
+      "min_value": 18000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "samples",
+      "min_value": 4096
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "samples",
+      "min_value": 9000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc churn",
+      "key": "p99_ns",
+      "max_value": 300000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown malloc/free burst",
+      "key": "p99_ns",
+      "max_value": 300000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap churn",
+      "key": "p99_ns",
+      "max_value": 500000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mmap/munmap burst",
+      "key": "p99_ns",
+      "max_value": 250000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "release breakdown mprotect lifecycle",
+      "key": "p99_ns",
+      "max_value": 100000
+    },
+    {
+      "platform": "*",
+      "profile": "release-breakdown-quick",
+      "name": "uhm release mixed long pressure",
+      "key": "p99_ns",
+      "max_value": 300000
+    }
+  ]
+}

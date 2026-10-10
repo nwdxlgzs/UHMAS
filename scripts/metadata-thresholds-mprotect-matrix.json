@@ -1,0 +1,350 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution page-private malloc restore/free",
+      "key": "page_span_pages",
+      "max_value": 7072
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution page-private malloc restore/free",
+      "key": "page_mark_pages",
+      "min_value": 2136,
+      "max_value": 2136
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect pass pressure",
+      "key": "page_span_pages",
+      "max_value": 38873
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect rollback pressure",
+      "key": "page_span_pages",
+      "max_value": 43673
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect wide pass pressure",
+      "key": "page_span_pages",
+      "max_value": 98903
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect wide rollback pressure",
+      "key": "page_span_pages",
+      "max_value": 103703
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect merge pressure",
+      "key": "page_span_pages",
+      "max_value": 18860
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution exact-neighbor mprotect merge pressure",
+      "key": "page_span_pages",
+      "max_value": 5030
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution exact-neighbor mprotect merge pressure",
+      "key": "page_mark_pages",
+      "min_value": 1612,
+      "max_value": 1612
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution partial-edge mprotect merge pressure",
+      "key": "page_span_pages",
+      "max_value": 36060
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect merge rollback pressure",
+      "key": "page_span_pages",
+      "max_value": 21260
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-quick",
+      "name": "attribution multi-VMA mprotect random fault pressure",
+      "key": "page_span_pages",
+      "max_value": 236526
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "operations",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "heap_check_excluded",
+      "min_value": 1,
+      "max_value": 1
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000,
+      "max_failed_samples": 1
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000,
+      "max_failed_samples": 1
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000,
+      "max_failed_samples": 1
+    },
+    {
+      "platform": "windows",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 1000000,
+      "max_failed_samples": 1
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "wsl",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "heap_lock_max_hold_ns",
+      "max_value": 5000000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "page_mark_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "page_mark_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "page_mark_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "page_mark_pages",
+      "max_value": 10000000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "page_query_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "page_query_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "page_query_pages",
+      "max_value": 1250000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "page_query_pages",
+      "max_value": 10400000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "page_lock_shards",
+      "max_value": 60000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "page_lock_shards",
+      "max_value": 60000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "page_lock_shards",
+      "max_value": 60000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "page_lock_shards",
+      "max_value": 440000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "page_budget_exceeded",
+      "max_value": 15000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "page_budget_exceeded",
+      "max_value": 15000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "page_budget_exceeded",
+      "max_value": 15000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "page_budget_exceeded",
+      "max_value": 120000
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p64-quick",
+      "name": "attribution *",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p128-quick",
+      "name": "attribution *",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-quick",
+      "name": "attribution *",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "mprotect-multi-vma-p256-lat128-quick",
+      "name": "attribution *",
+      "key": "tree_budget_exceeded",
+      "max_value": 0
+    }
+  ]
+}

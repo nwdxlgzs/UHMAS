@@ -1,0 +1,37 @@
+{
+  "rules": [
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "p50_ns", "min_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "p95_ns", "min_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "*", "key": "p99_ns", "min_value": 1 },
+    { "platform": "windows", "profile": "heap-close-quick", "name": "*", "key": "p99_ns", "max_value": 2000000 },
+    { "platform": "wsl", "profile": "heap-close-quick", "name": "*", "key": "p99_ns", "max_value": 5000000 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned ctx/class queue", "key": "work_units_per_sample", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned ctx 1", "key": "work_units_per_sample", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned ctx 3", "key": "work_units_per_sample", "min_value": 3, "max_value": 3 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned ctx 9", "key": "work_units_per_sample", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned TLS workers 1", "key": "work_units_per_sample", "min_value": 1, "max_value": 1 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned TLS workers 3", "key": "work_units_per_sample", "min_value": 3, "max_value": 3 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned TLS workers", "key": "work_units_per_sample", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned mixed ctx/TLS/class queue q1", "key": "work_units_per_sample", "min_value": 7, "max_value": 7 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned mixed ctx/TLS/class queue", "key": "work_units_per_sample", "min_value": 8, "max_value": 8 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned mixed ctx/TLS/class queue q8", "key": "work_units_per_sample", "min_value": 14, "max_value": 14 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned mixed ctx/TLS/class queue q32", "key": "work_units_per_sample", "min_value": 38, "max_value": 38 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close pre-reserved mixed ctx/TLS/class queue", "key": "work_units_per_sample", "min_value": 8, "max_value": 8 },
+
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase metadata epoch", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase local registry drain", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase fallback maintenance", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase final class publish", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase registry detach", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase TLS key delete", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q1 phase arena release", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase metadata epoch", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase local registry drain", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase fallback maintenance", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase final class publish", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase registry detach", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase TLS key delete", "key": "samples", "min_value": 9, "max_value": 9 },
+    { "platform": "*", "profile": "heap-close-quick", "name": "heap close owned q32 phase arena release", "key": "samples", "min_value": 9, "max_value": 9 }
+  ]
+}

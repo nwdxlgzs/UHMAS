@@ -1,0 +1,160 @@
+{
+  "rules": [
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase uhm small malloc/free multithread",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase uhm small malloc/free multithread",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share remote free/reuse",
+      "key": "mark_control_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share remote free/reuse",
+      "key": "mark_malloc_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share remote free/reuse",
+      "key": "mark_malloc_decommitted_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "mark_mmap_live_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "mark_free_reusable_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "mark_protecting_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_is_free_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_has_live_mmap_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_overlaps_va_state_calls",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_matches_generation_calls",
+      "min_value": 1
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase uhm small malloc/free multithread",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share remote free/reuse",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "mark_unknown_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase uhm small malloc/free multithread",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share remote free/reuse",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_matches_descriptor_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "page-range-phase false-share page-map mmap/munmap",
+      "key": "query_matches_generation_budget_exceeded",
+      "max_value": 0
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "tls-cache uhm small malloc/free multithread",
+      "key": "overflows",
+      "min_value": 1,
+      "max_value": 1000
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "tls-cache false-share remote free/reuse",
+      "key": "overflows",
+      "min_value": 50000,
+      "max_value": 70000
+    },
+    {
+      "platform": "*",
+      "profile": "false-sharing-quick",
+      "name": "tls-cache false-share page-map mmap/munmap",
+      "key": "overflows",
+      "max_value": 0
+    }
+  ]
+}
